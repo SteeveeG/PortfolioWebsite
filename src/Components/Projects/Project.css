@@ -1,0 +1,20 @@
+.ProjectPos{
+    position: relative;
+    text-align: center;
+    top :30em;
+    list-style: none;
+}
+
+.Wrapper{
+
+}
+.ProjectPic{
+    transition: ease-in-out 0.5s;
+
+}
+.ProjectPic:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+
+
+}

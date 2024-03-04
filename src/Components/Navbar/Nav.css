@@ -1,0 +1,180 @@
+:root{
+    --navbar-height: 80px;
+    --Mobile-Width:850px
+}
+
+ 
+.navula:hover,.hover:hover{
+    transition: ease-in-out 0.5s;
+    color: grey;
+}
+
+
+.iconLefTop {
+    padding: 25px 30px;
+    max-width: 30vw;
+    float: left;
+}
+
+.g{
+    color: black;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+
+.nav{
+    height: var(--navbar-height);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.logo{
+    color: black;
+    margin-left: 30px;
+    font-family: "Consolas", serif;
+    text-decoration: none;
+
+}
+.navul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    transition: ease-in-out 0.5s;
+
+}
+.navli {
+    height: 100%;
+    width: 85px;
+    position: relative;
+    right: 19vw;
+}
+
+.navula {
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+
+.dropdown{
+    height: min-content;
+    width: 220px;
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    padding: 0px 0px 0px 5px;
+    top: var(--navbar-height);
+}
+
+.dropdown .dropdownli{
+    height: 60px;
+    width: 100%;
+}
+.dropdown .dropdowna{
+    justify-content:  flex-start;
+}
+.navli:hover .dropdown{
+    display: flex;
+}
+nav input[type="checkbox"]{
+    display: none;
+}
+.expandable_li{
+    display: flex;
+    align-items: center;
+}
+.toggle_button {
+    width: 30px;
+    height: 23px;
+
+    position: absolute;
+    top :25px;
+    right: 25px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+
+}
+
+.Consolas{
+    font-family: Consolas, serif;
+}
+
+
+@media(max-width: 850px){
+    .toggle_button{
+        display: flex;
+    }
+    .navul.navula {
+        height: min-content;
+        width: 100%;
+        background-color:rgb(233, 233, 233);
+        left: 0;
+        z-index: 5;
+        display: none;
+        position: absolute;
+        top: var(--navbar-height);
+        transition: ease-in-out 0.5s;
+    }
+    .navli {
+        height: min-content;
+        width: 100%;
+    }
+    .navula {
+        padding: 30px 0;
+    }
+    .expandable_li.navli{
+        display: block;
+    }
+    .expandable_li.navli .hover{
+        text-align: center;
+        padding: 30px 0;
+        cursor: pointer;
+        display: block;
+    }
+    .expandable_li.navli:hover .navul.dropdown{
+        display: none;
+    }
+    .expandable_li.navli input[type="checkbox"]:checked ~ .navul.dropdown{
+        display: block;
+    }
+    .dropdown{
+        background-color: rgb(204, 202, 202);
+        position: static;
+        width: 100%;  
+        padding: 0px 0px 0px 0px;
+    }
+    .dropdown .dropdownli{
+        padding: 0;
+        display: block;
+        position: static;
+        background-color:transparent;
+
+    }
+    .dropdown  .dropdowna{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+    #toggle_button:checked ~ ul{
+        display: block;
+    }
+}
