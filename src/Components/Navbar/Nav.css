@@ -3,10 +3,9 @@
     --Mobile-Width:850px
 }
 
- 
-.navula:hover,.hover:hover{
+ .navula:hover,.hover:hover{
     transition: ease-in-out 0.5s;
-    color: grey;
+    color: rgb(75, 75, 75)
 }
 
 
@@ -36,7 +35,7 @@
     margin-left: 30px;
     font-family: "Consolas", serif;
     text-decoration: none;
-
+    z-index: 6;
 }
 .navul{
     height: 100%;
@@ -64,29 +63,6 @@
     text-decoration: none;
 }
 
-
-.dropdown{
-    height: min-content;
-    width: 220px;
-    background-color: transparent;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    padding: 0px 0px 0px 5px;
-    top: var(--navbar-height);
-}
-
-.dropdown .dropdownli{
-    height: 60px;
-    width: 100%;
-}
-.dropdown .dropdowna{
-    justify-content:  flex-start;
-}
-.navli:hover .dropdown{
-    display: flex;
-}
 nav input[type="checkbox"]{
     display: none;
 }
@@ -114,66 +90,39 @@ nav input[type="checkbox"]{
 
 }
 
-.Consolas{
-    font-family: Consolas, serif;
-}
 
 
-@media(max-width: 850px){
+@media(max-width: 500px){
     .toggle_button{
         display: flex;
+        z-index: 5;
     }
     .navul.navula {
         height: min-content;
         width: 100%;
-        background-color:rgb(233, 233, 233);
+        background-color:transparent;
+        backdrop-filter: blur(20px);
+        opacity: 1;
         left: 0;
         z-index: 5;
         display: none;
         position: absolute;
         top: var(--navbar-height);
         transition: ease-in-out 0.5s;
-    }
+        top: 65px;
+        margin: 0;
+       
+     }
     .navli {
         height: min-content;
         width: 100%;
+        right: 0;
     }
     .navula {
         padding: 30px 0;
     }
-    .expandable_li.navli{
-        display: block;
-    }
-    .expandable_li.navli .hover{
-        text-align: center;
-        padding: 30px 0;
-        cursor: pointer;
-        display: block;
-    }
-    .expandable_li.navli:hover .navul.dropdown{
-        display: none;
-    }
-    .expandable_li.navli input[type="checkbox"]:checked ~ .navul.dropdown{
-        display: block;
-    }
-    .dropdown{
-        background-color: rgb(204, 202, 202);
-        position: static;
-        width: 100%;  
-        padding: 0px 0px 0px 0px;
-    }
-    .dropdown .dropdownli{
-        padding: 0;
-        display: block;
-        position: static;
-        background-color:transparent;
 
-    }
-    .dropdown  .dropdowna{
-        width: 100%;
-        padding: 0;
-        justify-content: center;
-    }
+
     #toggle_button:checked ~ ul{
         display: block;
     }

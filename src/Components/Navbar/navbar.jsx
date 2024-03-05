@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import './Nav.css'
+import '../Main.css'
 
 class Navbar extends Component {
     state = {}
