@@ -1,13 +1,61 @@
-.background{
+body{
     background-color: #ffffff;
     opacity: 1;
     background-image: radial-gradient(#3c3e53 0.5px, #ffffff 0.5px);
-    background-size: 10px 10px;
+    background-size: 15px 15px;
     background-attachment: scroll;
     left: 0;
     top: 0;
     width: 100%;
     height: 250%;
     position: absolute;
+    margin: 0;
 
+}
+.Container{
+    position: relative;
+    top: 30em;
+    width: 100%;
+    
+ }
+
+@media (max-width: 960px) {
+   
+}
+
+@media (max-width: 880px) {
+    .pos{
+        left: 2em;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 700px) {
+    .pos{
+        top: 7em;
+        left: 1em;
+        font-size: 16px;
+    }
+}
+@media (max-width: 540px) {
+    .pos{
+        display: contents;
+
+    }
+
+    .Segoe.Header,  .Consolas.Intro , .Consolas.Name{
+        position: relative;
+        margin-left: 15px;
+        padding-right: 15px;
+    } 
+
+    .ProjectIntroPos{
+       top: 5em;
+   }
+   .ProjectIntroText{
+        font-size: 23px;
+   }
+   .ProjectPos{
+        top: 16em;
+   }
 }
