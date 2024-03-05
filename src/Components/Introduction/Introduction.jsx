@@ -1,7 +1,6 @@
-
 import React, { Component } from "react";
+import '../Main.css'
 import './Introduction.css'
-
 
 class Introduction extends Component {
     state = {}
