@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #ffffff;
     opacity: 1;
     background-image: radial-gradient(#3c3e53 0.5px, #ffffff 0.5px);
@@ -12,50 +12,210 @@ body{
     margin: 0;
 
 }
-.Container{
-    position: relative;
-    top: 30em;
-    width: 100%;
-    
- }
 
-@media (max-width: 960px) {
-   
+.Container {
+    position: relative;
+    top: 50em;
+    width: 100%;
+
+}
+
+
+
+
+
+@media (max-width: 1375px) {
+    .Arrow {
+        left: 10vw;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .AboutMepos {
+        top: 27vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Arrow {
+        transform: rotate(42deg);
+        left: 0;
+    }
+
+}
+
+@media (max-width: 970px) {
+    .Arrow {
+        transform: rotate(42deg);
+        left: -2em;
+        top: 0;
+    }
+
 }
 
 @media (max-width: 880px) {
-    .pos{
+    .pos {
         left: 2em;
         font-size: 19px;
+    }
+
+    .StuttgartStroke {
+        top: 70px;
+        left: 160px;
+    }
+
+    .AboutMepos {
+        top: 30vw;
+    }
+
+    .AboutMeHeader {
+        font-size: 4em;
+        text-align: center;
+        margin-right: 0;
     }
 }
 
 @media (max-width: 700px) {
-    .pos{
+    .pos {
         top: 7em;
         left: 1em;
         font-size: 16px;
     }
+
+    .StuttgartStroke {
+        top: 47px;
+        left: 104px;
+    }
+
+    .AboutMeHeader {
+        font-size: 3em;
+    }
+
+    .AboutMepos {
+        top: 16em;
+    }
+
+    .Aboutmetext {
+        font-size: 16px;
+        margin-left: 3vw;
+    }
 }
+ 
+
+@media (max-width: 644px) {
+    .TextmarkerCircle{
+        top: 97px;
+        left: 0px;
+   }
+}
+
+
 @media (max-width: 540px) {
-    .pos{
+    .pos {
         display: contents;
 
     }
 
-    .Segoe.Header,  .Consolas.Intro , .Consolas.Name{
+    .StuttgartStroke {
+        top: 136px;
+        left: 145px;
+        width: 219px;
+    }
+
+    .Arrow {
+        width: 100px;
+        transform: rotate(108deg);
+        left: 1em;
+        top: 36px;
+    }
+
+    .AboutMepos {
+        display: contents;
+    }
+
+    .Container {
+        top: 10em;
+    }
+
+    .Segoe.Header,
+    .Consolas.Intro,
+    .Consolas.Name {
         position: relative;
         margin-left: 15px;
         padding-right: 15px;
-    } 
+    }
 
-    .ProjectIntroPos{
-       top: 5em;
+    .ProjectIntroPos {
+        top: 5em;
+    }
+
+    .TextmarkerCircle{
+        top: 97px;
+        left: 0px;
    }
-   .ProjectIntroText{
+
+    .ProjectIntroText {
         font-size: 23px;
-   }
-   .ProjectPos{
+    }
+
+    .ProjectPos {
         top: 16em;
+    }
+}
+
+@media (max-width: 533px) {
+    .StuttgartStroke {
+        top: 176px;
+        left: 145px;
+
+    }
+}
+@media (max-width: 493px) {
+    .TextmarkerCircle{
+        top: 80px;
+        left: 0px;
+   }
+}
+
+
+
+
+
+@media (max-width: 381px) {
+    .StuttgartStroke {
+        top: 215px;
+        left: 3px;
+    }
+    .Arrow {
+        width: 80px;
+        transform: rotate(146deg);
+        left: 68vw;
+        top: 0px;
+    }
+
+}
+
+
+@media (max-width:303px) {
+    .TextmarkerCircle{
+        left: 66px
+   }
+}
+
+@media (max-width:254px) {
+    .StuttgartStroke {
+        top: 257px;
+    }
+    .ProjectIntroText{
+        min-width: 230px;
+    }
+}
+@media (max-width:240px) {
+    .TextmarkerCircle{
+        left: 0px;
+        top: 110px;
+        min-width: 74px;
+        margin-left: 55px;
    }
 }

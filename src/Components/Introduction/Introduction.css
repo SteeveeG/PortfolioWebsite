@@ -14,11 +14,26 @@
 
 .pos{
     position: absolute;
-    top: 6vw;
+    top: 3.5em;
     left: 5em;
     width: 32em;
     font-size: 23px;
     margin-left: 1em;
  }
 
- 
+ .StuttgartStroke{
+    opacity: 0.6;
+    position: absolute;
+    top: 95px;
+    left: 220px;
+    width: 260px;
+    z-index: -1;
+ }
+
+ .Arrow{
+ width: 150px;
+  transform: rotate(145deg);
+  top: 31px;
+  position: relative;
+  left: 15em;
+ }
