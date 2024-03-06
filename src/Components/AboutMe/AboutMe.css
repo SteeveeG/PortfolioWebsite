@@ -1,0 +1,23 @@
+.AboutMepos {
+     margin: 6em 0 ;
+     position: absolute;
+     top: 19em;
+     width: 100%; 
+
+}
+
+.AboutMeHeader {
+      text-align:right;
+      margin: 0;
+      margin-right: 30vw;
+      font-size: 5em;
+      
+}
+
+.Aboutmetext {
+     margin-left: 8em;
+     max-width: 1400px;
+     font-size: 1.2em;
+     margin-right: 40px;
+}
+ 
