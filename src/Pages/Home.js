@@ -5,8 +5,9 @@ import Project from "../Components/Projects/Project";
 import ProjectIntroduction from "../Components/Projects/ProjectIntroduction/ProjectIntroduction";
 import AboutMe from "../Components/AboutMe/AboutMe";
 import "./Home.css"
-
+ 
 export default function Home() {
+ 
     return (
         <div className="background">
             <Navbar />

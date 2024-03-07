@@ -51,8 +51,50 @@
     height: 100%;
     width: 85px;
     position: relative;
-    right: 19vw;
+
 }
+.navWrapper{
+    position: relative;
+    right: 5.7em;
+}
+.navDiv{
+    width: 25px;
+    text-align: center;
+    align-content: center;
+  display: grid; 
+}
+.navDiv:hover , .navDiv:hover .De , .navDiv:hover .En {
+    cursor: pointer;
+}
+
+.De{
+
+}
+.En{
+
+}
+.LanguageSelectedBar
+{
+}
+ 
+#De , #En{
+    visibility:hidden;
+    display: none;
+}
+
+
+#En:checked ~ .LanguageSelectedBar,
+#De:checked ~ .LanguageSelectedBar
+{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+}
+ 
+ 
+ 
+
 
 .navula {
     color: black;
@@ -126,4 +168,13 @@ nav input[type="checkbox"]{
     #toggle_button:checked ~ ul{
         display: block;
     }
+    #En:checked ~ .LanguageSelectedBar,
+    #De:checked ~ .LanguageSelectedBar
+    {
+        width: 20px;
+        right:  calc((20px -  100vw) / 2)!important;
+        position: relative;
+    }
+     
 }
+ 

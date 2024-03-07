@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from "./Pages/Home";
-
+import './Components/I18n/i18n.js' 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
