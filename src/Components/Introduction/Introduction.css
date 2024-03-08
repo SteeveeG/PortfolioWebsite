@@ -31,9 +31,11 @@
  }
 
  .Arrow{
- width: 150px;
+    width: 150px;
   transform: rotate(145deg);
   top: 31px;
   position: relative;
   left: 15em;
- }
+  }
+
+ 
