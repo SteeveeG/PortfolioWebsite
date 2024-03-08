@@ -1,0 +1,52 @@
+@media (max-width: 540px) {
+     body.en .TextmarkerCircle {
+          top: 56px;
+          left: 193px;
+     }
+}
+
+
+@media (max-width: 533px) {
+     body.en .StuttgartStroke {
+          top: 176px;
+          left: 145px;
+
+     }
+}
+@media (max-width: 493px) {
+     body.en .TextmarkerCircle{
+         top: 80px;
+         left: 0px;
+    }
+ }
+ 
+@media (max-width:303px) {
+     body.en .TextmarkerCircle{
+         left: 66px
+    }
+ }
+ 
+ 
+
+
+@media (max-width: 381px) {
+     body.en .StuttgartStroke {
+          top: 215px;
+          left: 3px;
+     }
+}
+
+@media (max-width:254px) {
+     body.en .StuttgartStroke {
+          top: 257px;
+     }
+
+}
+@media (max-width:240px) {
+     body.en .TextmarkerCircle{
+         left: -5px;
+         top: 110px;
+         min-width: 74px;
+         margin-left: 55px;
+    }
+ }

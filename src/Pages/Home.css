@@ -1,3 +1,60 @@
+@font-face {
+    font-family: 'FarmhouseChildren'; 
+    src: url("../Assets/fonts/FarmhouseChildren.otf") format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AdventureEiffel'; 
+    src: url("../Assets/fonts/AdventureEiffel.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kbswiftly'; 
+    src: url("../Assets/fonts/Kbswiftly.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LaterOn'; 
+    src: url("../Assets/fonts/LaterOn.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Qualitycontrol'; 
+    src: url("../Assets/fonts/Qualitycontrol.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sunflowerharvestotf'; 
+    src: url("../Assets/fonts/Sunflowerharvest.otf") format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sunflowerharvestttf'; 
+    src: url("../Assets/fonts/SunflowerHarvestRegular.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Thinpencilhandwritingotf'; 
+    src: url("../Assets/fonts/Thinpencilhandwriting.otf") format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Thinpencilhandwritingttf'; 
+    src: url("../Assets/fonts/ThinPencilHandwriting.ttf") format("truetype");
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     background-color: #ffffff;
     opacity: 1;
@@ -101,13 +158,13 @@ body {
         margin-left: 3vw;
     }
 }
- 
 
-@media (max-width: 644px) {
-    .TextmarkerCircle{
+
+@media (max-width: 643px) {
+    .TextmarkerCircle {
         top: 97px;
         left: 0px;
-   }
+    }
 }
 
 
@@ -150,11 +207,6 @@ body {
         top: 5em;
     }
 
-    .TextmarkerCircle{
-        top: 97px;
-        left: 0px;
-   }
-
     .ProjectIntroText {
         font-size: 23px;
     }
@@ -164,29 +216,7 @@ body {
     }
 }
 
-@media (max-width: 533px) {
-    .StuttgartStroke {
-        top: 176px;
-        left: 145px;
-
-    }
-}
-@media (max-width: 493px) {
-    .TextmarkerCircle{
-        top: 80px;
-        left: 0px;
-   }
-}
-
-
-
-
-
 @media (max-width: 381px) {
-    .StuttgartStroke {
-        top: 215px;
-        left: 3px;
-    }
     .Arrow {
         width: 80px;
         transform: rotate(146deg);
@@ -196,26 +226,8 @@ body {
 
 }
 
-
-@media (max-width:303px) {
-    .TextmarkerCircle{
-        left: 66px
-   }
-}
-
 @media (max-width:254px) {
-    .StuttgartStroke {
-        top: 257px;
-    }
-    .ProjectIntroText{
+    .ProjectIntroText {
         min-width: 230px;
     }
-}
-@media (max-width:240px) {
-    .TextmarkerCircle{
-        left: 0px;
-        top: 110px;
-        min-width: 74px;
-        margin-left: 55px;
-   }
 }
