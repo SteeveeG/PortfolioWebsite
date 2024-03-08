@@ -1,0 +1,18 @@
+.LanguageHelperPos {
+     position: relative;
+     margin-right: 30vw;
+     font-size: 20px;
+     text-align: right;
+}
+
+.LanguageHelperText {
+     font-family: Kbswiftly;
+     margin: 0;
+     width: fit-content;
+}
+
+.LanguageArrow{
+     transform: rotate(180deg);
+     width: 35px;
+   
+}

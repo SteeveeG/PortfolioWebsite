@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Introduction from "../Components/Introduction/Introduction";
 import Navbar from "../Components/Navbar/navbar";
+import Introduction from "../Components/Introduction/Introduction";
+import LanguageHelper from '../Components/LanguageHelper/LanguageHelper';
 import Project from "../Components/Projects/Project";
 import ProjectIntroduction from "../Components/Projects/ProjectIntroduction/ProjectIntroduction";
 import AboutMe from "../Components/AboutMe/AboutMe";
@@ -39,6 +40,7 @@ function Home() {
         <div className="background">
             <Navbar />
             <Introduction />
+            <LanguageHelper/>
             <AboutMe />
             <div className="Container">
                 <ProjectIntroduction />

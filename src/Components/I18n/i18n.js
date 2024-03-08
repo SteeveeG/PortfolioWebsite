@@ -24,6 +24,11 @@ const resources = {
       "ProjectIntro": "Here you can take a look at my Projects",
       //projects
 
+
+      //LanguageHelper
+      "LanguageHelperText": "For my English Homies"
+      //LanguageHelper
+
     },
   },
   de: {
@@ -47,6 +52,11 @@ const resources = {
       //projects
       "ProjectIntro": "Hier können Sie einen Blick auf meine Projekte werfen",
       //projects
+
+      //LanguageHelper
+      "LanguageHelperText": "Für meine Deutschen Homeboys"
+      //LanguageHelper
+
 
     },
   },
