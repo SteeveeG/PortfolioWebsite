@@ -7,12 +7,12 @@ import arrow from "../../Assets/Svg/Arrow2.svg"
 function LanguageHelper(){
      const { t, i18n } = useTranslation();
   return (
-     <div className="LanguageHelperPos">
+      <div className="LanguageHelperPos">
+          <img src={arrow} className="LanguageArrow" alt="an Arrow Pointing at the change Language RadioButtons"/>
           <p className="LanguageHelperText">
-          <img src={arrow} className="LanguageArrow" alt="an Arrow Pointing at the change Language RadioButtons" />
-          {t("LanguageHelperText")}
+              {t("LanguageHelperText")}
           </p>
-     </div>)
+      </div>)
 }
 
 export default LanguageHelper

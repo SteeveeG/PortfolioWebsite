@@ -134,7 +134,8 @@ nav input[type="checkbox"]{
 
 
 
-@media(max-width: 500px){
+@media(max-width: 540px){
+
     .toggle_button{
         display: flex;
         z-index: 5;

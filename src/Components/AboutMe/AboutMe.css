@@ -15,9 +15,15 @@
 }
 
 .Aboutmetext {
-     margin-left: 8em;
+     margin-left: 7em;
      max-width: 1400px;
      font-size: 1.2em;
      margin-right: 40px;
+}
+
+.AboutmeContact{
+    position: relative;
+    margin: 0 0 0 7em;
+    font-size: 1.2em;
 }
  

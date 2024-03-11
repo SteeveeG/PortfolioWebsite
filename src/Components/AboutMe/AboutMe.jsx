@@ -13,6 +13,8 @@ function AboutMe() {
 
                <h1 className="Segoe AboutMeHeader">{t("AboutMeHeader")}</h1>
                <p className="Consolas Aboutmetext">{t("AboutMeText")}</p>
+
+              <p className="Consolas AboutmeContact">{t("AboutMeContact")}</p>
      
           </div>
      );

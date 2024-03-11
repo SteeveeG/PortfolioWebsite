@@ -2,6 +2,13 @@ body.de .StuttgartStroke {
      left: 165px;
 }
 
+body.de .LanguageArrow{
+     margin-right: 72px;
+}
+body.de .LanguageHelperPos{
+     margin: 0 16px 0 0;
+}
+
 
 @media (max-width: 874px) {
      body.de .TextmarkerCircle {
