@@ -1,0 +1,91 @@
+:root{
+    --HighlightedColor: #bdbd00;
+    --fontSize:19px
+}
+
+
+
+.group{
+    position: relative;
+    top: 45em;
+    width: 100%;
+    text-align: center;
+}
+.InputContact{
+    border-style: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(71, 71, 71, 0.2);
+    font-size: var(--fontSize);
+}
+.label{
+    position: absolute;
+    margin: 0 0 0 5px;
+    transition: all 250ms ease-in-out;
+    z-index: -3;
+    font-size: var(--fontSize);
+
+}
+.InputWrapper{
+    display: inline-grid;
+    position: relative;
+    margin: 0 30px;
+    top: 150px;
+    width: 15em;
+    margin-bottom: 50px;
+}
+
+#input:focus ~ .label ,
+#input:valid ~ .label{
+    transform: translateY(-90%);
+    transition: all 250ms ease-in-out;
+}
+#input:focus ~ .label{
+    color: var(--HighlightedColor);
+    transition: all 250ms ease-in-out;
+}
+#input:focus ~ .ContactSpan{
+    background-color:var(--HighlightedColor) !important;
+    transition: all 250ms ease-in-out;
+}
+
+#input:valid ~ .ContactSpan{
+    background-color: green;
+}
+
+
+
+.ContactSpan{
+    transition: all 250ms ease-in-out;
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 100px;
+}
+
+.Form{
+    width: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #737373;
+    z-index: -3;
+}
+.ContactHeader{
+
+}
+.ContactWrapper{
+    text-align: left;
+    height: 500px;
+    top: 45em;
+    position: relative;
+    background: white;
+    z-index: -3;
+    margin: auto;
+    width: 850px;
+    border: transparent;
+    padding: 10px;
+    -webkit-box-shadow: 0px 6px 15px 5px #898989;
+    box-shadow: 0px 6px 15px 5px #898989;
+}

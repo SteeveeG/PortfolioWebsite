@@ -17,7 +17,8 @@ const resources = {
 
       //About Me
       "AboutMeHeader": "About Me",
-      "AboutMeText": "hi, I am a 19 year old full stack apprentice Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+      "AboutMeText": "Hi, I am a 19 year old developer from the beautiful Swabian region. I've been programming and developing software solutions since I was 15. That's why I started an apprenticeship as an IT specialist in application development in 2022. My specialty is the backend, and I am also learning the frontend. My programming languages include C#, Python, html & css, Javascript and SQL",
+      "AboutMeContact":"Have I sparked your interest? - Feel free to write to me!",
       //About Me
 
       //projects
@@ -26,7 +27,7 @@ const resources = {
 
 
       //LanguageHelper
-      "LanguageHelperText": "For my English Homies"
+      "LanguageHelperText": "mogsch ned mal mei webseid uf deutsch angucke ?! "
       //LanguageHelper
 
     },
@@ -46,7 +47,8 @@ const resources = {
 
       //About Me
       "AboutMeHeader": "Über Mich",
-      "AboutMeText": "Hi , ich bin ein 19 jähriger full stack azubi Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+      "AboutMeText": "Hi, ich bin ein 19 jähriger Entwickler aus dem schönen Schwabenland. Seitdem ich 15 bin beschäftige ich ich mit der Programmierung und Entwicklung von Software-Lösungen. Deshalb habe ich 2022 eine Ausbildung zum Fachinformatiker in der Anwendungsentwicklung begonnen. Mein Spezialgebiet ist das Backend, zusätzlich lerne ich das Frontend. Zu meinen Programmiersprachen zählen C#, Python , html & css , Javascript und SQL",
+      "AboutMeContact":"Hab ich dein Interesse geweckt? - Schreib mir doch gerne!",
       //About Me
 
       //projects
@@ -54,7 +56,7 @@ const resources = {
       //projects
 
       //LanguageHelper
-      "LanguageHelperText": "Für meine Deutschen Homeboys"
+      "LanguageHelperText": "For my English Speaking Homies"
       //LanguageHelper
 
 

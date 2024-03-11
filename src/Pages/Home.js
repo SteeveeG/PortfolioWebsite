@@ -5,6 +5,7 @@ import LanguageHelper from '../Components/LanguageHelper/LanguageHelper';
 import Project from "../Components/Projects/Project";
 import ProjectIntroduction from "../Components/Projects/ProjectIntroduction/ProjectIntroduction";
 import AboutMe from "../Components/AboutMe/AboutMe";
+import Contact from "../Components/Contact/Contact";
 import "./Home.css"
 import "./GermanHome.css"
 import "./EnglishHome.css"
@@ -48,6 +49,7 @@ function Home() {
                 <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
                 <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
             </div>
+            <Contact/>
         </div>
     )
 }
