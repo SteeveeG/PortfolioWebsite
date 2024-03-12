@@ -44,39 +44,27 @@
     font-style: normal;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+body{
+    /* Vorübergehend Während des Entwickelns */
+    padding-bottom: 4000px;
+}
 body {
     background-color: #ffffff;
     opacity: 1;
     background-image: radial-gradient(#3c3e53 0.5px, #ffffff 0.5px);
     background-size: 15px 15px;
     background-attachment: scroll;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 250%;
-    position: absolute;
-    margin: 0;
-
 }
 
 .Container {
-    position: relative;
+    position: sticky;
     top: 50em;
     width: 100%;
 
 }
-
+html {
+    height: 100%;
+}
 
 
 
