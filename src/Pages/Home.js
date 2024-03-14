@@ -6,9 +6,8 @@ import Project from "../Components/Projects/Project";
 import ProjectIntroduction from "../Components/Projects/ProjectIntroduction/ProjectIntroduction";
 import AboutMe from "../Components/AboutMe/AboutMe";
 import Contact from "../Components/Contact/Contact";
+import Footer from '../Components/Footer/Footer';
 import "./Home.css"
-import "./GermanHome.css"
-import "./EnglishHome.css"
 import i18next from 'i18next';
 
 function Home() {
@@ -25,6 +24,7 @@ function Home() {
             i18next.off('languageChanged', handleLanguageChange);
         };
     }, []);
+
     const [lang, setLang] = useState('en');
 
     const changeLanguage = (lng) => {
@@ -40,17 +40,19 @@ function Home() {
     return (
         <div className="background">
             <Navbar />
-            <Introduction />
-            <LanguageHelper/>
-            <AboutMe />
-            <div className="Container">
+          <LanguageHelper/>
+              <Introduction />
+                  <AboutMe />
+          <div className="Container">
                 <ProjectIntroduction />
                 <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
-                <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
-                <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
-            </div>
-            <Contact/>
+                 <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
+                <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />  
+              </div>
+              <Contact/>
+            <Footer/>
         </div>
+        
     )
 }
 export default Home;
