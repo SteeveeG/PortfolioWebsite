@@ -1,0 +1,215 @@
+:root {
+    --HighlightedColor: gray;
+    --fontSize: 22px;
+    --formWidth: 17em;
+}
+.ContactHeader,.InfoHeader{
+    font-family: "Segoe UI", serif;
+}
+.UnderLine{
+    font-family: "Consolas", serif;
+}
+.Contact {
+    height: 500px;
+    position: relative;
+    margin: auto;
+    max-width: 850px;
+    padding: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 6px 15px 5px #898989;
+    box-shadow: 0px 6px 15px 5px #898989;
+    border-radius: 2%;
+    z-index: 0;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: linear-gradient(#0000006d 1px, transparent 1px), linear-gradient(to right, #0000006d 1px, #ffffff 1px);
+    background-size: 20px 20px;
+    margin-bottom: 250px;
+}
+.ContactForm {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: -3;
+}
+.ContactHeader {
+    position: relative;
+}
+.UnderLine {
+    margin: 0;
+    position: relative;
+    display: block;
+}
+.InputWrapper {
+    display: inline-grid;
+    position: relative;
+    margin: 0 45px;
+    width: 17em;
+    margin-bottom: 30px;
+    top: 35px;
+}
+.Input {
+    border-style: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: var(--fontSize);
+    height: 100%;
+}
+.label {
+    position: absolute;
+    margin: 0 0 0 5px;
+    transition: all 250ms ease-in-out;
+    z-index: -3;
+    font-size: var(--fontSize);
+    font-family: "Consolas", serif;
+}
+.Span {
+    transition: all 250ms ease-in-out;
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 100px;
+}
+.MessageContact {
+    display: inline-grid;
+    position: relative;
+    margin: 0 45px;
+    width: 17em;
+    margin-bottom: 30px;
+    top: 35px;
+    height: auto;
+    background-color: transparent;
+}
+.MessageInput {
+    resize: none;
+    border-style: none;
+    outline: none;
+    border-radius: 4px;
+    height: 8em;
+    font-size: var(--fontSize);
+    width: 100%;
+    background-color: rgba(161, 159, 159, 0.1);
+}
+.Submit {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 13em;
+    top: 20.5em;
+    transition: all 500ms ease-in-out;
+    height: 50px;
+    border-style: solid;
+    border-radius: 8px;
+    font-size: var(--fontSize);
+    color: white;
+    font-family: "Consolas", serif;
+    background-color: black;
+}
+.Submit:hover {
+    background-color: #faf98f;
+    border-color: #faf98f;
+    transition: all 500ms ease-in-out;
+    border-style: solid;
+    color: black;
+}
+.Info {
+    color: white;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    height: 385px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 70px;
+    background-color: black;
+    text-align: left;
+    padding: 25px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.InfoHeader {
+    font-size: x-large;
+    margin: 0 0 40px 0
+}
+.EmailContainer,
+.LocationContainer {
+    align-items: flex-start;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.EmailLogo,
+.LocationLogo {
+    width: 20px;
+    margin-right: 5px;
+}
+.Email,
+.Location {
+    font-family: "Consolas", serif;
+    margin: 0 0 0% 0
+}
+.LocationTipp {
+    font-family: FarmhouseChildren;
+    margin: 0;
+    position: absolute;
+    transform: rotateZ(-30deg);
+    left: 80px;
+    top: 13.2em;
+}
+.ArrowContact {
+    width: 67px;
+    transform: rotateZ(168deg);
+    left: 101px;
+    position: relative;
+    bottom: 22px;
+    display: block;
+}
+
+.MessageInput:focus~.label,
+.MessageInput:valid~.label,
+.Input:focus~.label,
+.Input:valid~.label {
+    transform: translateY(-90%);
+    transition: all 250ms ease-in-out;
+}
+.MessageInput:focus~.label,
+.Input:focus~.label {
+    color: var(--HighlightedColor);
+    transition: all 250ms ease-in-out;
+}
+.MessageInput:focus~.Span
+.Input:focus~.Span {
+    background-color: var(--HighlightedColor) !important;
+    transition: all 250ms ease-in-out;
+}
+@media (max-width: 730px) {
+    .Info {
+        display: none;
+    }
+
+    .ContactForm {
+        width: 100%;
+    }
+
+    .Contact {
+        margin: 0 20px 250px 20px;
+    }
+}
+@media (max-width: 559px) {
+    .MessageContact {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .InputWrapper {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}

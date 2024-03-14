@@ -1,0 +1,64 @@
+.Container{
+     margin: 0 0 100px 0;
+     position: relative;
+     width: 100%;   
+}
+
+.Header {
+      text-align:right;
+      margin: 0;
+      margin-right: 30vw;
+      font-size: 5em;
+      font-family: "Segoe UI", serif;
+      
+}
+
+.Text,
+.Contact{
+     font-family: "Consolas", serif;
+}
+
+
+.Text {
+     margin-left: 7em;
+     max-width: 1400px;
+     font-size: 1.2em;
+     margin-right: 40px;
+     
+}
+
+.Contact{
+    position: relative;
+    margin: 0 0 0 7em;
+    font-size: 1.2em;  
+}
+ 
+
+@media (max-width: 880px) {
+
+     .Header {
+         font-size: 4em;
+         text-align: center;
+         margin-right: 0;
+     }
+ }
+ 
+
+  
+@media (max-width: 700px) {
+      
+     .Header {
+         font-size: 3em;
+     }
+ 
+     .Text , .Contact {
+         font-size: 16px;
+         margin-left: 3vw;
+     }
+ }
+ 
+ @media (max-width: 540px) {
+     .Container {
+         display: contents;
+     }
+ }

@@ -1,0 +1,47 @@
+.FooterContainer{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(186, 186, 186, 0.5);
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: relative;    
+    padding: 60px 0 0 0;
+    font-family: "Consolas", serif;
+}
+
+.LinkText{
+    transition: ease-in-out 0.5s;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+
+.LinkText:hover{
+    transition: ease-in-out 0.5s;
+    color: gray;
+}
+
+
+.Container{
+    flex-direction: row;
+    list-style: none;
+    transition: ease-in-out 0.5s;
+    color: black;     
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.Name{
+    text-align: center;
+    margin-top: 65px;
+}
+
+.Copyright{
+    text-align: center;
+    margin-top: 65px;
+}

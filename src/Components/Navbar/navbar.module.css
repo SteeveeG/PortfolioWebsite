@@ -1,28 +1,12 @@
-:root{
+:root {
     --navbar-height: 80px;
-    --Mobile-Width:850px
 }
 
- .navula:hover,.hover:hover{
-    transition: ease-in-out 0.5s;
-    color: rgb(75, 75, 75)
-}
-
-
-.iconLefTop {
-    padding: 25px 30px;
-    max-width: 30vw;
-    float: left;
-}
-
-.g{
+.nav {
+    font-family: "Consolas", serif;
     color: black;
-    padding: 0 ;
-    margin: 0 ;
-}
-
-
-.nav{
+    padding: 0;
+    margin: 0;
     height: var(--navbar-height);
     background-color: transparent;
     display: flex;
@@ -30,14 +14,60 @@
     align-items: center;
     font-size: 15px;
 }
-.logo{
+
+.logo {
     color: black;
+    padding: 0;
+    margin: 0;
     margin-left: 30px;
     font-family: "Consolas", serif;
     text-decoration: none;
     z-index: 6;
 }
-.navul{
+
+.LanguageContainer {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    display: grid;
+}
+
+.links {
+    height: 100%;
+    width: 85px;
+    position: relative;
+
+}
+
+.LanguageContainer:hover,
+.De:hover,
+.En:hover {
+    cursor: pointer;
+}
+
+.De,
+.En {
+    font-family: "Consolas", serif;
+    margin: 5px;
+}
+
+.RadioDe,
+.RadioEn {
+    visibility: hidden;
+    display: none;
+}
+
+.RadioEn:checked~.LanguageSelectedBar,
+.RadioDe:checked~.LanguageSelectedBar {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+    display: block;
+}
+
+.LiContainer {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -45,58 +75,19 @@
     align-items: center;
     list-style: none;
     transition: ease-in-out 0.5s;
-
-}
-.navli {
+    color: black;
     height: 100%;
-    width: 85px;
-    position: relative;
-
-}
-.navWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
     position: relative;
     right: 5.7em;
 }
-.navDiv{
-    width: 25px;
-    text-align: center;
-    align-content: center;
-  display: grid; 
-}
-.navDiv:hover , .navDiv:hover .De , .navDiv:hover .En {
-    cursor: pointer;
-}
-
-.De{
-
-}
-.En{
-
-}
-.LanguageSelectedBar
-{
-}
- 
-#De , #En{
-    visibility:hidden;
-    display: none;
-}
 
 
-#En:checked ~ .LanguageSelectedBar,
-#De:checked ~ .LanguageSelectedBar
-{
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    border-radius: 100px;
-}
- 
- 
- 
-
-
-.navula {
+.LinkText {
+    transition: ease-in-out 0.5s;
     color: black;
     height: 100%;
     display: flex;
@@ -105,25 +96,27 @@
     text-decoration: none;
 }
 
-nav input[type="checkbox"]{
+.LinkText:hover{
+    transition: ease-in-out 0.5s;
+    color: gray;
+}
+
+.togglebtn {
     display: none;
 }
-.expandable_li{
-    display: flex;
-    align-items: center;
-}
-.toggle_button {
+ 
+
+.togglebutton {
     width: 30px;
     height: 23px;
-
     position: absolute;
-    top :25px;
+    top: 25px;
     right: 25px;
-
     display: none;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .bar {
     height: 4px;
     width: 100%;
@@ -134,16 +127,17 @@ nav input[type="checkbox"]{
 
 
 
-@media(max-width: 540px){
+@media(max-width: 540px) {
 
-    .toggle_button{
+    .togglebutton {
         display: flex;
         z-index: 5;
     }
-    .navul.navula {
+
+    .LiContainer {
         height: min-content;
         width: 100%;
-        background-color:transparent;
+        background-color: transparent;
         backdrop-filter: blur(20px);
         opacity: 1;
         left: 0;
@@ -154,28 +148,29 @@ nav input[type="checkbox"]{
         transition: ease-in-out 0.5s;
         top: 65px;
         margin: 0;
-       
-     }
-    .navli {
+        padding: 0;
+
+    }
+
+    .links {
         height: min-content;
         width: 100%;
         right: 0;
     }
-    .navula {
+
+    .LinkText {
         padding: 30px 0;
     }
 
-
-    #toggle_button:checked ~ ul{
+    .togglebtn:checked~ul {
         display: block;
     }
-    #En:checked ~ .LanguageSelectedBar,
-    #De:checked ~ .LanguageSelectedBar
-    {
-        width: 20px;
-        right:  calc((20px -  100vw) / 2)!important;
+
+    .RadioEn:checked~.LanguageSelectedBar,
+    .RadioDe:checked~.LanguageSelectedBar {
+        width: 30px !important;
+        right: calc((30px - 100vw) / 2) !important;
         position: relative;
     }
-     
+
 }
- 

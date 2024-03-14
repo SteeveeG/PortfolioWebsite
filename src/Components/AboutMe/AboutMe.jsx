@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 import { useTranslation } from "react-i18next";
-import './AboutMe.css'
-import '../Main.css'
-
+import AboutMeCss from './AboutMe.module.css'
+ 
 
 
 function AboutMe() {
      const { t, i18n } = useTranslation();
 
      return (
-          <div className="AboutMepos">
+          <div className={AboutMeCss.Container}>
 
-               <h1 className="Segoe AboutMeHeader">{t("AboutMeHeader")}</h1>
-               <p className="Consolas Aboutmetext">{t("AboutMeText")}</p>
+               <h1 className={AboutMeCss.Header}>{t("AboutMeHeader")}</h1>
+               <p className={AboutMeCss.Text}>{t("AboutMeText")}</p>
 
-              <p className="Consolas AboutmeContact">{t("AboutMeContact")}</p>
+              <p className={AboutMeCss.Contact}>{t("AboutMeContact")}</p>
      
           </div>
      );

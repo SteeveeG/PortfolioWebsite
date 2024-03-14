@@ -1,0 +1,257 @@
+  .Header {
+      line-height: 0.8em;
+      font-size: 3.2em;
+      margin: 0 0 0 0;
+      font-family: "Segoe UI", serif;
+  }
+
+  .Name {
+      font-family: "Consolas", serif;
+      margin-bottom: 0;
+  }
+
+  .Intro {
+      font-family: "Consolas", serif;
+      color: #666666;
+  }
+
+  .pos {
+      position: relative;
+      left: 5em;
+      width: 32em;
+      font-size: 23px;
+      margin-left: 1em;
+  }
+
+
+  .deStuttgartStroke {
+    opacity: 0.6;
+    position: absolute;
+    top: 69px;
+    left: 162px;
+    width: 275px;
+    z-index: -1;
+  }
+
+  .enStuttgartStroke {
+      opacity: 0.6;
+      position: absolute;
+      top: 75px;
+      left: 220px;
+      width: 260px;
+      z-index: -1;
+  }
+
+  .Arrow {
+      width: 150px;
+      transform: rotate(145deg);
+      top: 31px;
+      position: relative;
+      left: 15em;
+  }
+
+
+  .highlightcontainer, 
+  .highlight {
+    position: relative;
+  }
+  
+  .highlightcontainer {
+    display: inline-block;
+  }
+  .highlightcontainer:before {
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: rgba(250, 232, 12, 0.7);
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 10px 3px 3px 10px;
+  }
+  
+
+
+
+
+
+
+
+
+  @media (max-width: 1375px) {
+      .Arrow {
+          left: 10vw;
+      }
+
+  }
+
+  @media (max-width: 1100px) {
+      .Arrow {
+          transform: rotate(42deg);
+          left: 0;
+      }
+
+  }
+
+  @media (max-width: 970px) {
+      .Arrow {
+          transform: rotate(42deg);
+          left: -2em;
+          top: 0;
+      }
+
+  }
+
+  @media (max-width: 880px) {
+      .pos {
+          left: 2em;
+          font-size: 19px;
+      }
+
+      .enStuttgartStroke {
+          top: 50px;
+          left: 160px;
+      }
+      .deStuttgartStroke{
+        top: 40px;
+        left: 100px;
+      }
+  }
+
+ 
+  @media (max-width: 700px) {
+      .deStuttgartStroke {
+          left: 80px;
+          top: 30px;
+      }
+
+      .enStuttgartStroke {
+        top: 30px;
+          left: 104px;
+      }
+
+
+      .pos {
+          left: 1em;
+          font-size: 16px;
+      }
+
+
+      .AboutMeHeader {
+          font-size: 3em;
+      }
+
+      .Aboutmetext,
+      .AboutmeContact {
+          font-size: 16px;
+          margin-left: 3vw;
+      }
+
+
+
+
+  }
+
+
+
+  @media (max-width: 540px) {
+      .enStuttgartStroke {
+          top: 132px;
+          left: 145px;
+          width: 219px;
+      }
+
+      .deStuttgartStroke {
+          top: 115px;
+          left: 90px;
+      }
+
+
+
+      .pos {
+          display: contents;
+
+      }
+
+      .Arrow {
+          width: 100px;
+          transform: rotate(108deg);
+          left: 1em;
+          top: 36px;
+      }
+
+
+      .Header,
+      .Intro,
+      .Name {
+          position: relative;
+          margin-left: 15px;
+          padding-right: 15px;
+      }
+  }
+  @media (max-width: 533px) {
+    
+    .enStuttgartStroke {
+        top: 182px;
+        left: 0;
+        width: 219px;
+    }
+
+
+}
+
+  @media (max-width: 427px) {
+    
+    .enStuttgartStroke {
+        top: 182px;
+        left: 145px;
+        width: 219px;
+    }
+
+
+}
+
+  @media (max-width: 405px) {
+    .deStuttgartStroke {
+        top: 170px;
+    }
+  }
+
+  @media (max-width: 381px) {
+      .enStuttgartStroke {
+          top: 222px;
+          left: 8px;
+      }
+  }
+
+  @media (max-width: 400px) {
+      .Arrow {
+          width: 80px;
+          transform: rotate(146deg);
+          left: 68vw;
+          top: 0px;
+      }
+  }
+
+  @media (max-width: 344px) {
+      .deStuttgartStroke {
+          left:   0px;
+          top: 210px;
+          width: 240px;
+      }
+  }
+  
+@media (max-width: 254px) {
+    .enStuttgartStroke {
+        top: 257px;
+    }
+    .deStuttgartStroke {
+        left: 10px;
+        top: 255px;
+    }
+}  

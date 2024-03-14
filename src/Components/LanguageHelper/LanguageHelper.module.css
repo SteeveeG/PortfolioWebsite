@@ -1,19 +1,29 @@
-.LanguageHelperPos {
+.Container {
      position: relative;
      text-align: right;
      margin: 0 10px 0 0;
      bottom: 30px;
+    
 }
 
-.LanguageHelperText {
+.Text {
      font-family: Kbswiftly;
      margin: 0;
      text-align: right;
 }
 
-.LanguageArrow{
+.enArrow, .deArrow{
      transform: rotate(180deg);
      position: relative;
      width: 25px;
+}
+.enArrow{
      margin-right: 105px;
+}
+.deArrow{
+     margin-right: 77px;
+}
+
+@media (max-width: 540px) {
+     .Container{display: none}
 }
