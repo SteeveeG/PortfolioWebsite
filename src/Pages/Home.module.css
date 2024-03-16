@@ -1,0 +1,27 @@
+ 
+body {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#3c3e53 0.5px, #ffffff 0.5px);
+    background-size: 15px 15px;
+    background-attachment: scroll;
+    margin: 0;
+}
+
+.Container {
+    position: relative;
+    width: 100%;
+
+}
+
+* {
+    scroll-behavior: smooth;
+}
+ 
+@media (max-width: 540px) {
+    .Container {
+        top: 10em;
+    }
+}
+
+ 

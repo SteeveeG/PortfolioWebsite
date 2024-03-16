@@ -5,11 +5,9 @@ import img from "../../Assets/Png/CodeProjektBeispiel.png"
 import GithubLogo from "./Assets/github-mark.svg"
 
 
-
 class Project extends Component {
     state = {}
     render() {
-
         const { header, description, link } = this.props;
         return (
             <div className={ProjectCss.Container}>

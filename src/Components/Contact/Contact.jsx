@@ -11,7 +11,7 @@ function Contact() {
  
    
     const { t, i18n } = useTranslation();
-    return (<div className={ContactCss.Contact}>
+    return (<div className={ContactCss.Contact} id='Contact'>
             <form className={ContactCss.ContactForm}>
                 <h1 className={ContactCss.ContactHeader}>Let's Talk !</h1>
                 <p className={ContactCss.UnderLine}>{t("ContactUnderline")}</p>

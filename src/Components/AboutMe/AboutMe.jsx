@@ -8,7 +8,7 @@ function AboutMe() {
      const { t, i18n } = useTranslation();
 
      return (
-          <div className={AboutMeCss.Container}>
+          <div className={AboutMeCss.Container} id="About">
 
                <h1 className={AboutMeCss.Header}>{t("AboutMeHeader")}</h1>
                <p className={AboutMeCss.Text}>{t("AboutMeText")}</p>

@@ -24,9 +24,9 @@ function Navbar() {
                 <span className={NavbarCss.bar} />
             </label>
             <ul className={NavbarCss.LiContainer}>
-                <li className={NavbarCss.links}><a className={NavbarCss.LinkText} href="#">{t("About")}</a></li>
-                <li className={NavbarCss.links}><a className={NavbarCss.LinkText} href="#">{t("Projects")}</a></li>
-                <li className={NavbarCss.links}><a className={NavbarCss.LinkText} href="#">{t("Contact")}</a></li>
+                <li className={NavbarCss.links}><a className={NavbarCss.LinkText} href="#About">{t("About")}</a></li>
+                <li className={NavbarCss.links}><a className={NavbarCss.LinkText} href="#Projects">{t("Projects")}</a></li>
+                <li className={NavbarCss.links}><a className={NavbarCss.LinkText} href="#Contact">{t("Contact")}</a></li>
                 <div className={NavbarCss.LanguageContainer}>
                     <input type="radio" id="De" name="language"
                      checked={lang === 'de'}
