@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+
       // Navbar
       "About": "About",
       "Projects": "Projects",
@@ -25,6 +26,14 @@ const resources = {
       //projects
       "ProjectIntro": "Here you can take a look at my Projects",
       //projects
+
+      //ProjectTexts
+      "ProjectHeaderP1":"Chat-App",
+      "ProjectTextP1": "A WPF Chat App that is connected to a Grpc Service , Api and in the Backend  still bound to a SQL database.",
+      "ProjectHeaderP2":"Edabit-Challenges",
+      "ProjectTextP2":"A small collection of tasks from the website Edabit in the language C# and Python.",
+      //ProjectTexts
+
 
 
       //LanguageHelper
@@ -52,7 +61,7 @@ const resources = {
 
       //Introduction
       "IntroHeader1": "Full stack Azubi\naus ",
-      "introHeader2":" Stuttgart",
+      "introHeader2": " Stuttgart",
       "IntroText": "Ein Full-Stack-Azubi mit einer großen Leidenschaft für die Entwicklung neuer Lösungen und intensiver Projekte in allen Bereichen der Entwicklung",
       //Introduction
 
@@ -66,10 +75,18 @@ const resources = {
       "ProjectIntro": "Hier können Sie einen Blick auf meine Projekte werfen",
       //projects
 
+      //ProjectTexts
+      "ProjectHeaderP1":"Chat-App",
+      "ProjectTextP1": "Eine WPF Chat App die mit einem Grpc Service , Api verbunden ist und im Backend  noch an eine SQLdatenbank gebunden ist.",
+      "ProjectHeaderP2":"Edabit-Challenges",
+      "ProjectTextP2":"eine kleine Ansammlung aus aufgaben von der Website Edabit in der Sprache C# und Python.",
+      //ProjectTexts
+
+
       //LanguageHelper
       "LanguageHelperText": "For my English Speaking Homies",
       //LanguageHelper
-    
+
       //Contact
       "ContactUnderline": "Fühl dich frei, mich zu kontaktieren :)",
       "ContactMessage": "Nachricht",

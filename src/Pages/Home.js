@@ -10,34 +10,9 @@ import Footer from '../Components/Footer/Footer';
 import Comments from '../Components/Comments/Comments';
 import HomeCss from "./Home.module.css"
 import i18next from 'i18next';
-
+import { useTranslation } from "react-i18next";
 function Home() {
-    useEffect(() => {
-        function handleLanguageChange(lng) {
-
-            document.body.classList.remove('en', 'de');
-            document.body.classList.add(lng);
-        }
-
-        i18next.on('languageChanged', handleLanguageChange);
-
-        return () => {
-            i18next.off('languageChanged', handleLanguageChange);
-        };
-    }, []);
-
-    const [lang, setLang] = useState('en');
-
-    const changeLanguage = (lng) => {
-        setLang(lng);
-        i18next.changeLanguage(lng);
-    }
-
-    useEffect(() => {
-        changeLanguage(lang);
-    }, [lang]);
-
-
+   const { t } = useTranslation();
     return (
         <div className={HomeCss.background}>
             <Navbar />
@@ -50,11 +25,11 @@ function Home() {
                     commentdivName="Comment1"
                     comment='Console.WriteLine("Hello Wolrd !");'
                     fontfam='FarmhouseChildren' />
-                <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
+                <Project header={t("ProjectHeaderP1")} description={t("ProjectTextP1")} link="#" />
                 <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='FarmhouseChildren' />
-                <Comments commentdivName="Comment3" comment='WOW Er ist so Krass keine ahnung' fontfam='Qualitycontrol' />
-                <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
-                <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
+                 <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} link="#" />
+                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='FarmhouseChildren' />
+               <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
             </div>
             <Contact />
             <Footer />

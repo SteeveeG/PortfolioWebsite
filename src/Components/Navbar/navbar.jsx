@@ -5,6 +5,19 @@ import { useTranslation } from "react-i18next";
 import i18next from "../I18n/i18n";
 
 function Navbar() {
+    useEffect(() => {
+        function handleLanguageChange(lng) {
+            document.body.classList.remove('en', 'de');
+            document.body.classList.add(lng);
+        }
+
+        i18next.on('languageChanged', handleLanguageChange);
+
+        return () => {
+            i18next.off('languageChanged', handleLanguageChange);
+        };
+    }, []);
+
     const [lang, setLang] = useState('en'); 
 
     const changeLanguage = (lng) => {
