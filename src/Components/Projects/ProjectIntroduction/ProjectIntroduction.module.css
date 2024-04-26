@@ -8,102 +8,32 @@
      font-size: 30px;
      font-family: "Consolas", serif;
 }
-.deTextmarkerCircle,
-.enTextmarkerCircle{
-     position: relative;
-     top: 57px;
-     left: 252px;
-     z-index: -1;
-}
-@media (max-width: 643px) {
-    .enTextmarkerCircle  {
-        top: 97px;
-        left: 0px;
-    }
+
+.highlightcontainer,
+.highlight {
+    position: relative;
 }
 
-@media (max-width: 874px) {
-     .deTextmarkerCircle  {
-         left: 315px;
-     }
- }
- 
- @media (max-width: 758px) {
-     .deTextmarkerCircle {
-         left: -63px;
-         top: 100px;
-     }
- }
- 
- @media (max-width: 610px) {
-     .deTextmarkerCircle  {
-         left: 0px;
-         top: 100px;
-     }
- }
- 
- @media (max-width: 493px) {
-     .enTextmarkerCircle {
-         left: 20px;
-     }
- }
- 
- @media (max-width: 468px) {
-     .deTextmarkerCircle  {
-         left: 0px;
-         top: 80px;
-     }
- }
- @media (max-width: 445px) {
-     .enTextmarkerCircle {
-         left: 46px;
-     }
- }
- @media (max-width: 395px) {
-     .enTextmarkerCircle {
-         left: 86px;
-     }
- }
- 
- @media (max-width: 341px) {
-     .deTextmarkerCircle  {
-         left: 95px;
-         top: 80px;
-     }
- } 
- 
- @media (max-width:313px) {
-     .enTextmarkerCircle{
-          left: 0;
-          top: 130px;
-     }
- }
- 
- @media (max-width:303px) {
-     
- 
-     .deTextmarkerCircle  {
-         left: -40px;
-         top: 110px;
-     }
- }
- 
- @media (max-width: 265px) {
-     .deTextmarkerCircle {
-       left: 40px;
-       top: 110px;
-   }
-   
- }
- 
- @media (max-width:230px) {
-     .enTextmarkerCircle{
-          left: -15px;
-          top: 160px;
-          min-width: 74px;
-          margin-left: 55px;
-}}
-
+.highlightcontainer {
+    display: inline-block;
+    z-index: -1;
+}
+.highlightcontainer:before {
+    content: " ";
+    display: block;
+    height: 110%;
+    width: 110%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background-image: url("../../../Assets/Svg/TextMarkerCircle.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(2deg);
+    bottom: -13px;
+    left: -16px;
+    padding: 20px 3px 3px 20px;
+}
 
  
  @media (max-width:254px) {
@@ -111,5 +41,3 @@
          min-width: 230px;
      }
  }
- 
- 

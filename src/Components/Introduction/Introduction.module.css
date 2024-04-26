@@ -24,23 +24,6 @@
   }
 
 
-  .deStuttgartStroke {
-    opacity: 0.6;
-    position: absolute;
-    top: 69px;
-    left: 162px;
-    width: 275px;
-    z-index: -1;
-  }
-
-  .enStuttgartStroke {
-      opacity: 0.6;
-      position: absolute;
-      top: 75px;
-      left: 220px;
-      width: 260px;
-      z-index: -1;
-  }
 
   .Arrow {
       width: 150px;
@@ -58,6 +41,7 @@
   
   .highlightcontainer {
     display: inline-block;
+      z-index: -1;
   }
   .highlightcontainer:before {
     content: " ";
@@ -112,29 +96,10 @@
           left: 2em;
           font-size: 19px;
       }
-
-      .enStuttgartStroke {
-          top: 50px;
-          left: 160px;
-      }
-      .deStuttgartStroke{
-        top: 40px;
-        left: 100px;
-      }
   }
 
  
   @media (max-width: 700px) {
-      .deStuttgartStroke {
-          left: 80px;
-          top: 30px;
-      }
-
-      .enStuttgartStroke {
-        top: 30px;
-          left: 104px;
-      }
-
 
       .pos {
           left: 1em;
@@ -160,17 +125,6 @@
 
 
   @media (max-width: 540px) {
-      .enStuttgartStroke {
-          top: 132px;
-          left: 145px;
-          width: 219px;
-      }
-
-      .deStuttgartStroke {
-          top: 115px;
-          left: 90px;
-      }
-
 
 
       .pos {
@@ -194,40 +148,9 @@
           padding-right: 15px;
       }
   }
-  @media (max-width: 533px) {
-    
-    .enStuttgartStroke {
-        top: 182px;
-        left: 0;
-        width: 219px;
-    }
 
 
-}
 
-  @media (max-width: 427px) {
-    
-    .enStuttgartStroke {
-        top: 182px;
-        left: 145px;
-        width: 219px;
-    }
-
-
-}
-
-  @media (max-width: 405px) {
-    .deStuttgartStroke {
-        top: 170px;
-    }
-  }
-
-  @media (max-width: 381px) {
-      .enStuttgartStroke {
-          top: 222px;
-          left: 8px;
-      }
-  }
 
   @media (max-width: 400px) {
       .Arrow {
@@ -238,20 +161,4 @@
       }
   }
 
-  @media (max-width: 344px) {
-      .deStuttgartStroke {
-          left:   0px;
-          top: 210px;
-          width: 240px;
-      }
-  }
   
-@media (max-width: 254px) {
-    .enStuttgartStroke {
-        top: 257px;
-    }
-    .deStuttgartStroke {
-        left: 10px;
-        top: 255px;
-    }
-}  

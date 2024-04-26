@@ -13,9 +13,6 @@ function Introduction() {
     const { t, i18n } = useTranslation();
 
 
-    const StuttgartStroke = document.body.className === 'de' ? IntroductionCss.deStuttgartStroke : IntroductionCss.enStuttgartStroke;
-
-
     return (<div className={IntroductionCss.pos}>
         <p className={IntroductionCss.Name}>Steven Kühnl</p>
 
@@ -25,11 +22,6 @@ function Introduction() {
              </span>
         </span>
             </h1>
-
-        {/* <h1>Hello <span className={IntroductionCss.highlightcontainer}>
-            <span className={IntroductionCss.highlight} >World</span></span> !</h1> */}
-
-        {/* <img src={stroke} className={StuttgartStroke} alt="a Stroke from a Textmaker under the Word Stuttgart" /> */}
 
         <p className={IntroductionCss.Intro}>{t("IntroText")}</p>
 

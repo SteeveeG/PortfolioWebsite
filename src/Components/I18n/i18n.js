@@ -24,7 +24,8 @@ const resources = {
       //About Me
 
       //projects
-      "ProjectIntro": "Here you can take a look at my Projects",
+      "ProjectIntro": "Here you can take a look at my ",
+      "ProjectIntroProject": "Projects",
       //projects
 
       //ProjectTexts
@@ -72,7 +73,8 @@ const resources = {
       //About Me
 
       //projects
-      "ProjectIntro": "Hier können Sie einen Blick auf meine Projekte werfen",
+      "ProjectIntro": "Hier siehst du meine letzten ",
+      "ProjectIntroProject": "Projekte",
       //projects
 
       //ProjectTexts
