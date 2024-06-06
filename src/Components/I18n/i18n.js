@@ -12,8 +12,8 @@ const resources = {
       // Navbar
 
       //Introduction
-      "IntroHeader1": "Full stack Apprentice\nfrom ",
-      "introHeader2": " Stuttgart",
+      "IntroHeader1": "Full stack Apprentice from ",
+      "introHeader2": "Stuttgart",
       "IntroText": "A full stack apprentice with a great passion for developing new solutions and intensive projects in every area of development",
       //Introduction
 
@@ -30,9 +30,9 @@ const resources = {
 
       //ProjectTexts
       "ProjectHeaderP1":"Chat-App",
-      "ProjectTextP1": "A WPF Chat App that is connected to a Grpc Service , Api and in the Backend  still bound to a SQL database.",
+      "ProjectTextP1": "A WPF chat app that uses a REST API and Grpc service for real-time communication and has its own MS SQL database for storage, client and server all written in C#.",
       "ProjectHeaderP2":"Edabit-Challenges",
-      "ProjectTextP2":"A small collection of tasks from the website Edabit in the language C# and Python.",
+      "ProjectTextP2":"A collection of coding challenges from the website Edabit, to solve algorithmic problems and thus deepened my knowledge in C# and further developed my skills in Python.",
       //ProjectTexts
 
 
@@ -46,8 +46,8 @@ const resources = {
       "ContactUnderline": "Feel free to contact me :)",
       "ContactMessage": "Message",
       "ContactSubmit": "Submit",
-      "InfoLocation": "Stuttgart south-germany",
-      "InfoTipp": "MY HOOD",
+      "InfoLocation": "Marbach am Neckar south-germany",
+      "InfoTipp":"My hood"
       //Contact
 
     },
@@ -61,8 +61,8 @@ const resources = {
       // Navbar
 
       //Introduction
-      "IntroHeader1": "Full stack Azubi\naus ",
-      "introHeader2": " Stuttgart",
+      "IntroHeader1": "Full stack Azubi aus ",
+      "introHeader2": "Stuttgart",
       "IntroText": "Ein Full-Stack-Azubi mit einer großen Leidenschaft für die Entwicklung neuer Lösungen und intensiver Projekte in allen Bereichen der Entwicklung",
       //Introduction
 
@@ -79,9 +79,9 @@ const resources = {
 
       //ProjectTexts
       "ProjectHeaderP1":"Chat-App",
-      "ProjectTextP1": "Eine WPF Chat App die mit einem Grpc Service , Api verbunden ist und im Backend  noch an eine SQLdatenbank gebunden ist.",
+      "ProjectTextP1": "Eine WPF Chat App die eine REST API und Grpc Service nutzt für Echtzeit-Kommunikation und zum Speichern ihre eigene MS SQL-Datenbank hat, Client sowie Server wurde alles in C# geschrieben.",
       "ProjectHeaderP2":"Edabit-Challenges",
-      "ProjectTextP2":"eine kleine Ansammlung aus aufgaben von der Website Edabit in der Sprache C# und Python.",
+      "ProjectTextP2":"Eine Ansammlung von Coding-Challenges von der Website Edabit, zur Lösung von Algorithmische Probleme und habe somit mein Wissen in c# vertieft und meine Fähigkeiten in Python weiter ausgebaut.",
       //ProjectTexts
 
 
@@ -93,8 +93,8 @@ const resources = {
       "ContactUnderline": "Fühl dich frei, mich zu kontaktieren :)",
       "ContactMessage": "Nachricht",
       "ContactSubmit": "Schicken",
-      "InfoLocation": "Stuttgart Baden-Württemberg",
-      "InfoTipp": "MEINE HOOD",
+      "InfoLocation": "Marbach am Neckar Baden-Württemberg",
+      "InfoTipp":"My hood"
       //Contact
 
     },
