@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import '../Main.css'
 import ProjectCss from './Project.module.css'
-import img from "../../Assets/Png/CodeProjektBeispiel.png"
+ 
 import GithubLogo from "./Assets/github-mark.svg"
 
 
 class Project extends Component {
     state = {}
     render() {
-        const { header, description, link } = this.props;
+        const { header, description, link , img } = this.props;
         return (
             <div className={ProjectCss.Container}>
                 <div className={ProjectCss.Wrapper}>
@@ -21,7 +21,7 @@ class Project extends Component {
                             <p className={ProjectCss.Text}>
                                 {description}
                             </p>
-                            <a href={link}>
+                            <a href={link} target="_blank" >
                                 <img src={GithubLogo} className={ProjectCss.GithubLogo} alt="githublogo" />
                             </a>
                         </div>

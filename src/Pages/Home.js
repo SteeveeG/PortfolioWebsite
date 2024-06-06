@@ -10,6 +10,9 @@ import Footer from '../Components/Footer/Footer';
 import Comments from '../Components/Comments/Comments';
 import HomeCss from "./Home.module.css"
 import i18next from 'i18next';
+import img from "../Components/Projects/Assets/CodeProjektBeispiel.png"
+import imgChat from "../Components/Projects/Assets/ChatWindow.png"
+import imgEdabit from "../Components/Projects/Assets/Edabit.png"
 import { useTranslation } from "react-i18next";
 function Home() {
    const { t } = useTranslation();
@@ -25,11 +28,10 @@ function Home() {
                     commentdivName="Comment1"
                     comment='Console.WriteLine("Hello Wolrd !");'
                     fontfam='FarmhouseChildren' />
-                <Project header={t("ProjectHeaderP1")} description={t("ProjectTextP1")} link="#" />
+                <Project header={t("ProjectHeaderP1")} description={t("ProjectTextP1")} img={imgChat} link="https://github.com/SteeveeG/ChatApp/tree/main" />
                 <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='FarmhouseChildren' />
-                 <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} link="#" />
+                 <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} img={imgEdabit}   link="https://github.com/SteeveeG/EdabitChallenges/tree/main" />
                  <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='FarmhouseChildren' />
-               <Project header="Die Überschrift" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et" link="#" />
             </div>
             <Contact />
             <Footer />
@@ -37,6 +39,6 @@ function Home() {
 
     )
 }
-export default Home;
+export default Home; 
 
 
