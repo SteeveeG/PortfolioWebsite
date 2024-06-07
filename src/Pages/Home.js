@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from "../Components/Navbar/navbar";
 import Introduction from "../Components/Introduction/Introduction";
 import LanguageHelper from '../Components/LanguageHelper/LanguageHelper';
@@ -9,10 +9,9 @@ import Contact from "../Components/Contact/Contact";
 import Footer from '../Components/Footer/Footer';
 import Comments from '../Components/Comments/Comments';
 import HomeCss from "./Home.module.css"
-import i18next from 'i18next';
-import img from "../Components/Projects/Assets/CodeProjektBeispiel.png"
 import imgChat from "../Components/Projects/Assets/ChatWindow.png"
 import imgEdabit from "../Components/Projects/Assets/Edabit.png"
+
 import { useTranslation } from "react-i18next";
 function Home() {
    const { t } = useTranslation();
