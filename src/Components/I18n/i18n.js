@@ -19,8 +19,7 @@ const resources = {
 
       //About Me
       "AboutMeHeader": "About Me",
-      "AboutMeText": "Hi, I am a 19 year old developer from the beautiful Swabian region. I've been programming and developing software solutions since I was 15. That's why I started an apprenticeship as an IT specialist in application development in 2022. My specialty is the backend, and I am also learning the frontend. My programming languages include C#, Python, html & css, Javascript and SQL",
-      "AboutMeContact": "Have I sparked your interest? - Feel free to write to me!",
+      "AboutMeText": "My name is Steven and I come from the Stutgart area. I discovered my passion for development and programming at a young age. After gaining most of my programming experience myself, I decided to start an apprenticeship as an IT specialist for application development at the subsidiary “TeamTechnik” of Dürr AG in 2022. My areas of expertise are the full stack consisting of backend and frontend development. I feel very comfortable in the programming languages C#, Phyton, Html, css, Javascript and SQL.",
       //About Me
 
       //projects
@@ -62,15 +61,13 @@ const resources = {
       // Navbar
 
       //Introduction
-      "IntroHeader1": "Full stack Azubi aus ",
-      "introHeader2": "Stuttgart",
-      "IntroText": "Ein Full-Stack-Azubi mit einer großen Leidenschaft für die Entwicklung neuer Lösungen und intensiver Projekte in allen Bereichen der Entwicklung",
+      "IntroHeader1": "Full Stack Entwickler\naus ",
+      "introHeader2": " Stuttgart",
       //Introduction
 
       //About Me
       "AboutMeHeader": "Über Mich",
-      "AboutMeText": "Hi, ich bin ein 19 jähriger Entwickler aus dem schönen Schwabenland. Seitdem ich 15 bin beschäftige ich ich mit der Programmierung und Entwicklung von Software-Lösungen. Deshalb habe ich 2022 eine Ausbildung zum Fachinformatiker in der Anwendungsentwicklung begonnen. Mein Spezialgebiet ist das Backend, zusätzlich lerne ich das Frontend. Zu meinen Programmiersprachen zählen C#, Python , html & css , Javascript und SQL",
-      "AboutMeContact": "Hab ich dein Interesse geweckt? - Schreib mir doch gerne!",
+      "AboutMeText": "Mein Name ist Steven und ich komme aus dem Raum Stutgart. Bereits in meinen jungen jahren habe ich meine Leidenschaft für das Entwickeln und Programmieren endeckt. Nachdem ich mir die Erfahung für das Programmieren größtenteils selbst erarbeitet hatte, entschied ich mich 2022 dazu eine Lehre als Fachinformatiker für Anwendungsentwicklungen bei dem Tochterunternehmen \"TeamTechnik\" der Dürr AG, zu beginnen. Meine Fachgebiete sind das Fullstack bestehend aus Backend und Frontend Entwicklung. Ich fühle mich in den Programmiersprachen C#, Phyton, Html, css, Javascript und SQL sehr wohl.\n",
       //About Me
 
       //projects
@@ -99,20 +96,18 @@ const resources = {
       "ErrorEmailSend" :"Service ist grade nicht verfügbar, bitte hier eine E-mail schreiben: kuehnl.st@gmail.com :)"
       //Contact
 
-
-
     },
   },
 };
 
 i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: "en",
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+    .use(initReactI18next)
+    .init({
+      resources,
+      lng: "en",
+      interpolation: {
+        escapeValue: false,
+      },
+    });
 
 export default i18n;

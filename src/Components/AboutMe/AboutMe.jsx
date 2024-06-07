@@ -13,7 +13,7 @@ function AboutMe() {
                <h1 className={AboutMeCss.Header}>{t("AboutMeHeader")}</h1>
                <p className={AboutMeCss.Text}>{t("AboutMeText")}</p>
 
-              <p className={AboutMeCss.Contact}>{t("AboutMeContact")}</p>
+
      
           </div>
      );
