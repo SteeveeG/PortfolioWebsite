@@ -14,8 +14,7 @@ const resources = {
       //Introduction
       "IntroHeader1": "Full stack Apprentice from ",
       "introHeader2": "Stuttgart",
-      "IntroText": "A full stack apprentice with a great passion for developing new solutions and intensive projects in every area of development",
-      //Introduction
+       //Introduction
 
       //About Me
       "AboutMeHeader": "About Me",

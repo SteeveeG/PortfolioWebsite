@@ -25,6 +25,11 @@
 }
 
 
+@media (max-width: 585px) {
+    .Text {
+       display: none;
+    }
+}
 @media (max-width: 600px) {
     .Projectdiv {
         max-width: 100%;
