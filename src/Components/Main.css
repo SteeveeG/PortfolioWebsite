@@ -7,46 +7,55 @@
  @font-face {
     font-family: 'FarmhouseChildren'; 
     src: url("../Assets/fonts/FarmhouseChildren.otf") format("opentype");
-    font-style: normal;
+    font-style: italic;
+     font-weight: 1 1000;
 }
 @font-face {
     font-family: 'AdventureEiffel'; 
     src: url("../Assets/fonts/AdventureEiffel.ttf") format("truetype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Kbswiftly'; 
     src: url("../Assets/fonts/Kbswiftly.ttf") format("truetype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'LaterOn'; 
     src: url("../Assets/fonts/LaterOn.ttf") format("truetype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Qualitycontrol'; 
     src: url("../Assets/fonts/Qualitycontrol.ttf") format("truetype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Sunflowerharvestotf'; 
     src: url("../Assets/fonts/Sunflowerharvest.otf") format("opentype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Sunflowerharvestttf'; 
     src: url("../Assets/fonts/SunflowerHarvestRegular.ttf") format("truetype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Thinpencilhandwritingotf'; 
     src: url("../Assets/fonts/Thinpencilhandwriting.otf") format("opentype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Thinpencilhandwritingttf'; 
     src: url("../Assets/fonts/ThinPencilHandwriting.ttf") format("truetype");
-    font-style: normal;
+    font-style: italic;
+    font-weight: 1 1000;
 }
  
