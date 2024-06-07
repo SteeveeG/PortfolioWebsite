@@ -113,8 +113,8 @@
     background-color: black;
 }
 .Submit:hover {
-    background-color: #faf98f;
-    border-color: #faf98f;
+    background-color: yellow;
+    border-color: yellow;
     transition: all 500ms ease-in-out;
     border-style: solid;
     color: black;

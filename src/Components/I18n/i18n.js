@@ -47,7 +47,8 @@ const resources = {
       "ContactMessage": "Message",
       "ContactSubmit": "Submit",
       "InfoLocation": "Marbach am Neckar south-germany",
-      "InfoTipp":"My hood"
+      "InfoTipp":"My hood",
+      "ErrorEmailSend" :"Service is currently not available, please write an e-mail here: kuehnl.st@gmail.com :)"
       //Contact
 
     },
@@ -94,8 +95,11 @@ const resources = {
       "ContactMessage": "Nachricht",
       "ContactSubmit": "Schicken",
       "InfoLocation": "Marbach am Neckar Baden-Württemberg",
-      "InfoTipp":"My hood"
+      "InfoTipp":"My hood",
+      "ErrorEmailSend" :"Service ist grade nicht verfügbar, bitte hier eine E-mail schreiben: kuehnl.st@gmail.com :)"
       //Contact
+
+
 
     },
   },
