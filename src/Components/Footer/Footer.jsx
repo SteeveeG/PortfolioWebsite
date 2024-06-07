@@ -1,12 +1,12 @@
-import ReactDOM from 'react-dom/client';
-import React, { useState } from 'react'
+
+import React from 'react'
 import { useTranslation } from "react-i18next";
  import '../Main.css'
 import FooteCss from './Footer.module.css'
 
 
 function Footer() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
    
     return (
         <footer className={FooteCss.FooterContainer}>

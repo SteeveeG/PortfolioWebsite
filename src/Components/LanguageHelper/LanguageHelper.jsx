@@ -5,7 +5,7 @@ import arrow from "../../Assets/Svg/Arrow2.svg"
 
 
 function LanguageHelper(){
-     const { t, i18n } = useTranslation();
+     const { t } = useTranslation();
      const Arrow = document.body.className === 'de'? LanguageHelperCss.deArrow : LanguageHelperCss.enArrow;
   return ( 
       <div className={LanguageHelperCss.Container}>

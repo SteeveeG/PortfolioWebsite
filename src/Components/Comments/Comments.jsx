@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { useTranslation } from "react-i18next";
 import CommentsCss from './Comments.module.css'
 import "../../Pages/Home.css"
 
@@ -17,3 +16,5 @@ class Comments extends Component {
 }
 
 export default Comments;
+
+

@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import IntroductionCss from './Introduction.module.css'
-import stroke from '../../Assets/Svg/TextmarkerStroke.svg'
 import Arrow from '../../Assets/Svg/Arrow3.svg'
 import '../Main.css'
 import { useTranslation } from "react-i18next";
-import i18next from "../I18n/i18n";
-
 
 
 
 function Introduction() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
 
     return (<div className={IntroductionCss.pos}>

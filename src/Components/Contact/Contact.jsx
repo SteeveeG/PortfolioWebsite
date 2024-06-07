@@ -13,7 +13,7 @@ function Contact() {
     const inputRefName = useRef(null);
     const inputRefEmail = useRef(null);
     const inputRefMessage = useRef(null);
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const form = useRef();
 
     const sendEmail = (event) => {
@@ -53,7 +53,7 @@ function Contact() {
                     <span className={ContactCss.Span}/>
                 </div>
                 <div className={ContactCss.MessageContact}>
-                <textarea type="textarea" id="message" name="message" ref={inputRefMessage}
+                <textarea id="message" name="message" ref={inputRefMessage}
                           className={ContactCss.MessageInput} required/>
 
                     <label className={ContactCss.label} htmlFor="message">{t("ContactMessage")}</label>
