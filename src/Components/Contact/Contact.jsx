@@ -20,9 +20,11 @@ function Contact() {
     const sendEmail = (event) => {
         event.preventDefault();
         emailjs
-            .sendForm('service_ggzv3oi', 'template_s17ig7p', form.current, {
-                publicKey: 'liZYNSSSS_zqc298X',
+            .sendForm('SERVICEID', 'TEMPLATEID', form.current, {
+                publicKey: 'PUPLICKEY',
             })
+
+        
             .then(
                 () => {
                     inputRefName.current.value = "";
