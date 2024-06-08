@@ -4,15 +4,16 @@
     --formWidth: 17em;
 }
 .ContactHeader,.InfoHeader{
-    font-family: "Segoe UI", serif;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
 }
 .UnderLine{
-    font-family: "Consolas", serif;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
 }
 .Contact {
     height: 500px;
     position: relative;
-    margin: auto;
     max-width: 850px;
     padding: 10px;
     overflow: hidden;
@@ -24,7 +25,7 @@
     opacity: 1;
     background-image: linear-gradient(#0000006d 1px, transparent 1px), linear-gradient(to right, #0000006d 1px, #ffffff 1px);
     background-size: 20px 20px;
-    margin-bottom: 250px;
+    margin: auto auto 250px;
 }
 .ContactForm {
     text-align: center;
@@ -47,9 +48,8 @@
 .InputWrapper {
     display: inline-grid;
     position: relative;
-    margin: 0 45px;
     width: 17em;
-    margin-bottom: 30px;
+    margin: 0 45px 30px;
     top: 35px;
 }
 .Input {
@@ -66,7 +66,8 @@
     transition: all 250ms ease-in-out;
     z-index: -3;
     font-size: var(--fontSize);
-    font-family: "Consolas", serif;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
 }
 .Span {
     transition: all 250ms ease-in-out;
@@ -78,9 +79,8 @@
 .MessageContact {
     display: inline-grid;
     position: relative;
-    margin: 0 45px;
     width: 17em;
-    margin-bottom: 30px;
+    margin: 0 45px 30px;
     top: 35px;
     height: auto;
     background-color: transparent;
@@ -109,7 +109,8 @@
     border-radius: 8px;
     font-size: var(--fontSize);
     color: white;
-    font-family: "Consolas", serif;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
     background-color: black;
 }
 .Submit:hover {
@@ -122,13 +123,12 @@
 .Info {
     color: white;
     left: 50%;
-    margin: 0;
     position: absolute;
     top: 50%;
     height: 385px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-left: 70px;
+    margin: 0 0 0 70px;
     background-color: black;
     text-align: left;
     padding: 25px;
@@ -152,11 +152,12 @@
 }
 .Email,
 .Location {
-    font-family: "Consolas", serif;
-    margin: 0 0 0% 0
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
+    margin: 0
 }
 .LocationTipp {
-    font-family: FarmhouseChildren;
+    font-family: FarmhouseChildren, sans-serif;
     margin: 0;
     position: absolute;
     transform: rotateZ(-30deg);

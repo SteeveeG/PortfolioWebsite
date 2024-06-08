@@ -2,16 +2,19 @@
       line-height: 0.8em;
       font-size: 3.2em;
       margin: 0 0 0 0;
-      font-family: "Segoe UI", serif;
+      font-family: "Segoe UI", sans-serif;
+      font-weight: bold;
   }
 
   .Name {
-      font-family: "Consolas", serif;
+      font-family: "Consolas", sans-serif;
+      font-weight: normal;
       margin-bottom: 0;
   }
 
   .Intro {
-      font-family: "Consolas", serif;
+      font-family: "Consolas", sans-serif;
+      font-weight: normal;
       color: #666666;
   }
 

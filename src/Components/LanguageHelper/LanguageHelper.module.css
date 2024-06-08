@@ -7,7 +7,8 @@
 }
 
 .Text {
-     font-family: Kbswiftly;
+     font-family: Kbswiftly, sans-serif;
+     font-weight: normal;
      margin: 0;
      text-align: right;
 }

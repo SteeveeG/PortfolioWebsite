@@ -3,11 +3,10 @@
 
 
 .Container {
-    margin: 0;
     padding: 0;
     text-align: center;
     transition: 0.5s ease-in-out;
-    margin-bottom: 13em;
+    margin: 0 0 13em;
 }
 
 .Wrapper {
@@ -57,7 +56,6 @@
     opacity: 0;
     visibility: hidden;
     margin: 0;
-    height: 0;
     position: absolute;
     width: inherit;
 }
@@ -84,17 +82,18 @@
 }
 
 .Header {
-    font-family: "Segoe UI", serif;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
     position: relative;
-    margin: 0;
     font-size: 34px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .Text {
     position: relative;
     margin: 0;
-    font-family: "Consolas", serif;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
 }
  
  

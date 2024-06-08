@@ -3,7 +3,8 @@
 }
 
 .nav {
-    font-family: "Consolas", serif;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
     color: black;
     padding: 0;
     margin: 0;
@@ -18,9 +19,9 @@
 .logo {
     color: black;
     padding: 0;
-    margin: 0;
-    margin-left: 30px;
-    font-family: "Consolas", serif;
+    margin: 0 0 0 30px;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
     text-decoration: none;
     z-index: 6;
 }
@@ -48,7 +49,8 @@
 
 .De,
 .En {
-    font-family: "Consolas", serif;
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
     margin: 5px;
 }
 
@@ -76,10 +78,6 @@
     list-style: none;
     transition: ease-in-out 0.5s;
     color: black;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     text-decoration: none;
     position: relative;
     right: 5.7em;
@@ -144,7 +142,6 @@
         z-index: 5;
         display: none;
         position: absolute;
-        top: var(--navbar-height);
         transition: ease-in-out 0.5s;
         top: 65px;
         margin: 0;

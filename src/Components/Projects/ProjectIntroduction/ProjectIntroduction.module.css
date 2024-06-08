@@ -6,7 +6,8 @@
 .Text{
      margin: 0;
      font-size: 30px;
-     font-family: "Consolas", serif;
+     font-family: "Consolas", sans-serif;
+    font-weight: bold;
 }
 
 .highlightcontainer,
