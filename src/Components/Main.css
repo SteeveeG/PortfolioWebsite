@@ -1,59 +1,59 @@
  @font-face {
-    font-family: 'FarmhouseChildren', sans-serif;
+    font-family: 'FarmhouseChildren';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/FarmhouseChildren.otf") format("opentype");
 }
 @font-face {
-    font-family: 'AdventureEiffel' , sans-serif;
+    font-family: 'AdventureEiffel' ;
     font-weight: normal;
     font-style: italic;  ;
     src: url("../Assets/fonts/AdventureEiffel.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Kbswiftly', sans-serif;
+    font-family: 'Kbswiftly';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Kbswiftly.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'LaterOn', sans-serif;
+    font-family: 'LaterOn';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/LaterOn.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'Qualitycontrol', sans-serif;
+    font-family: 'Qualitycontrol';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Qualitycontrol.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'Sunflowerharvestotf', sans-serif;
+    font-family: 'Sunflowerharvestotf';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Sunflowerharvest.otf") format("opentype");
 
 }
 @font-face {
-    font-family: 'Sunflowerharvestttf', sans-serif;
+    font-family: 'Sunflowerharvestttf';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/SunflowerHarvestRegular.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'Thinpencilhandwritingotf', sans-serif;
+    font-family: 'Thinpencilhandwritingotf';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Thinpencilhandwriting.otf") format("opentype");
 
 }
 @font-face {
-    font-family: 'Thinpencilhandwritingttf', sans-serif;
+    font-family: 'Thinpencilhandwritingttf';
     font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/ThinPencilHandwriting.ttf") format("truetype");
