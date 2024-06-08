@@ -1,3 +1,5 @@
+@import url("../Main.css");
+
 :root {
     --HighlightedColor: gray;
     --fontSize: 22px;
@@ -17,8 +19,8 @@
     max-width: 850px;
     padding: 10px;
     overflow: hidden;
-    -webkit-box-shadow: 0px 6px 15px 5px #898989;
-    box-shadow: 0px 6px 15px 5px #898989;
+    -webkit-box-shadow: 0 6px 15px 5px #898989;
+    box-shadow: 0 6px 15px 5px #898989;
     border-radius: 2%;
     z-index: 0;
     background-color: #ffffff;
@@ -185,7 +187,7 @@
     color: var(--HighlightedColor);
     transition: all 250ms ease-in-out;
 }
-.MessageInput:focus~.Span
+.MessageInput:focus~.Span,
 .Input:focus~.Span {
     background-color: var(--HighlightedColor) !important;
     transition: all 250ms ease-in-out;
@@ -205,12 +207,10 @@
 }
 @media (max-width: 559px) {
     .MessageContact {
-        margin: 0;
-        margin-bottom: 30px;
+        margin: 0 0 30px;
     }
 
     .InputWrapper {
-        margin: 0;
-        margin-bottom: 30px;
+        margin: 0 0 30px;
     }
 }

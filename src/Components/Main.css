@@ -1,68 +1,60 @@
-.Segoe{
-     font-family: "Segoe UI", serif;
-        font-weight: 1 1000;
- }
- .Consolas{
-     font-family: "Consolas", serif;
-        font-weight: 1 1000;
- }
  @font-face {
-    font-family: 'FarmhouseChildren';
-    font-weight: 1 1000;
-     font-style: italic;
+    font-family: 'FarmhouseChildren', sans-serif;
+    font-weight: normal;
+    font-style: italic;
     src: url("../Assets/fonts/FarmhouseChildren.otf") format("opentype");
 }
 @font-face {
-    font-family: 'AdventureEiffel';
-    font-weight: 1 1000;
-    font-style: italic;
+    font-family: 'AdventureEiffel' , sans-serif;
+    font-weight: normal;
+    font-style: italic;  ;
     src: url("../Assets/fonts/AdventureEiffel.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Kbswiftly';
-    font-weight: 1 1000;
+    font-family: 'Kbswiftly', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Kbswiftly.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'LaterOn';
-    font-weight: 1 1000;
+    font-family: 'LaterOn', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/LaterOn.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'Qualitycontrol';
-    font-weight: 1 1000;
+    font-family: 'Qualitycontrol', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Qualitycontrol.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'Sunflowerharvestotf';
-    font-weight: 1 1000;
+    font-family: 'Sunflowerharvestotf', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Sunflowerharvest.otf") format("opentype");
 
 }
 @font-face {
-    font-family: 'Sunflowerharvestttf';
-    font-weight: 1 1000;
+    font-family: 'Sunflowerharvestttf', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/SunflowerHarvestRegular.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: 'Thinpencilhandwritingotf';
-    font-weight: 1 1000;
+    font-family: 'Thinpencilhandwritingotf', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/Thinpencilhandwriting.otf") format("opentype");
 
 }
 @font-face {
-    font-family: 'Thinpencilhandwritingttf';
-    font-weight: 1 1000;
+    font-family: 'Thinpencilhandwritingttf', sans-serif;
+    font-weight: normal;
     font-style: italic;
     src: url("../Assets/fonts/ThinPencilHandwriting.ttf") format("truetype");
 }
