@@ -1,43 +1,18 @@
  @font-face {
     font-family: 'Farmhouse Children';
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     src: url("../Assets/fonts/Farmhouse Children.otf") format("opentype");
 }
-@font-face {
-    font-family: 'adventure Eiffel' ;
-    font-weight: normal;
-    font-style: italic;  ;
-    src: url("../Assets/fonts/adventure Eiffel.ttf") format("truetype");
-}
+ 
 @font-face {
     font-family: 'KBSwiftly';
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     src: url("../Assets/fonts/KBSwiftly.ttf") format("truetype");
 
 }
-@font-face {
-    font-family: 'Later On';
-    font-weight: normal;
-    font-style: italic;
-    src: url("../Assets/fonts/Later On.ttf") format("truetype");
-
-}
-
  
-@font-face {
-    font-family: 'Sunflower Harvest';
-    font-weight: normal;
-    font-style: italic;
-    src: url("../Assets/fonts/Sunflower Harvest.ttf") format("truetype");
-
-}
  
-@font-face {
-    font-family: 'Thin Pencil Handwriting';
-    font-weight: normal;
-    font-style: italic;
-    src: url("../Assets/fonts/Thin Pencil Handwriting.ttf") format("truetype");
-}
+
  
