@@ -24,13 +24,7 @@
     src: url("../Assets/fonts/Later On.ttf") format("truetype");
 
 }
-@font-face {
-    font-family: 'QualityControl';
-    font-weight: normal;
-    font-style: italic;
-    src: url("../Assets/fonts/QualityControl.ttf") format("truetype");
 
-}
  
 @font-face {
     font-family: 'Sunflower Harvest';
