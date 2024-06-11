@@ -26,11 +26,11 @@ function Home() {
                 <Comments
                     commentdivName="Comment1"
                     comment='Console.WriteLine("Hello Wolrd !");'
-                    fontfam='FarmhouseChildren' />
+                    fontfam='Farmhouse Children' />
                 <Project header={t("ProjectHeaderP1")} description={t("ProjectTextP1")} img={imgChat} link="https://github.com/SteeveeG/ChatApp/tree/main" />
-                <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='FarmhouseChildren' />
+                <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
                  <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} img={imgEdabit}   link="https://github.com/SteeveeG/EdabitChallenges/tree/main" />
-                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='FarmhouseChildren' />
+                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
             </div>
             <Contact />
             <Footer />
