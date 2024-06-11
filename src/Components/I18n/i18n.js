@@ -12,7 +12,7 @@ const resources = {
       // Navbar
 
       //Introduction
-      "IntroHeader1": "Full stack Apprentice from ",
+      "IntroHeader1": "Full stack Developer from ",
       "introHeader2": "Stuttgart",
        //Introduction
 

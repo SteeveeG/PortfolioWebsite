@@ -1,4 +1,4 @@
-.Container{
+.AboutMe{
      margin: 0 0 100px 0;
      position: relative;
      width: 100%;   
@@ -13,13 +13,9 @@
       
 }
 
-.Text{
-     font-family: "Consolas", sans-serif;
-     font-weight: normal;
-}
-
-
 .Text {
+    font-family: "Consolas", sans-serif;
+    font-weight: normal;
      margin-left: 7em;
      max-width: 1400px;
      font-size: 1.2em;
@@ -58,7 +54,7 @@
  }
  
  @media (max-width: 540px) {
-     .Container {
-         display: contents;
+     .AboutMe {
+         display: inline;
      }
  }

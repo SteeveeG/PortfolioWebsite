@@ -7,8 +7,6 @@ import { useTranslation } from "react-i18next";
 function ProjectIntroduction() {
 
     const { t } = useTranslation();
-    
-
 
 
     return (<div className={ProjectIntroductionCss.Container} id="Projects">
