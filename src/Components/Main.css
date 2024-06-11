@@ -13,6 +13,16 @@
 
 }
  
+@font-face {
+    font-family: 'Consolas';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../Assets/fonts/Consolas.ttf") format("truetype");
+}
  
-
- 
+@font-face {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../Assets/fonts/Segoe UI.ttf") format("truetype");
+}
