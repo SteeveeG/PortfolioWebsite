@@ -126,7 +126,10 @@
 
 
 @media(max-width: 540px) {
-
+    .LanguageContainer{
+        height: max-content;
+        padding-bottom: 10px;
+    }
     .togglebutton {
         display: flex;
         z-index: 5;
