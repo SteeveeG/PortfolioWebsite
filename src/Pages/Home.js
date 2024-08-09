@@ -11,10 +11,12 @@ import Comments from '../Components/Comments/Comments';
 import HomeCss from "./Home.module.css"
 import imgChat from "../Components/Projects/Assets/ChatWindow.png"
 import imgEdabit from "../Components/Projects/Assets/Edabit.png"
+import imgTattoo from "../Components/Projects/Assets/TattooStudio.png"
+
 
 import { useTranslation } from "react-i18next";
 function Home() {
-   const { t } = useTranslation();
+    const { t } = useTranslation();
     return (
         <div className={HomeCss.background}>
             <Navbar />
@@ -29,8 +31,13 @@ function Home() {
                     fontfam='Farmhouse Children' />
                 <Project header={t("ProjectHeaderP1")} description={t("ProjectTextP1")} img={imgChat} link="https://github.com/SteeveeG/ChatApp/tree/main" />
                 <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
-                 <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} img={imgEdabit}   link="https://github.com/SteeveeG/EdabitChallenges/tree/main" />
-                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
+                <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} img={imgEdabit}
+                    link="https://github.com/SteeveeG/EdabitChallenges/tree/main" />
+
+                <Project header={t("ProjectHeaderP3")} description={t("ProjectTextP3")} img={imgTattoo}
+                    link="https://github.com/SteeveeG/tattoostudio" />
+
+                <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
             </div>
             <Contact />
             <Footer />
@@ -38,6 +45,6 @@ function Home() {
 
     )
 }
-export default Home; 
+export default Home;
 
 

@@ -31,6 +31,9 @@ const resources = {
       "ProjectTextP1": "A WPF chat app that uses a REST API and Grpc service for real-time communication and has its own MS SQL database for storage, client and server all written in C#.",
       "ProjectHeaderP2":"Edabit-Challenges",
       "ProjectTextP2":"A collection of coding challenges from the website Edabit, to solve algorithmic problems and thus deepened my knowledge in C# and further developed my skills in Python.",
+      
+      "ProjectHeaderP3":"Tattoo Studio Website",
+      "ProjectTextP3":"A website for a non-existent tattoo studio that I made in the React + Vite framework.",
       //ProjectTexts
 
 
@@ -79,7 +82,11 @@ const resources = {
       "ProjectTextP1": "Eine WPF Chat App die eine REST API und Grpc Service nutzt für Echtzeit-Kommunikation und zum Speichern ihre eigene MS SQL-Datenbank hat, Client sowie Server wurde alles in C# geschrieben.",
       "ProjectHeaderP2":"Edabit-Challenges",
       "ProjectTextP2":"Eine Ansammlung von Coding-Challenges von der Website Edabit, zur Lösung von Algorithmische Probleme und habe somit mein Wissen in c# vertieft und meine Fähigkeiten in Python weiter ausgebaut.",
+     
+      "ProjectHeaderP3":"Tattoo Studio Website",
+      "ProjectTextP3":"Ein Website für ein nicht existierendes Tattoo-Studio, das ich mit dem React + Vite Framework erstellt habe.",
       //ProjectTexts
+
 
 
       //LanguageHelper
