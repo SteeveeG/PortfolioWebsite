@@ -22,7 +22,9 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
-
+.LiveDemoLink{
+    margin: 0 10px;
+}
 
 @media (max-width: 585px) {
     .Text {
