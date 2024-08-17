@@ -69,22 +69,22 @@ const resources = {
 
       //About Me
       "AboutMeHeader": "Über Mich",
-      "AboutMeText": "Mein Name ist Steven und ich komme aus dem Raum Stutgart. Bereits in meinen jungen jahren habe ich meine Leidenschaft für das Entwickeln und Programmieren endeckt. Nachdem ich mir die Erfahung für das Programmieren größtenteils selbst erarbeitet hatte, entschied ich mich 2022 dazu eine Lehre als Fachinformatiker für Anwendungsentwicklungen bei dem Tochterunternehmen \"TeamTechnik\" der Dürr AG, zu beginnen. Meine Fachgebiete sind das Fullstack bestehend aus Backend und Frontend Entwicklung. Ich fühle mich in den Programmiersprachen C#, Phyton, Html, css, Javascript und SQL sehr wohl.\n",
+      "AboutMeText": "Mein Name ist Steven und ich komme aus dem Raum Stuttgart. Bereits in jungen Jahren habe ich meine Leidenschaft für das Entwickeln und Programmieren entdeckt. Nachdem ich mir die Erfahrung für das Programmieren größtenteils selbst erarbeitet hatte, entschied ich mich 2022 dazu, eine Ausbildung als Fachinformatiker für Anwendungsentwicklung im Tochterunternehmen \"TeamTechnik\" der Dürr AG zu beginnen. Meine Fachgebiete sind das Full Stack, bestehend aus Backend- und Frontend-Entwicklung. Ich fühle mich in den Programmiersprachen C#, Phyton, Html, css, Javascript und SQL sehr wohl.\n",
       //About Me
 
       //projects
-      "ProjectIntro": "Hier siehst du meine letzten ",
+      "ProjectIntro": "Hier siehst Du meine letzten ",
       "ProjectIntroProject": "Projekte",
       //projects
 
       //ProjectTexts
-      "ProjectHeaderP1":"Chat-App",
-      "ProjectTextP1": "Eine WPF Chat App die eine REST API und Grpc Service nutzt für Echtzeit-Kommunikation und zum Speichern ihre eigene MS SQL-Datenbank hat, Client sowie Server wurde alles in C# geschrieben.",
+      "ProjectHeaderP1":"Chat-App", // die eine REST API und einen Grpc Service nutzt für Echtzeit-Kommunikatio
+      "ProjectTextP1": "Eine WPF Chat-App, die für Echtzeit-Kommunikation sowohl REST API als auch Grpc Service nutzt und Daten in ihrer eigenen MS SQL-Datenbank speichert. Client sowie Server wurden vollständig in C# geschrieben.",
       "ProjectHeaderP2":"Edabit-Challenges",
-      "ProjectTextP2":"Eine Ansammlung von Coding-Challenges von der Website Edabit, zur Lösung von Algorithmische Probleme und habe somit mein Wissen in c# vertieft und meine Fähigkeiten in Python weiter ausgebaut.",
+      "ProjectTextP2":"Eine Ansammlung von Coding-Challenges der Website Edabit, zur Lösung von algorithmischen Problemen. Somit habe ich mein Wissen in C# vertieft und meine Fähigkeiten in Python weiter ausgebaut.",
      
       "ProjectHeaderP3":"Tattoo Studio Website",
-      "ProjectTextP3":"Ein Website für ein nicht existierendes Tattoo-Studio, das ich mit dem React + Vite Framework erstellt habe.",
+      "ProjectTextP3":"Ein Website für ein nicht existierendes Tattoo-Studio, die ich mit dem React + Vite Framework erstellt habe.",
       //ProjectTexts
 
 
