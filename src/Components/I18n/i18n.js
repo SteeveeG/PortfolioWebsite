@@ -18,7 +18,7 @@ const resources = {
 
       //About Me
       "AboutMeHeader": "About Me",
-      "AboutMeText": "My name is Steven and I come from the Stutgart area. I discovered my passion for development and programming at a young age. After gaining most of my programming experience myself, I decided to start an apprenticeship as an IT specialist for application development at the subsidiary “TeamTechnik” of Dürr AG in 2022. My areas of expertise are the full stack consisting of backend and frontend development. I feel very comfortable in the programming languages C#, Phyton, Html, css, Javascript and SQL.",
+      "AboutMeText": "My name is Steven, and I come from the Stuttgart area. From a young age, I discovered my passion for developing and programming. After gaining most of my programming experience through self-study, I decided in 2022 to start a training program as an IT Specialist in Application Development at \"TeamTechnik,\" a subsidiary of Dürr AG. My areas of expertise are full stack development, including both backend and frontend development. I am very familiar with the programming languages C#, Python, Html & Css, JavaScript and SQL.",
       //About Me
 
       //projects
@@ -28,9 +28,9 @@ const resources = {
 
       //ProjectTexts
       "ProjectHeaderP1":"Chat-App",
-      "ProjectTextP1": "A WPF chat app that uses a REST API and Grpc service for real-time communication and has its own MS SQL database for storage, client and server all written in C#.",
+      "ProjectTextP1": "A WPF chat app that uses both REST API and gRPC service for real-time communication and stores data in its own MS SQL database. Both the client and the server are developed entirely in C#.",
       "ProjectHeaderP2":"Edabit-Challenges",
-      "ProjectTextP2":"A collection of coding challenges from the website Edabit, to solve algorithmic problems and thus deepened my knowledge in C# and further developed my skills in Python.",
+      "ProjectTextP2":"A collection of coding challenges from the website Edabit for solving algorithmic problems. This allowed me to deepen my knowledge of C# and further develop my skills in Python.",
       
       "ProjectHeaderP3":"Tattoo Studio Website",
       "ProjectTextP3":"A website for a non-existent tattoo studio that I made in the React + Vite framework.",
@@ -69,7 +69,7 @@ const resources = {
 
       //About Me
       "AboutMeHeader": "Über Mich",
-      "AboutMeText": "Mein Name ist Steven und ich komme aus dem Raum Stuttgart. Bereits in jungen Jahren habe ich meine Leidenschaft für das Entwickeln und Programmieren entdeckt. Nachdem ich mir die Erfahrung für das Programmieren größtenteils selbst erarbeitet hatte, entschied ich mich 2022 dazu, eine Ausbildung als Fachinformatiker für Anwendungsentwicklung im Tochterunternehmen \"TeamTechnik\" der Dürr AG zu beginnen. Meine Fachgebiete sind das Full Stack, bestehend aus Backend- und Frontend-Entwicklung. Ich fühle mich in den Programmiersprachen C#, Phyton, Html, css, Javascript und SQL sehr wohl.\n",
+      "AboutMeText": "Mein Name ist Steven und ich komme aus dem Raum Stuttgart. Bereits in jungen Jahren habe ich meine Leidenschaft für das Entwickeln und Programmieren entdeckt. Nachdem ich mir die Erfahrung für das Programmieren größtenteils selbst erarbeitet hatte, entschied ich mich 2022 dazu, eine Ausbildung als Fachinformatiker für Anwendungsentwicklung im Tochterunternehmen \"TeamTechnik\" der Dürr AG zu beginnen. Meine Fachgebiete sind das Full Stack, bestehend aus Backend- und Frontend-Entwicklung. Ich fühle mich in den Programmiersprachen C#, Phyton, Html & Css, Javascript und SQL sehr vertraut.\n",
       //About Me
 
       //projects
