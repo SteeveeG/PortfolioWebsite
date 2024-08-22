@@ -1,0 +1,20 @@
+.container{
+    height: 30em;
+}
+.header{
+    Font-family: "Farmhouse Children";
+    position: relative;
+    font-size: 2em;
+    margin: 0;
+}
+.headerunderline{
+    margin: 0;
+    Font-family: "Farmhouse Children";
+    font-size: 2em;
+    line-height: 0;
+}
+.headerwrap{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
