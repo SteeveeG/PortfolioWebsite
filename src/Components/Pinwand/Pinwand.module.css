@@ -1,9 +1,18 @@
+:root {
+    --pinzindex: 1;
+    --linezindex: 0;
+    --logozindex: -1;
+    --snippetzindex: -2;
+}
+
+
 .container{
-    height: 30em;
+    height: 60em;
+    position: relative;
 }
 .header{
     Font-family: "Farmhouse Children";
-    position: relative;
+    position: absolute;
     font-size: 2em;
     margin: 0;
 }
@@ -12,9 +21,268 @@
     Font-family: "Farmhouse Children";
     font-size: 2em;
     line-height: 0;
+    position: absolute;
 }
 .headerwrap{
     text-align: center;
     display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 54em;
+}
+.skillpin{
+    position: absolute;
+    left: 57em;
+    top: 7px;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+}
+.linetocsharp{
+    width: 454px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-19deg);
+    position: absolute;
+    left: 31em;
+    top: 6em;
+}
+.csharplogo{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: var(--logozindex);
+    left: 25.5em;
+    top: 10em;
+}
+.desktopheader{
+    margin: 0;
+    position: absolute;
+    left: 8em;
+    top: 2em;
+    Font-family: "Just Me Again Down Here";
+    font-size: 40px;
+}
+.csharppin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 30.2em;
+    top: 10.3em;
+}
+.comments{
+    display: flex;
     flex-direction: column;
+    position: relative;
+    left: 39em;
+    top: 9em;
+    transform: rotate(-25deg);
+    width: max-content;
+}
+.comments > div{
+    display: flex;
+    flex-direction: row;
+}
+.comments > *{
+    user-select: none;
+    Font-family: "Just Me Again Down Here";
+}
+.arrowcsharp{
+    margin: 0;
+    position: relative;
+    bottom: 40px;
+    font-size: 46px;
+}
+.fouryears{
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+    transform: rotate(25deg);
+    font-size: 40px;
+    -webkit-transform-origin: 50% 51%;
+}
+.pro{
+    font-size: 46px;
+    margin: 0;
+}
+.smile{
+    margin: 0 0 0 20px;
+    font-size: 49px;
+}
+.csharpsnippet{
+    Font-family: "Just Me Again Down Here";
+    z-index: var(--snippetzindex);
+    position: absolute;
+    left: 10.4em;
+    transform: rotate(8deg);
+    font-size: 30px;
+}
+
+.linetohtml{
+    width: 606px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(11deg);
+    position: absolute;
+    left: 57.7em;
+    top: 5em;
+}
+.htmllogo{
+    z-index: var(--logozindex);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: 16em;
+    top: 6em;
+}
+.htmlpin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    right: 22em;
+    top: 8em;
+}
+.htmlsnippet{
+    Font-family: "Just Me Again Down Here";
+    z-index: var(--snippetzindex);
+    position: absolute;
+    font-size: 20px;
+    right: 6em;
+    top: 3em;
+}
+.webheader{
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    Font-family: "Just Me Again Down Here";
+    font-size: 60px;
+    right: 12em;
+}
+.javascriptlogo{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: 47em;
+    margin: 0;
+    z-index: var(--logozindex);
+    top: 15em;
+}
+.linetojavascript{
+    width: 512px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(162deg);
+    position: absolute;
+    left: 63.7em;
+    top: 14em;
+}
+.javascriptpin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    right: 53em;
+    top: 18.4em;
+}
+.javascriptsnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    right: 33em;
+    font-size: 20px;
+    top: 19em;
+    transform: rotate(-7deg);
+    z-index: var(--snippetzindex);
+}
+.csslogo{
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    right: 11em;
+    top: 25em;
+    z-index: var(--logozindex);
+}
+.linetocssfromhtml{
+    width: 339px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(75deg);
+    position: absolute;
+    left: 87em;
+    top: 18.5em;
+}
+.linetocssfromjavascript{
+    width: 595px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(196deg);
+    position: absolute;
+    left: 63.7em;
+    top: 24em;
+}
+.csspin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    right: 17em;
+    top: 28em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reactlogologo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 12em;
+    margin: 0;
+    z-index: var(--logozindex);
+    top: 27em;
+}
+.linetoreact{
+    width: 512px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(162deg);
+    position: absolute;
+    left: 63.7em;
+    top: 14em;
 }
