@@ -7,7 +7,7 @@
 
 
 .container{
-    height: 60em;
+    height: 90em;
     position: relative;
 }
 .header{
@@ -137,7 +137,7 @@
     position: absolute;
     width: 250px;
     height: 250px;
-    right: 16em;
+    left: 87em;
     top: 6em;
 }
 .htmlpin{
@@ -145,7 +145,7 @@
     z-index: var(--pinzindex);
     width: 50px;
     height: 50px;
-    right: 22em;
+    left: 93.5em;
     top: 8em;
 }
 .htmlsnippet{
@@ -153,7 +153,7 @@
     z-index: var(--snippetzindex);
     position: absolute;
     font-size: 20px;
-    right: 6em;
+    left: 69em;
     top: 3em;
 }
 .webheader{
@@ -162,13 +162,13 @@
     top: 2em;
     Font-family: "Just Me Again Down Here";
     font-size: 60px;
-    right: 12em;
+    left: 17em;
 }
 .javascriptlogo{
     position: absolute;
     width: 280px;
     height: 280px;
-    right: 47em;
+    left: 55em;
     margin: 0;
     z-index: var(--logozindex);
     top: 15em;
@@ -189,13 +189,13 @@
     z-index: var(--pinzindex);
     width: 50px;
     height: 50px;
-    right: 53em;
+    left: 63em;
     top: 18.4em;
 }
 .javascriptsnippet{
     Font-family: "Just Me Again Down Here";
     position: absolute;
-    right: 33em;
+    left: 50em;
     font-size: 20px;
     top: 19em;
     transform: rotate(-7deg);
@@ -205,7 +205,7 @@
     position: absolute;
     width: 200px;
     height: 280px;
-    right: 11em;
+    left: 95em;
     top: 25em;
     z-index: var(--logozindex);
 }
@@ -236,53 +236,248 @@
     z-index: var(--pinzindex);
     width: 50px;
     height: 50px;
-    right: 17em;
+    left: 99em;
     top: 28em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.reactlogologo{
+.csssnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    left: 65em;
+    font-size: 26px;
+    top: 18em;
+    transform: rotate(8deg);
+    z-index: var(--snippetzindex);
+}
+.reactpin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 74.5em;
+    top: 35em;
+}
+.reactlogo{
     position: absolute;
     width: 200px;
     height: 200px;
-    right: 12em;
+    left: 69em;
     margin: 0;
     z-index: var(--logozindex);
-    top: 27em;
+    top: 33em;
 }
 .linetoreact{
-    width: 512px;
+    width: 328px;
     color: red;
     height: 1px;
     background-color: red;
     z-index: var(--linezindex);
-    transform: rotate(162deg);
+    transform: rotate(235deg);
     position: absolute;
-    left: 63.7em;
-    top: 14em;
+    left: 59.7em;
+    top: 27em;
+}
+.reactsnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    left: 43em;
+    font-size: 26px;
+    top: 23em;
+    z-index: var(--snippetzindex);
+}
+.linetovite{
+    width: 338px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(367deg);
+    position: absolute;
+    left: 55.7em;
+    top: 34.5em;
+}
+.vitelogo{
+    z-index: var(--logozindex);
+    position: absolute;
+    width: 170px;
+    left: 50em;
+    top: 32em;
+}
+.vitepin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 54em;
+    top: 32em;
+}
+.vitesnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    left: 30em;
+    font-size: 26px;
+    top: 21em;
+    z-index: var(--snippetzindex);
+}
+
+.cpluspluslogo{
+    z-index: var(--logozindex);
+    position: absolute;
+    width: 190px;
+    left: 10em;
+    top: 25em;
+}
+.linetocplusplus{
+    width: 396px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-50deg);
+    position: absolute;
+    left: 11em;
+    top: 21em;
+}
+.cpluspluspin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 14.2em;
+    top: 29.3em;
+}
+.cplusplussnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    left: 7em;
+    font-size: 26px;
+    top: 16em;
+    z-index: var(--snippetzindex);
+    transform: rotate(-7deg);
+}
+
+.sqllogo{
+    z-index: var(--logozindex);
+    position: absolute;
+    width: 300px;
+    left: 48em;
+    top: 54em;
+}
+.sqlpin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 52.5em;
+    top: 53em;
+}
+.sqlsnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    left: 27em;
+    font-size: 25px;
+    top: 35em;
+    z-index: var(--snippetzindex);
+    transform: rotate(1deg);
+}
+.linetosqlfromcsharp{
+    width: 771px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-118deg);
+    position: absolute;
+    left: 19em;
+    top: 33em;
+}
+.linetosqlfromcplusplus{
+    width: 731px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-148deg);
+    position: absolute;
+    left: 12em;
+    top: 41em;
+}
+.linetosqlfromjavascript{
+    width: 599px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-73deg);
+    position: absolute;
+    left: 40.5em;
+    top: 36em;
+}
+.linetosqlfrompython{
+    width: 579px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-6deg);
+    position: absolute;
+    left: 53em;
+    top: 51.4em;
+}
+.pythonlogo{
+    z-index: var(--logozindex);
+    position: absolute;
+    width: 350px;
+    left: 79em;
+    top: 43em;
+    height: auto;
+}
+.pythonpin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 88.5em;
+    top: 48.8em;
+}
+.pythonsnippet{
+    Font-family: "Just Me Again Down Here";
+    position: absolute;
+    left: 58em;
+    font-size: 22px;
+    top: 31em;
+    z-index: var(--snippetzindex);
+    transform: rotate(-8deg);
+}
+.linetoresumefromcplusplus{
+    width: 579px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-6deg);
+    position: absolute;
+    left: 53em;
+    top: 51.4em;
+}
+.linetoresumefromsql{
+    width: 579px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-6deg);
+    position: absolute;
+    left: 53em;
+    top: 51.4em;
+}
+.linetoresumefrompython{
+    width: 579px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    transform: rotate(-6deg);
+    position: absolute;
+    left: 53em;
+    top: 51.4em;
 }
