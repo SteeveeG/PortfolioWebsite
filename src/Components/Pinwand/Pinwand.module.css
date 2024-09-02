@@ -449,35 +449,43 @@
     transform: rotate(-8deg);
 }
 .linetoresumefromcplusplus{
-    width: 579px;
+    width: 1089px;
     color: red;
     height: 1px;
     background-color: red;
     z-index: var(--linezindex);
-    transform: rotate(-6deg);
+    transform: rotate(55deg);
     position: absolute;
-    left: 53em;
-    top: 51.4em;
+    left: 1em;
+    top: 57.4em;
 }
 .linetoresumefromsql{
-    width: 579px;
+    width: 506px;
     color: red;
     height: 1px;
     background-color: red;
     z-index: var(--linezindex);
-    transform: rotate(-6deg);
+    transform: rotate(90deg);
     position: absolute;
-    left: 53em;
-    top: 51.4em;
+    left: 38.3em;
+    top: 69.4em;
 }
 .linetoresumefrompython{
-    width: 579px;
+    width: 819px;
     color: red;
     height: 1px;
     background-color: red;
     z-index: var(--linezindex);
-    transform: rotate(-6deg);
+    transform: rotate(-44deg);
     position: absolute;
-    left: 53em;
-    top: 51.4em;
+    left: 46em;
+    top: 67.4em;
+}
+.resumepin{
+    position: absolute;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    left: 52.5em;
+    top: 83.8em;
 }

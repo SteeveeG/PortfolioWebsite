@@ -1,0 +1,88 @@
+.header{
+    Font-family: "Farmhouse Children";
+    position: absolute;
+    font-size: 2em;
+    margin: 0;
+}
+.headerunderline{
+    margin: 0;
+    Font-family: "Farmhouse Children";
+    font-size: 2em;
+    line-height: 0;
+    position: absolute;
+}
+.headerwrap{
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    left: 59em;
+    bottom: 46px;
+}
+.box{
+    height: 100em;
+    width: min-content;
+}
+.line1{
+    width: 819px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    position: relative;
+    left: 28.5em;
+    top: 20em;
+    transform: rotate(90deg);
+}
+
+.resumebox{
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    position: relative;
+    left: 64em;
+    bottom: 6em;
+    box-shadow: inset 0px 0px 15px 3px rgba(0, 0, 0, 0.25), 0px 0px 15px 3px rgba(0, 0, 0, 0.25), 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(1px);
+}
+.resumeheader{
+    font-family: "Consolas", sans-serif;
+    font-size: 30px;
+    margin: 10px 0 0 0 ;
+}
+.resumetext1{
+    font-family: "Consolas", sans-serif;
+}
+.resumetext2{
+    font-family: "Consolas", sans-serif;
+}
+
+.pin1{
+    position: relative;
+    left: 52.5em;
+    z-index: var(--pinzindex);
+    width: 50px;
+    height: 50px;
+    top: 2em;
+}
+.line2{
+    width: 150px;
+    color: red;
+    height: 1px;
+    background-color: red;
+    z-index: var(--linezindex);
+    position: relative;
+    left: 33.5em;
+    top: 3.7em;
+}
+.year1{
+    margin: 0;
+    Font-family: "Farmhouse Children";
+    font-size: 2em;
+    position: relative;
+    left: 28em;
+    bottom: 2em;
+}

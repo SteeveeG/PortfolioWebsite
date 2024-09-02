@@ -134,7 +134,7 @@ function Pinwand(){
          <hr className={css.linetoresumefromcplusplus}/>
          <hr className={css.linetoresumefromsql}/>
          <hr className={css.linetoresumefrompython}/>
-
+         <Pin className={css.resumepin}/>
 
      </div>)
 }
