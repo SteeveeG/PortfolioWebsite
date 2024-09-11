@@ -4,61 +4,106 @@
     --logozindex: -1;
     --snippetzindex: -2;
 }
-.linetocsharp,.linetohtml,.linetojavascript,.linetocssfromhtml,.linetocssfromjavascript,
-.linetoreact,.linetovite,.linetocplusplus,.linetosqlfromcsharp,.linetosqlfromcplusplus,
-.linetosqlfromjavascript,.linetosqlfrompython,.linetoresumefromcplusplus,.linetoresumefromsql,
-.linetoresumefrompython{
+
+.linetocsharp,
+.linetohtml,
+.linetojavascript,
+.linetocssfromhtml,
+.linetocssfromjavascript,
+.linetoreact,
+.linetovite,
+.linetocplusplus,
+.linetosqlfromcsharp,
+.linetosqlfromcplusplus,
+.linetosqlfromjavascript,
+.linetosqlfrompython,
+.linetoresumefromcplusplus,
+.linetoresumefromsql,
+.linetoresumefrompython {
     height: 2px;
     background-color: red;
     z-index: var(--linezindex);
     position: absolute;
     border: none;
 }
-.skillpin,.csharppin,.htmlpin,.javascriptpin,.csspin,.reactpin,.vitepin,.cpluspluspin,.sqlpin,
-.pythonpin,.resumepin{
+
+.skillpin,
+.csharppin,
+.htmlpin,
+.javascriptpin,
+.csspin,
+.reactpin,
+.vitepin,
+.cpluspluspin,
+.sqlpin,
+.pythonpin,
+.resumepin {
     position: absolute;
     z-index: var(--pinzindex);
     width: 50px;
     height: 50px;
 }
-.csharpsnippet,.htmlsnippet,.javascriptsnippet,.csssnippet,.reactsnippet,.vitesnippet,.cplusplussnippet,
-.sqlsnippet,.pythonsnippet{
+
+.csharpsnippet,
+.htmlsnippet,
+.javascriptsnippet,
+.csssnippet,
+.reactsnippet,
+.vitesnippet,
+.cplusplussnippet,
+.sqlsnippet,
+.pythonsnippet {
     Font-family: "Just Me Again Down Here";
     z-index: var(--snippetzindex);
     position: absolute;
     font-size: 20px;
+    width: max-content;
+
 }
-.csharplogo,.htmllogo,.javascriptlogo,.csslogo,.reactlogo,.vitelogo,.cpluspluslogo,.sqllogo,.pythonlogo{
+
+.csharplogo,
+.htmllogo,
+.javascriptlogo,
+.csslogo,
+.reactlogo,
+.vitelogo,
+.cpluspluslogo,
+.sqllogo,
+.pythonlogo {
     position: absolute;
     z-index: var(--logozindex);
+    width: 100%;
+    height: auto;
 }
-.container{
+
+.container {
     overflow: hidden;
     height: 90em;
     position: relative;
 }
-.header{
+
+.header {
+
     Font-family: "Farmhouse Children";
     position: relative;
     font-size: 2em;
     margin: 0;
-    text-align: initial;
 }
-.headerunderline{
+
+.headerunderline {
     margin: 0;
     Font-family: "Farmhouse Children";
     font-size: 2em;
     line-height: 0;
-    position: absolute;
 }
-.headerwrap{
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
+
+.headerwrap {
+    left: 55em;
+    top: 3em;
     position: relative;
-    left: 54em;
 }
-.desktopheader{
+
+.desktopheader {
     margin: 0;
     position: absolute;
     left: 8em;
@@ -67,55 +112,58 @@
     font-size: 40px;
 }
 
-.skillpin{
+.skillpin {
     left: 57em;
     top: 7px;
 }
-.linetocsharp{
+
+.linetocsharp {
     width: 454px;
     transform: rotate(-19deg);
     left: 31em;
     top: 6em;
 }
-.csharpcontainer{
+
+.csharpcontainer {
     width: 200px;
     position: relative;
     left: 25.5em;
     top: 6em;
 }
-.csharplogo{
-  width: 100%;
-  height: auto;
-    
-}
-.csharppin{
+
+.csharppin {
     width: 100%;
     top: 10px;
 }
-.comments{
+
+.comments {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 39em;
-    top: 4em;
+    left: 14em;
+    top: -3em;
     transform: rotate(-25deg);
     width: max-content;
 }
-.comments > div{
+
+.comments>div {
     display: flex;
     flex-direction: row;
 }
-.comments > *{
+
+.comments>* {
     user-select: none;
     Font-family: "Just Me Again Down Here";
 }
-.arrowcsharp{
+
+.arrowcsharp {
     margin: 0;
     position: relative;
     bottom: 40px;
     font-size: 46px;
 }
-.fouryears{
+
+.fouryears {
     margin: 0;
     position: relative;
     bottom: 20px;
@@ -123,41 +171,48 @@
     font-size: 40px;
     -webkit-transform-origin: 50% 51%;
 }
-.pro{
+
+.pro {
     font-size: 46px;
     margin: 0;
 }
-.smile{
+
+.smile {
     margin: 0 0 0 20px;
     font-size: 49px;
 }
-.csharpsnippet{
-    left: 10.4em;
+
+.csharpsnippet {
+    top: 0;
+    left: -2em;
     transform: rotate(8deg);
     font-size: 30px;
 }
 
-.linetohtml{
+.linetohtml {
     width: 606px;
     transform: rotate(11deg);
     left: 57.7em;
     top: 5em;
 }
-.htmllogo{
+
+.htmlcontainer {
     width: 250px;
-    height: 250px;
-    left: 87em;
-    top: 6em;
+    position: relative;
+    left: 87.5em;
+    top: -10.5em;
 }
-.htmlpin{
-    left: 93.5em;
-    top: 8em;
+
+.htmlpin {
+    left: 6em;
+    top: 2em;
 }
-.htmlsnippet{
-    left: 69em;
-    top: 3em;
+
+.htmlsnippet {
+    top: -4em;
 }
-.webheader{
+
+.webheader {
     margin: 0;
     position: absolute;
     top: 2em;
@@ -165,370 +220,370 @@
     font-size: 60px;
     left: 17em;
 }
-.javascriptlogo{
+
+.javascriptcontainer {
+    position: relative;
     width: 280px;
-    height: 280px;
     left: 55em;
-    margin: 0;
-    top: 15em;
+    top: -1.5em;
 }
-.linetojavascript{
+
+.linetojavascript {
     width: 512px;
     transform: rotate(162deg);
     left: 63.7em;
     top: 14em;
 }
-.javascriptpin{
-    left: 63em;
-    top: 18.4em;
+
+.javascriptpin {
+    left: 8em;
+    top: 3em;
 }
-.javascriptsnippet{
-    left: 50em;
-    top: 19em;
+
+.javascriptsnippet {
+    top: 3em;
     transform: rotate(-7deg);
 }
-.csslogo{
+
+.csslogo {
     position: relative;
     width: 100%
 }
-.csspin{
+
+.csspin {
     position: absolute;
     left: 4.5em;
     top: 2em;
-}  
-.csscontainer{
+}
+
+.csscontainer {
     width: 200px;
     position: relative;
     left: 94em;
     top: 10em;
 }
-.linetocssfromhtml{
+
+.linetocssfromhtml {
     width: 339px;
     transform: rotate(75deg);
     left: 87em;
     top: 18.5em;
 }
-.linetocssfromjavascript{
+
+.linetocssfromjavascript {
     width: 595px;
     transform: rotate(196deg);
     left: 63.7em;
     top: 24em;
 }
- 
-.csssnippet{
-    left: 65em;
+
+.csssnippet {
+    top: 2em;
+    left: 6em;
     font-size: 26px;
-    top: 18em;
     transform: rotate(8deg);
 }
-.reactpin{
-    left: 74.5em;
-    top: 35em;
-}
-.reactlogo{
+
+.reactcontainer {
+    position: relative;
     width: 200px;
-    height: 200px;
-    left: 69em;
-    margin: 0;
-    top: 33em;
+    left: 69.5em;
+    top: -1.5em;
 }
-.linetoreact{
+
+.reactpin {
+    left: 5em;
+    top: 2em;
+}
+
+.linetoreact {
     width: 328px;
     transform: rotate(235deg);
     left: 59.7em;
     top: 27em;
 }
-.reactsnippet{
-    left: 43em;
+
+.reactsnippet {
+    top: 1em;
     font-size: 26px;
-    top: 23em;
 }
-.linetovite{
+
+.linetovite {
     width: 338px;
     transform: rotate(367deg);
     left: 55.7em;
     top: 34.5em;
 }
-.vitelogo{
+
+.vitecontainer {
+    position: relative;
     width: 170px;
     left: 50em;
-    top: 32em;
+    top: -3em;
 }
-.vitepin{
-    left: 54em;
-    top: 32em;
+
+.vitepin {
+    left: 4em;
+    top: 1em;
 }
-.vitesnippet{
-    left: 30em;
+
+.vitesnippet {
     font-size: 26px;
-    top: 21em;
 }
-.cpluspluslogo{
-    width: 190px;
-    left: 10em;
-    top: 25em;
-}
-.linetocplusplus{
+
+.linetocplusplus {
     width: 396px;
     transform: rotate(-50deg);
     left: 11em;
     top: 21em;
 }
-.cpluspluspin{
-    left: 14.2em;
-    top: 29.3em;
+
+.cpluscpluscontainer {
+    position: relative;
+    width: 190px;
+    left: 10em;
+    top: 12em;
 }
-.cplusplussnippet{
-    left: 7em;
+
+.cpluspluspin {
+    left: 4.4em;
+    top: 0.4em;
+}
+
+.cplusplussnippet {
+
     font-size: 26px;
-    top: 16em;
+
     transform: rotate(-7deg);
 }
 
-.sqllogo{
+.sqlcontainer {
+    position: relative;
     width: 300px;
-    left: 48em;
-    top: 54em;
+    left: 46.4em;
+    top: 17.3em;
 }
-.sqlpin{
-    left: 52.5em;
-    top: 53em;
+
+.sqlpin {
+    left: 6em;
+    top: 1em;
 }
-.sqlsnippet{
-    left: 27em;
-    font-size: 25px;
-    top: 35em;
+
+.sqlsnippet {
+
+    left: -2em;
     transform: rotate(1deg);
 }
-.linetosqlfromcsharp{
+
+.linetosqlfromcsharp {
     width: 771px;
     transform: rotate(-118deg);
     left: 19em;
     top: 33em;
 }
-.linetosqlfromcplusplus{
+
+.linetosqlfromcplusplus {
     width: 731px;
     transform: rotate(-148deg);
     left: 12em;
     top: 41em;
 }
-.linetosqlfromjavascript{
+
+.linetosqlfromjavascript {
     width: 599px;
     transform: rotate(-73deg);
     left: 40.5em;
     top: 36em;
 }
-.linetosqlfrompython{
+
+.linetosqlfrompython {
     width: 579px;
     transform: rotate(-6deg);
     left: 53em;
     top: 51.4em;
 }
-.pythonlogo{
+
+.pythoncontainer {
+    position: relative;
     width: 350px;
-    left: 79em;
-    top: 43em;
-    height: auto;
+    left: 78em;
+    top: 8.5em;
 }
-.pythonpin{
-    left: 88.5em;
-    top: 48.8em;
+
+.pythonpin {
+    left: 10em;
+    top: 6em;
 }
-.pythonsnippet{
-    left: 64em;
-    top: 35em;
+
+.pythonsnippet {
     transform: rotate(-8deg);
 }
-.linetoresumefromcplusplus{
+
+.linetoresumefromcplusplus {
     width: 1089px;
     transform: rotate(55deg);
     left: 1em;
     top: 57.4em;
 }
-.linetoresumefromsql{
+
+.linetoresumefromsql {
     width: 506px;
     transform: rotate(90deg);
     left: 38.3em;
     top: 69.4em;
 }
-.linetoresumefrompython{
+
+.linetoresumefrompython {
     width: 819px;
     transform: rotate(-44deg);
     left: 46em;
     top: 67.4em;
 }
-.resumepin{
+
+.resumepin {
     left: 52.5em;
     top: 83.8em;
 }
 
 @media (max-width: 1725px) {
-    .webheader{
+    .webheader {
         top: 1.5em;
     }
-    .desktopheader{
+
+    .desktopheader {
         left: 1em;
     }
-    .headerwrap{
-        left: 47em;
+
+    .headerwrap {
+        top: 5em;
+        left: 40em;
     }
-    .skillpin{
+
+    .skillpin {
         left: 48em;
         top: 49px;
     }
-    .linetocsharp{
+
+    .csharpcontainer {
+        left: 2em;
+        top: 6em;
+    }
+
+    .cpluscpluscontainer {
+        left: 5em;
+        top: 21em;
+    }
+
+    .csscontainer {
+        left: 83.5em;
+        top: 9em;
+    }
+
+    .javascriptcontainer {
+        left: 40em;
+        top: -9.5em;
+    }
+
+    .vitecontainer {
+        left: 34em;
+        top: -8.5em;
+    }
+
+    .reactcontainer {
+        left: 53.5em;
+        top: -9.5em;
+    }
+
+    .linetocsharp {
         width: 686px;
         transform: rotate(-10deg);
         left: 7em;
         top: 7.7em;
     }
-    .csharplogo{
-        left: 1.5em;
-    }
-    .csharppin{
-        left: 6.2em;
-    }
-    .linetohtml{
+
+    .linetohtml {
         width: 730px;
         transform: rotate(6deg);
         left: 49.7em;
         top: 6.5em;
     }
-    .csharpsnippet{
-        left: 0.4em;
-        transform: rotate(9deg);
-        top: 7em;
-    }
-    .comments{
-        left: 14em;
-        top: 1em;
-    }
-    .cpluspluslogo{
-        left: 5em;
-        top: 34em;
-    }
-    .cpluspluspin{
-        left: 9.2em;
-        top: 38.3em;
-    }
-    .cplusplussnippet{
-        left: 3em;
-        top: 28em;
-        font-size: 20px;
-    }
-    .linetocplusplus{
+
+    .linetocplusplus {
         width: 463px;
         transform: rotate(84deg);
         left: -5.2em;
         top: 25em;
     }
-    .linetosqlfromcsharp{
-        width: 1007px;
+
+    .linetosqlfromcsharp {
+        width: 997px;
         transform: rotate(-138deg);
         left: 0.5em;
         top: 33em;
     }
-    .linetoresumefromcplusplus{
-        width: 1020px;
+
+    .linetoresumefromcplusplus {
+        width: 989px;
         transform: rotate(46deg);
-        left: 0em;
+        left: 1.5em;
         top: 61.4em;
     }
-    .linetosqlfromcplusplus{
+
+    .linetosqlfromcplusplus {
         width: 710px;
         transform: rotate(-161deg);
         left: 10em;
         top: 46em;
     }
-    .linetojavascript{
+
+    .linetojavascript {
         width: 718px;
         transform: rotate(177deg);
         left: 49.7em;
         top: 10em;
     }
-    .javascriptlogo{
-        left: 40em;
-        top: 8em;
-    }
-    .javascriptsnippet{
-        left: 34em;
-        top: 12em;
-    }
-    .javascriptpin{
-        left: 48em;
-        top: 10.4em;
-    }
-    .vitelogo{
-        left: 33em;
-        top: 26em;
-    }
-    .vitepin{
-        left: 37em;
-        top: 27em;
-    }
-    .vitesnippet{
-        left: 26em;
-        top: 22em;
-        font-size: 20px;
-    }
-    .linetovite{
+
+    .linetovite {
         width: 332px;
         transform: rotate(0deg);
         left: 39.3em;
         top: 27.5em;
     }
-    .csslogo{
-        left: 84em;
-    }
-    .linetocssfromhtml{
+
+    .linetocssfromhtml {
         transform: rotate(104deg);
         left: 82em;
         top: 18.5em;
     }
-    .linetocssfromjavascript{
+
+    .linetocssfromjavascript {
         width: 441px;
         transform: rotate(200deg);
         left: 63.7em;
     }
-    .csspin{
-        left: 88.5em;
-    }
-    .csssnippet{
-        font-size: 23px;
-        top: 21em;
-    }
 
-    .reactpin{
-        left: 58.5em;
-        top: 27em;
-    }
-    .reactlogo{
-        left: 54em;
-        top: 26em;
-    }
-    .linetoreact{
+    .linetoreact {
         width: 339px;
         transform: rotate(238deg);
         left: 44em;
         top: 19em;
     }
-    .reactsnippet{
-        left: 34em;
-        top: 17em;
-    }
-    .linetohtml{
+
+    .linetohtml {
         width: 730px;
         transform: rotate(6deg);
         left: 49.7em;
         top: 6.5em;
     }
-    .linetocssfromjavascript{
+
+    .linetocssfromjavascript {
         width: 681px;
         transform: rotate(203deg);
         left: 48.7em;
         top: 20em;
     }
-    .linetosqlfromjavascript{
+
+    .linetosqlfromjavascript {
         width: 698px;
         transform: rotate(84deg);
         left: 30em;
@@ -538,36 +593,379 @@
 }
 
 @media (max-width:1620px) {
-    .pythonlogo{
-        left: 58em;
-        top: 33em;
+    .pythoncontainer {
+        left: 58.5em;
+        top: -1.5em;
     }
-    .pythonsnippet{
-        left: 49em;
-        top: 28em;
-    }
-    .pythonpin{
+
+    .csscontainer {
+        width: 160px;
         left: 68.5em;
-        top: 38.8em;   
+        top: 1em;
     }
-    .linetosqlfrompython{
+
+    .csssnippet {
+        left: 4em;
+    }
+
+    .htmlcontainer {
+        width: 209px;
+        left: 74.5em;
+        top: -13.5em;
+    }
+
+    .htmlpin {
+        left: 5em;
+    }
+
+    .sqlcontainer {
+        top: 20.3em;
+    }
+
+    .pythoncontainer {
+        top: 2em;
+    }
+
+    .vitecontainer {
+        top: -5.3em;
+    }
+
+    .reactcontainer {
+        top: -6.3em;
+    }
+
+    .linetosqlfrompython {
         width: 350px;
         transform: rotate(139deg);
         left: 51em;
         top: 46.4em;
     }
-    .linetoresumefrompython{
+
+    .linetoresumefrompython {
         width: 774px;
         transform: rotate(110deg);
         left: 38em;
         top: 62.4em;
     }
-    .csslogo{
-        left: 71em;
-        top: 25em;
-        width: 165px;
-        height: min-content;
+
+    .linetohtml {
+        width: 520px;
+        transform: rotate(4deg);
+        top: 5em;
+    }
+
+    .linetojavascript {
+        width: 515px;
+        transform: rotate(171deg);
+        top: 8.5em;
+    }
+
+    .linetocssfromjavascript {
+        width: 426px;
+        transform: rotate(201deg);
+        left: 48.7em;
+        top: 16em;
+    }
+
+    .linetocssfromhtml {
+        transform: rotate(114deg);
+        left: 69em;
+        top: 13.5em;
+        width: 268px;
     }
 }
 
- 
+@media (max-width:1380px) {
+    .csharpcontainer {
+        width: 150px;
+        left: 3em;
+    }
+
+    .cpluscpluscontainer {
+        width: 150px;
+    }
+
+    .javascriptcontainer {
+        width: 220px;
+        left: 35em;
+    }
+
+    .vitecontainer {
+        width: 130px;
+        left: 23em;
+        top: 0em;
+    }
+
+    .reactcontainer {
+        width: 140px;
+        left: 40em;
+        top: -5em;
+    }
+
+    .pythoncontainer {
+        width: 250px;
+        left: 60em;
+        top: 10em;
+    }
+
+    .csscontainer {
+        width: 140px;
+        left: 60em;
+        top: 4em;
+    }
+
+    .htmlcontainer {
+        width: 180px;
+        left: 65em;
+    }
+
+    .sqlcontainer {
+        left: 38em;
+    }
+
+    .linetovite {
+        width: 317px;
+        transform: rotate(-12deg);
+        left: 27.3em;
+        top: 29em;
+    }
+
+    .linetoreact {
+        width: 284px;
+        transform: rotate(83deg);
+        left: 36.5em;
+        top: 19em;
+    }
+
+    .linetocssfromjavascript {
+        width: 410px;
+        transform: rotate(210deg);
+        left: 41.7em;
+        top: 17em;
+    }
+
+    .linetocssfromhtml {
+        transform: rotate(109deg);
+        left: 60.5em;
+        top: 14.5em;
+    }
+
+    .linetojavascript {
+        width: 457px;
+        transform: rotate(170deg);
+        left: 44.7em;
+    }
+
+    .linetohtml {
+        width: 367px;
+    }
+
+    .webheader {
+        top: 1.2em;
+        left: 14em;
+    }
+
+    .pythonpin {
+        left: 8em;
+        top: 4em;
+    }
+
+    .pythoncontainer {
+        left: 60.5em;
+        top: 6em;
+    }
+
+    .linetoresumefromsql {
+        width: 543px;
+        left: 28.7em;
+    }
+
+    .linetosqlfromcplusplus {
+        width: 592px;
+        transform: rotate(-160deg);
+        top: 45.4em;
+    }
+
+    .linetosqlfrompython {
+        width: 430px;
+        transform: rotate(155deg);
+        left: 45em;
+        top: 45.4em;
+    }
+
+    .linetosqlfromjavascript {
+        width: 644px;
+        transform: rotate(89deg);
+        left: 24.87em;
+        top: 32em;
+    }
+
+    .resumepin {
+        left: 44.1em;
+        top: 84.8em;
+    }
+
+    .linetoresumefrompython {
+        width: 814px;
+        transform: rotate(118deg);
+        left: 32em;
+        top: 63.4em;
+    }
+
+    .linetoresumefromcplusplus {
+        width: 937px;
+        transform: rotate(53deg);
+        left: -1.5em;
+    }
+}
+
+@media (max-width:1200px) {
+    .headerwrap {
+        left: 34em;
+    }
+
+    .htmlcontainer {
+        left: 50em;
+        top: -6em;
+    }
+
+    .csscontainer {
+        top: 6em;
+        left: 40em
+    }
+
+    .javascriptcontainer {
+        top: 20em;
+        left: 50em;
+    }
+
+    .cpluscpluscontainer {
+        left: 10em;
+    }
+
+    .reactcontainer {
+        top: 3em;
+        left: 25em;
+    }
+
+    .vitecontainer {
+        top: -9em;
+    }
+
+    .pythoncontainer {
+        top: 40em;
+        left: 20em;
+    }
+
+    .sqlcontainer {
+        top: 28em;
+        left: 33em;
+    }
+
+    .resumepin {
+        left: 34em;
+    }
+
+    .skillpin {
+        left: 34em;
+    }
+
+    .linetocsharp {
+        width: 475px;
+        transform: rotate(-15deg);
+        left: 7em;
+        top: 7.5em;
+    }
+
+    .linetohtml {
+        left: 35em;
+        transform: rotate(24deg);
+        top: 8.5em;
+    }
+
+    .linetojavascript {
+        left: 43.5em;
+        transform: rotate(84deg);
+        top: 26.5em;
+    }
+
+    .linetocssfromhtml {
+        transform: rotate(132deg);
+        left: 43em;
+        top: 19.5em;
+    }
+
+    .linetocssfromjavascript {
+        transform: rotate(227deg);
+        left: 42.5em;
+        top: 32.5em;
+        width: 317px;
+    }
+
+    .linetoreact {
+        width: 443px;
+        transform: rotate(11deg);
+        left: 31.5em;
+        top: 37.5em;
+    }
+
+    .linetovite {
+        width: 222px;
+        transform: rotate(77deg);
+        left: 23.3em;
+        top: 29em;
+    }
+
+    .linetocplusplus {
+        width: 478px;
+        transform: rotate(73deg);
+        left: -3.2em;
+    }
+
+    .linetosqlfromcsharp {
+        width: 937px;
+        transform: rotate(-124deg);
+        left: -5em;
+        top: 36em;
+    }
+
+    .linetosqlfromcplusplus {
+        width: 535px;
+        transform: rotate(-140deg);
+        top: 49em;
+        left: 12em;
+    }
+    .linetosqlfromjavascript{
+        width: 435px;
+        transform: rotate(136deg);
+        left: 36.87em;
+        top: 49em;
+    }
+
+    .linetosqlfrompython{
+        width: 329px;
+        transform: rotate(126deg);
+        left: 25em;
+        top: 66.4em;
+    }
+    .linetoresumefromsql{
+        width: 440px;
+        left: 24.3em;
+        transform: rotate(100deg);
+        top: 72.4em;
+
+    }
+    .linetoresumefrompython {
+        width: 215px;
+        transform: rotate(62deg);
+        left: 25.4em;
+        top: 79.4em;
+    }
+    .linetoresumefromcplusplus{
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    
+}
