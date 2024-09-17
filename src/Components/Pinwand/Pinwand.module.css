@@ -1232,81 +1232,93 @@
         top: 20px;
     }
 
-    .linetocsharp{
+    .linetocsharp {
         width: 264px;
         transform: rotate(-24deg)
     }
-    .linetohtml{
+
+    .linetohtml {
         transform: rotate(32deg);
         top: 6.5em;
         width: 183px;
     }
-    .linetojavascript{
+
+    .linetojavascript {
         left: 16.5em;
         transform: rotate(100deg);
         width: 451px;
         top: 24.5em;
     }
-    .linetocssfromhtml{
+
+    .linetocssfromhtml {
         transform: rotate(-58deg);
         left: 20.5em;
         width: 255px;
     }
-    .linetocssfromjavascript{
+
+    .linetocssfromjavascript {
         transform: rotate(71deg);
         left: 18.5em;
         width: 240px;
         top: 31.5em;
     }
-    .linetoreact{
+
+    .linetoreact {
         width: 238px;
         transform: rotate(40deg);
         left: 14.5em;
         top: 33em;
     }
-    .linetovite{
+
+    .linetovite {
         width: 184px;
         transform: rotate(111deg);
         left: 12.6em;
         top: 23em;
     }
-    .linetocplusplus{
+
+    .linetocplusplus {
         width: 257px;
         transform: rotate(97deg);
         left: -2em;
         top: 19em;
     }
-    .linetosqlfromcsharp{
+
+    .linetosqlfromcsharp {
         transform: rotate(-113deg);
         left: -6.5em;
         top: 33em;
         width: 730px;
     }
-    .linetosqlfromcplusplus{
+
+    .linetosqlfromcplusplus {
         width: 537px;
         top: 40em;
         left: -1.5em;
     }
-    .linetosqlfromjavascript{
+
+    .linetosqlfromjavascript {
         width: 257px;
         transform: rotate(102deg);
         left: 18.7em;
         top: 46em;
     }
-    .linetosqlfrompython{
+
+    .linetosqlfrompython {
         width: 249px;
         transform: rotate(-12deg);
         left: 9.5em;
         top: 55em;
     }
- 
- 
-    .linetoresumefromsql{
+
+
+    .linetoresumefromsql {
         left: 10em;
         transform: rotate(104deg);
         width: 393px;
         top: 65.4em;
     }
+
     .linetoresumefrompython {
         width: 362px;
         transform: rotate(63deg);
@@ -1374,10 +1386,12 @@
         width: 130px;
 
     }
-    .cpluspluspin{
+
+    .cpluspluspin {
         left: 2.8em;
         top: 0;
     }
+
     .reactcontainer {
         top: 0em;
         left: 13em;
@@ -1398,226 +1412,546 @@
         left: 2em;
         top: 0;
     }
-    .csspin{
+
+    .csspin {
         left: 2.5em;
         top: 1em;
     }
-    .javascriptcontainer{
+
+    .javascriptcontainer {
         width: 170px;
         left: 23em;
         top: 20em;
     }
-    .javascriptpin{
+
+    .javascriptpin {
         left: 4em;
         top: 1em;
     }
-    .sqlcontainer{
+
+    .sqlcontainer {
         width: 200px;
         top: 25em;
         left: 20em;
     }
-    .sqlpin{
+
+    .sqlpin {
         left: 4em;
         top: 0em;
     }
-    .sqlcontainer{
+
+    .sqlcontainer {
         width: 200px;
     }
-    .pythoncontainer{
+
+    .pythoncontainer {
         width: 200px;
         left: 2em;
         top: 26em;
     }
-    .pythonpin{
+
+    .pythonpin {
         left: 6em;
         top: 2.5em;
     }
-    .resumepin{
+
+    .resumepin {
         top: 75.8em;
         left: 18em;
     }
 }
+
 @media (max-width:600px) {
-    .htmlcontainer{
+    .htmlcontainer {
         left: 24em;
-        top: -12em; 
+        top: -12em;
     }
-    .linetohtml{
+
+    .linetohtml {
         transform: rotate(18deg);
         top: 5em;
         width: 104px;
         left: 23em;
     }
-    .linetocssfromhtml{
+
+    .linetocssfromhtml {
         transform: rotate(-73deg);
         left: 16.5em;
         width: 314px;
         top: 15.5em;
     }
-    .linetojavascript{
+
+    .linetojavascript {
         left: 12em;
         transform: rotate(92deg);
         width: 529px;
         top: 22.5em;
     }
 }
+
 @media (max-width:540px) {
-    .resumepin{
+    .resumepin {
         left: 13.2em;
     }
 
-    .linetocsharp{
+    .linetocsharp {
         width: 166px;
         transform: rotate(-40deg);
         left: 6em;
     }
-    .linetohtml{
+
+    .linetohtml {
         transform: rotate(61deg);
         top: 9em;
         width: 200px;
         left: 12em;
     }
-    .linetojavascript{
+
+    .linetojavascript {
         left: 11.4em;
         transform: rotate(84deg);
         width: 346px;
-        top: 25.5em;  
+        top: 25.5em;
     }
-    .linetocssfromhtml{
+
+    .linetocssfromhtml {
         transform: rotate(-73deg);
         left: 12em;
         width: 220px;
         top: 21.5em;
     }
-    .linetocssfromjavascript{
+
+    .linetocssfromjavascript {
         transform: rotate(55deg);
         left: 14.5em;
         width: 170px;
     }
-    .linetoreact{
+
+    .linetoreact {
         width: 202px;
         transform: rotate(-10deg);
         left: 10.5em;
         top: 37.5em;
     }
-    .linetovite{
+
+    .linetovite {
         width: 151px;
         transform: rotate(117deg);
         left: 4.6em;
         top: 42em;
     }
- 
-    .linetosqlfromcsharp{
+
+    .linetosqlfromcsharp {
         transform: rotate(-108deg);
         left: -8.5em;
         top: 32em;
     }
-    .linetosqlfromcplusplus{
+
+    .linetosqlfromcplusplus {
         width: 505px;
         top: 40em;
         left: -2.5em;
         transform: rotate(-122deg);
     }
-    .linetosqlfromjavascript{
+
+    .linetosqlfromjavascript {
         width: 283px;
         transform: rotate(98deg);
         left: 13.5em;
         top: 45em;
     }
-    .linetosqlfrompython{
+
+    .linetosqlfrompython {
         width: 192px;
         transform: rotate(-16deg);
     }
-    .linetoresumefromsql{
 
-            left: 5.5em;
-            transform: rotate(106deg);
+    .linetoresumefromsql {
+
+        left: 5.5em;
+        transform: rotate(106deg);
     }
+
     .linetoresumefrompython {
         width: 333px;
         transform: rotate(75deg);
         left: 1.5em;
     }
-    
-    .headerwrap{
+
+    .headerwrap {
         left: 7em;
     }
-    .skillpin{
+
+    .skillpin {
         left: 14em;
     }
-    .webheader{
+
+    .webheader {
         top: 2em;
         font-size: 48px;
     }
-    .reactcontainer{
+
+    .reactcontainer {
         top: 10em;
         left: 8em;
     }
-    .vitecontainer{
+
+    .vitecontainer {
         top: 18em;
         left: 3em;
     }
-    .comments{
+
+    .comments {
         left: 9em;
         top: -6em;
     }
-    .fouryears{
+
+    .fouryears {
         right: 18px;
         bottom: 53px;
     }
+
     .cplusplussnippet,
-    .reactsnippet
-    {
+    .reactsnippet {
         font-size: 20px;
     }
 
-    .htmlcontainer{
+    .htmlcontainer {
         left: 16em;
         top: -3em;
     }
-    .csscontainer{
+
+    .csscontainer {
         left: 13em;
         top: 9em;
     }
-    .javascriptcontainer{
+
+    .javascriptcontainer {
         left: 18em;
         top: 18em;
     }
-    .sqlcontainer{
+
+    .sqlcontainer {
         left: 16em;
 
     }
 }
+
 @media (max-width: 453px) {
+
     .csharpsnippet,
-.htmlsnippet,
-.javascriptsnippet,
-.csssnippet,
-.reactsnippet,
-.vitesnippet,
-.cplusplussnippet,
-.sqlsnippet,
-.pythonsnippet {
-    font-size: 16px;
+    .htmlsnippet,
+    .javascriptsnippet,
+    .csssnippet,
+    .reactsnippet,
+    .vitesnippet,
+    .cplusplussnippet,
+    .sqlsnippet,
+    .pythonsnippet {
+        font-size: 16px;
+    }
+
+
+    .linetojavascript {
+        left: 6.7em;
+        transform: rotate(92deg);
+        width: 451px;
+        top: 28.5em;
+    }
+
+
+    .linetocssfromjavascript {
+        transform: rotate(77deg);
+        left: 11em;
+        width: 235px;
+        top: 34.5em;
+    }
+
+    .linetoreact {
+        width: 167px;
+        transform: rotate(-47deg);
+        left: 11.5em;
+        top: 46.5em;
+    }
+
+    .linetovite {
+        width: 176px;
+        transform: rotate(64deg);
+        left: 10em;
+        top: 55em;
+    }
+
+    .linetosqlfromcsharp {
+        transform: rotate(-90deg);
+        left: -9.5em;
+        top: 28em;
+        width: 538px;
+    }
+
+    .linetosqlfromcplusplus {
+        width: 269px;
+        top: 35em;
+        left: -2.4em;
+        transform: rotate(83deg);
+    }
+
+    .linetosqlfromjavascript {
+        width: 215px;
+        transform: rotate(-9deg);
+        left: 7.5em;
+        top: 43.5em;
+    }
+
+    .linetosqlfrompython {
+        width: 201px;
+        transform: rotate(81deg);
+        left: 2em;
+        top: 51em;
+    }
+
+    .linetoresumefromsql {
+        /* From Vite to Resume */
+        left: 6.8em;
+        transform: rotate(107deg);
+        width: 275px;
+        top: 68em;
+    }
+
+    .linetoresumefrompython {
+        transform: rotate(80deg);
+        left: 0.5em;
+
+    }
+
+    .resumepin {
+        left: 11.2em;
+    }
+
+    .reactcontainer {
+        top: 22em;
+        left: 10em;
+    }
+
+    .vitecontainer {
+        top: 32em;
+        left: 14em;
+    }
+
+    .sqlcontainer {
+        left: 2em;
+        top: 16em;
+    }
+
+    .javascriptcontainer {
+        left: 15em;
+        top: 24em;
+    }
+
+    .webheader {
+        top: 1em;
+        font-size: 48px;
+        left: 6em;
+    }
 }
 
+@media (max-width: 400px) {
+
+    .skillpin,
+    .csharppin,
+    .htmlpin,
+    .javascriptpin,
+    .csspin,
+    .reactpin,
+    .vitepin,
+    .cpluspluspin,
+    .sqlpin,
+    .pythonpin,
+    .resumepin {
+        width: 30px;
+        height: 30px;
+    }
+
+    .linetocsharp{
+        width: 156px;
+        transform: rotate(-52deg);
+        left: 4em;
+    }
+    .linetohtml{
+        transform: rotate(86deg);
+        top: 11em;
+        width: 240px;
+        left: 5em;
+    }
+    .linetojavascript{
+        left: 4.5em;
+        transform: rotate(81deg);
+        width: 318px;
+    }
+    .linetocssfromhtml{
+        transform: rotate(-109deg);
+        left: 10em;
+        width: 140px;
+        top: 22.5em;
+    }
+    .linetocssfromjavascript{
+        transform: rotate(89deg);
+        left: 10em;
+        width: 189px;
+        top: 32.5em;
+    }
+    .linetoreact{
+        width: 197px;
+        transform: rotate(-30deg);
+        left: 4.5em;
+        top: 41.7em;
+    }
+    .linetovite{
+        width: 196px;
+        transform: rotate(33deg);
+        left: 4em;
+        top: 48.5em;
+    }
+    .linetocplusplus{
+        width: 243px;
+        left: -2.5em;
+    }
+    .linetosqlfromcsharp{
+        transform: rotate(-94deg);
+        left: -4.3em;
+        top: 23em;
+        width: 366px;
+    }
+    .linetosqlfromcplusplus{
+        width: 139px;
+        top: 30em;
+        left: 1.6em;
+        transform: rotate(64deg);
+    }
+    .linetosqlfromjavascript{
+        width: 144px;
+        transform: rotate(32deg);
+        top: 36.5em;
+    }
+    .linetosqlfrompython{
+        width: 328px;
+        transform: rotate(87deg);
+        left: -1.8em;
+        top: 44em;
+    }
+    .linetoresumefromsql{
+        left: 1.5em;
+        transform: rotate(100deg);
+        width: 384px;
+        top: 64em;
+    }
+    .linetoresumefrompython {
+        transform: rotate(84deg);
+        left: -0.5em;
+        top: 65em;
+        width: 338px;
+    }
+
+    .resumepin{
+        left: 10.2em;
+
+    }   
+    
+    .skillpin{
+        left: 11em;
+
+    }
+    .headerwrap{
+        left: 4em;
+    }
+
+    .htmlcontainer {
+        left: 9em;
+        top: 0em;
+        width: 125px;
+    }
+
+    .htmlpin {
+        top: 1.5em;
+        left: 3em;
+    }
+
+    .csharpcontainer {
+        width: 100px;
+    }
+
+    .csharppin {
+        left: 2.1em;
+        top: 0.5em;
+    }
+
+    .csscontainer {
+        width: 100px;
+    }
+
+    .csspin {
+        left: 2em;
+    }
+
+    .cpluscpluscontainer {
+        width: 101px;
+    }
+
+    .cpluspluspin {
+        left: 2.1em;
+        top: 0.2em;
+    }
+
+    .sqlcontainer {
+        top: 8em;
+        width: 163px;
+        left: 4em;
+    }
+
+    .sqlpin {
+        left: 3em;
+    }
+
+    .javascriptcontainer {
+        width: 143px;
+        left: 11em;
+        top: 20em;
+    }
+
+    .javascriptpin {
+        top: 2em;
+    }
+
+    .reactcontainer {
+        top: 19em;
+        left: 2em;
+    }
+
+    .vitecontainer {
+        top: 26em;
+        left: 12em;
+    }
+    .webheader{
+        top: 4.55em;
+        font-size: 45px;
+        left: 5.5em;
+    }
+
+}
+@media (max-width: 313px) {
+    .linetocsharp,
+.linetohtml,
+.linetojavascript,
+.linetocssfromhtml,
+.linetocssfromjavascript,
+.linetoreact,
+.linetovite,
+.linetocplusplus,
+.linetosqlfromcsharp,
+.linetosqlfromcplusplus,
+.linetosqlfromjavascript,
+.linetosqlfrompython,
+.linetoresumefromcplusplus,
+.linetoresumefromsql,
+.linetoresumefrompython {display: none;}
  
-.reactcontainer{
-    top: 22em;
-    left: 10em;
-}
-.vitecontainer{
-    top: 32em;
-    left: 14em;
-}
-.sqlcontainer{
-    left: 4em;
-    top: 16em;
-}
-
-
-
-
-
-
 }
