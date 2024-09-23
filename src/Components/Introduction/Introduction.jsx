@@ -20,7 +20,10 @@ function Introduction() {
         </span>
             </h1>
 
-        <img src={Arrow} className={IntroductionCss.Arrow} alt="a Arow pointing at text" />
+ 
+
+        <Arrow  className={IntroductionCss.Arrow} alt="a Arow pointing at text" />
+ 
     </div>
     );
 

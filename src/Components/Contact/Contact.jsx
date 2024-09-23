@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { useTranslation } from "react-i18next";
-import emailLogo from "../../Assets/Svg/email-8-svgrepo-com.svg"
-import locationLogo from "../../Assets/Svg/location-pin-alt-1-svgrepo-com(1).svg"
-import Arrow from "../../Assets/Svg/WhiteArrow.svg"
+import emailLogo from "../../Assets/png/email-8-svgrepo-com.png"
+import locationLogo from "../../Assets/png/location-pin-alt-1-svgrepo-com(1).png"
+import Arrow from "../../Assets/png/WhiteArrow.png"
 import ContactCss from './Contact.module.css'
 import emailjs from '@emailjs/browser';
 

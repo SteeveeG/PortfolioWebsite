@@ -26,10 +26,10 @@
       margin-left: 1em;
   }
 
-
+ 
 
   .Arrow {
-      width: 150px;
+      height: auto;
       transform: rotate(145deg);
       top: 31px;
       position: relative;
@@ -81,9 +81,9 @@
 
   @media (max-width: 970px) {
       .Arrow {
-          transform: rotate(42deg);
+          transform: rotate(42deg) scale(0.8);
           left: -2em;
-          top: 0;
+          top: 20px;
       }
 
   }
@@ -130,9 +130,8 @@
       }
 
       .Arrow {
-          width: 100px;
-          transform: rotate(108deg);
-          left: 1em;
+          transform: rotate(108deg) scale(0.5);
+          left: 0em;
           top: 36px;
       }
 
@@ -146,16 +145,12 @@
       }
   }
 
+@media (max-width: 460px) {
+    .Arrow {
+        display: none;
+    }
+    
+}
 
-
-
-  @media (max-width: 400px) {
-      .Arrow {
-          width: 80px;
-          transform: rotate(146deg);
-          left: 68vw;
-          top: 0;
-      }
-  }
-
+ 
   

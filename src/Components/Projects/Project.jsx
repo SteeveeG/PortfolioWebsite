@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import '../Main.css'
 import ProjectCss from './Project.module.css'
  
-import GithubLogo from "./Assets/github-mark.svg"
-import LiveDemo from "./Assets/global-17.svg"
+import GithubLogo from "./Assets/github-mark.png"
+import LiveDemo from "./Assets/global-17.png"
 
 
 class Project extends Component {
@@ -18,7 +18,7 @@ class Project extends Component {
                         <div className={ProjectCss.TextContainer}>
                             <h1 className={ProjectCss.Header}>
                                 {header}
-                            </h1>
+                            </h1> 
                             <p className={ProjectCss.Text}>
                                 {description}
                             </p>
