@@ -1938,20 +1938,103 @@
 
 }
 @media (max-width: 313px) {
-    .linetocsharp,
-.linetohtml,
-.linetojavascript,
-.linetocssfromhtml,
-.linetocssfromjavascript,
-.linetoreact,
-.linetovite,
-.linetocplusplus,
-.linetosqlfromcsharp,
-.linetosqlfromcplusplus,
-.linetosqlfromjavascript,
-.linetosqlfrompython,
+
+.linetohtml{
+    transform: rotate(90deg);
+    left: 4.5em;
+}
+.linetojavascript{
+    left: -1em;
+    transform: rotate(98deg);
+    width: 362px;
+    top: 30em;
+}
+.linetocssfromhtml{
+    transform: rotate(90deg);
+    left: 7.5em;
+}
+.linetocssfromjavascript{
+    transform: rotate(102deg);
+    left: 3.4em;
+    width: 227px;
+    top: 33.5em;
+}
+.linetoreact{
+    width: 152px;
+    transform: rotate(-59deg);
+    left: 1.8em;
+    top: 44.7em;
+}
+.linetovite{
+    width: 140px;
+    transform: rotate(22deg);
+    left: 4em;
+    top: 50.5em;
+}
+.linetocplusplus{
+    width: 169px;
+    left: -0.3em;
+    transform: rotate(101deg);
+    top: 16em;
+}
+.linetosqlfromcsharp{
+    transform: rotate(-87deg);
+    left: -5.8em;
+}
+.linetosqlfromcplusplus{
+    width: 208px;
+    top: 28em;
+    left: -2em;
+    transform: rotate(87deg);
+}
+.linetosqlfromjavascript{
+    width: 128px;
+    transform: rotate(59deg);
+    top: 37.5em;
+    left: 3em;
+}
+.linetosqlfrompython{
+    display: none;
+}
 .linetoresumefromcplusplus,
 .linetoresumefromsql,
 .linetoresumefrompython {display: none;}
- 
+
+
+.htmlcontainer{
+    left: 8em;
+}
+.csscontainer{
+    left: 9em;
+}
+.cpluscpluscontainer{
+    top: 4em;
+}
+.sqlcontainer{
+    left: 1em;
+}
+.javascriptcontainer{
+    left: 4em;
+    top: 22em;
+}
+.reactcontainer{
+    top: 23em;
+    left: 1em;
+}
+.pythoncontainer{
+    left: -1em;
+    top: 28em;
+}
+.vitecontainer{
+    left: 9em;
+}
+.resumepin{
+    left: 8.5em;
+}
+}
+
+@media (max-width: 250px) {
+    .container{
+        display: none;
+    }
 }
