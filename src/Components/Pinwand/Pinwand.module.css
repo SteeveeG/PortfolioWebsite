@@ -445,6 +445,101 @@
     top: 83.8em;
 }
 
+
+.htmlcontainer:hover ~ .linetocssfromhtml:before,
+.htmlcontainer:hover ~ .linetojavascript:before,
+.csscontainer:hover ~ .linetocssfromhtml:before,
+.csscontainer:hover ~ .linetocssfromjavascript:before,
+.javascriptcontainer:hover ~ .linetocssfromjavascript:before,
+.javascriptcontainer:hover ~ .linetojavascript:before,
+.javascriptcontainer:hover ~ .linetoreact:before,
+.reactcontainer:hover ~ .linetoreact:before,
+.reactcontainer:hover ~ .linetovite:before,
+.vitecontainer:hover ~ .linetovite:before,
+.csharpcontainer:hover ~ .linetocsharp:before,
+.csharpcontainer:hover ~ .linetocplusplus:before,
+.csharpcontainer:hover ~ .linetosqlfromcsharp:before,
+.cpluscpluscontainer:hover ~ .linetocplusplus:before,
+.cpluscpluscontainer:hover ~ .linetosqlfromcplusplus:before,
+.sqlcontainer:hover ~ .linetosqlfromjavascript:before,
+.sqlcontainer:hover ~ .linetosqlfromcsharp:before,
+.sqlcontainer:hover ~ .linetosqlfromcplusplus:before,
+.sqlcontainer:hover ~ .linetosqlfrompython:before,
+.sqlcontainer:hover ~ .linetoresumefromsql:before,
+.pythoncontainer:hover ~ .linetoresumefrompython:before,
+.pythoncontainer:hover ~ .linetosqlfrompython:before
+{
+
+    animation: move-line 2s ease-in-out infinite;
+
+}
+.htmlcontainer:hover ~ .linetohtml:before,
+.javascriptcontainer:hover ~ .linetosqlfromjavascript:before,
+.csharpcontainer:hover ~ .linetosqlfromcsharp:before
+{
+    animation: reversemove-line 2s ease-in-out infinite;
+}
+.linetoresumefrompython::before,
+.linetoresumefromsql::before,
+.linetosqlfrompython::before,
+.linetosqlfromjavascript::before,
+.linetocsharp::before,
+.linetosqlfromcplusplus::before,
+.linetosqlfromcsharp::before,
+.linetocplusplus::before,
+.linetocsharp::before,
+.linetocssfromhtml::before,
+.linetojavascript::before,
+.linetocssfromhtml::before,
+.linetocssfromjavascript::before,
+.linetoreact::before,
+.linetovite:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background-color: #2c3e50;
+    transition: none;
+}
+.linetohtml::before,
+.linetosqlfromjavascript::before,
+.linetosqlfromcsharp::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 20%;
+    height: 100%;
+    background-color: #2c3e50;
+    transition: none;
+}
+@keyframes move-line {
+    0% {
+        left: -20%; /* Start links außerhalb */
+    }
+    50% {
+        left: 100%; /* Endet rechts außerhalb */
+    }
+    100% {
+        left: -20%; /* Zurück zum Start */
+    }
+}
+@keyframes reversemove-line {
+    0% {
+        right: -20%;
+    }
+    50% {
+        right: 100%;
+    }
+    100% {
+        right: -20%;
+    }
+}
+
+
+
 @media (max-width: 1725px) {
     .webheader {
         top: 1.5em;
