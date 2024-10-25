@@ -200,7 +200,8 @@
     width: 250px;
     position: relative;
     left: 87.5em;
-    top: -10.5em;
+    top: -22.5em;
+    height: 250px;
 }
 
 .htmlpin {
@@ -225,7 +226,8 @@
     position: relative;
     width: 280px;
     left: 55em;
-    top: -1.5em;
+    top: -29.5em;
+    height: 250px;
 }
 
 .linetojavascript {
@@ -260,7 +262,7 @@
     width: 200px;
     position: relative;
     left: 94em;
-    top: 10em;
+    top: -34em;
 }
 
 .linetocssfromhtml {
@@ -288,7 +290,8 @@
     position: relative;
     width: 200px;
     left: 69.5em;
-    top: -1.5em;
+    top: -44.5em;
+    height: 200px;
 }
 
 .reactpin {
@@ -319,7 +322,8 @@
     position: relative;
     width: 170px;
     left: 50em;
-    top: -3em;
+    top: -58.5em;
+    height: 170px;
 }
 
 .vitepin {
@@ -343,6 +347,8 @@
     width: 190px;
     left: 10em;
     top: 12em;
+    height: 190px;
+
 }
 
 .cpluspluspin {
@@ -361,7 +367,7 @@
     position: relative;
     width: 300px;
     left: 46.4em;
-    top: 17.3em;
+    top: -49em;
 }
 
 .sqlpin {
@@ -407,7 +413,7 @@
     position: relative;
     width: 350px;
     left: 78em;
-    top: 8.5em;
+    top: -57.5em;
 }
 
 .pythonpin {
