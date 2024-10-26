@@ -454,52 +454,41 @@
 
 .htmlcontainer:hover ~ .linetocssfromhtml:before,
 .htmlcontainer:hover ~ .linetojavascript:before,
-.csscontainer:hover ~ .linetocssfromhtml:before,
-.csscontainer:hover ~ .linetocssfromjavascript:before,
-.javascriptcontainer:hover ~ .linetocssfromjavascript:before,
-.javascriptcontainer:hover ~ .linetojavascript:before,
-.javascriptcontainer:hover ~ .linetoreact:before,
 .reactcontainer:hover ~ .linetoreact:before,
-.reactcontainer:hover ~ .linetovite:before,
 .vitecontainer:hover ~ .linetovite:before,
 .csharpcontainer:hover ~ .linetocsharp:before,
-.csharpcontainer:hover ~ .linetocplusplus:before,
-.csharpcontainer:hover ~ .linetosqlfromcsharp:before,
 .cpluscpluscontainer:hover ~ .linetocplusplus:before,
-.cpluscpluscontainer:hover ~ .linetosqlfromcplusplus:before,
 .sqlcontainer:hover ~ .linetosqlfromjavascript:before,
 .sqlcontainer:hover ~ .linetosqlfromcsharp:before,
+.csscontainer:hover ~ .linetocssfromjavascript:before,
 .sqlcontainer:hover ~ .linetosqlfromcplusplus:before,
+.cpluscpluscontainer:hover ~ .linetoresumefromcplusplus:before,
 .sqlcontainer:hover ~ .linetosqlfrompython:before,
-.sqlcontainer:hover ~ .linetoresumefromsql:before,
-.pythoncontainer:hover ~ .linetoresumefrompython:before,
-.pythoncontainer:hover ~ .linetosqlfrompython:before
-{
+.sqlcontainer:hover ~ .linetoresumefromsql:before
 
+{
     animation: move-line 2s ease-in-out infinite;
 
 }
+.pythoncontainer:hover ~ .linetosqlfrompython:before,
+.pythoncontainer:hover ~ .linetoresumefrompython:before,
+.cpluscpluscontainer:hover ~ .linetosqlfromcplusplus:before,
 .htmlcontainer:hover ~ .linetohtml:before,
 .javascriptcontainer:hover ~ .linetosqlfromjavascript:before,
-.csharpcontainer:hover ~ .linetosqlfromcsharp:before
+.csscontainer:hover ~ .linetocssfromhtml:before,
+.csharpcontainer:hover ~ .linetosqlfromcsharp:before,
+.javascriptcontainer:hover ~ .linetojavascript:before,
+.javascriptcontainer:hover ~ .linetocssfromjavascript:before,
+.javascriptcontainer:hover ~ .linetoreact:before,
+.reactcontainer:hover ~ .linetovite:before,
+.csharpcontainer:hover ~ .linetocplusplus:before
 {
     animation: reversemove-line 2s ease-in-out infinite;
 }
-.linetoresumefrompython::before,
+
 .linetoresumefromsql::before,
-.linetosqlfrompython::before,
-.linetosqlfromjavascript::before,
-.linetocsharp::before,
-.linetosqlfromcplusplus::before,
-.linetosqlfromcsharp::before,
-.linetocplusplus::before,
-.linetocsharp::before,
-.linetocssfromhtml::before,
-.linetojavascript::before,
-.linetocssfromhtml::before,
-.linetocssfromjavascript::before,
-.linetoreact::before,
-.linetovite:before{
+.linetocsharp::before
+{
     content: "";
     position: absolute;
     top: 0;
@@ -509,9 +498,21 @@
     background-color: #2c3e50;
     transition: none;
 }
-.linetohtml::before,
+
+.linetosqlfrompython::before,
+.linetoresumefrompython::before,
+.linetoresumefromcplusplus::before,
+.linetosqlfromcplusplus::before,
+.linetocplusplus::before,
+.linetovite:before,
 .linetosqlfromjavascript::before,
-.linetosqlfromcsharp::before{
+.linetocssfromjavascript::before,
+.linetojavascript::before,
+.linetohtml::before,
+.linetosqlfromcsharp::before,
+.linetoreact::before,
+.linetocssfromhtml::before{
+
     content: "";
     position: absolute;
     top: 0;
@@ -521,15 +522,21 @@
     background-color: #2c3e50;
     transition: none;
 }
+
+
+
+
+
+
 @keyframes move-line {
     0% {
-        left: -20%; /* Start links außerhalb */
+        left: -20%;
     }
     50% {
-        left: 100%; /* Endet rechts außerhalb */
+        left: 100%;
     }
     100% {
-        left: -20%; /* Zurück zum Start */
+        left: -20%;
     }
 }
 @keyframes reversemove-line {
