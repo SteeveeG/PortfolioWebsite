@@ -366,6 +366,7 @@
 .sqlcontainer {
     position: relative;
     width: 300px;
+    height: 300px;
     left: 46.4em;
     top: -49em;
 }
@@ -412,8 +413,9 @@
 .pythoncontainer {
     position: relative;
     width: 350px;
+    height: 350px;
     left: 78em;
-    top: -57.5em;
+    top: -76.3em;
 }
 
 .pythonpin {
@@ -584,22 +586,22 @@
 
     .csscontainer {
         left: 83.5em;
-        top: 9em;
+        top: -34em;
     }
 
     .javascriptcontainer {
         left: 40em;
-        top: -9.5em;
+        top: -37.5em;
     }
 
     .vitecontainer {
         left: 34em;
-        top: -8.5em;
+        top: -64.4em;
     }
 
     .reactcontainer {
         left: 53.5em;
-        top: -9.5em;
+        top: -52.5em;
     }
 
     .linetocsharp {
@@ -709,7 +711,7 @@
     .csscontainer {
         width: 160px;
         left: 68.5em;
-        top: 1em;
+        top: -41em;
     }
 
     .csssnippet {
@@ -719,7 +721,7 @@
     .htmlcontainer {
         width: 209px;
         left: 74.5em;
-        top: -13.5em;
+        top: -25em;
     }
 
     .htmlpin {
@@ -727,19 +729,19 @@
     }
 
     .sqlcontainer {
-        top: 20.3em;
+        top: -45.7em;
     }
 
     .pythoncontainer {
-        top: 2em;
+        top: -83em;
     }
 
     .vitecontainer {
-        top: -5.3em;
+        top: -60.8em;
     }
 
     .reactcontainer {
-        top: -6.3em;
+        top: -49em;
     }
 
     .linetosqlfrompython {
@@ -788,6 +790,9 @@
         width: 150px;
         left: 3em;
     }
+    .headerwrap {
+        left: 33em;
+    }
 
     .cpluscpluscontainer {
         width: 150px;
@@ -801,25 +806,28 @@
     .vitecontainer {
         width: 130px;
         left: 23em;
-        top: 0em;
+        top: -55.5em;
     }
 
     .reactcontainer {
         width: 140px;
         left: 40em;
-        top: -5em;
+        top: -48em;
     }
+
+
+
 
     .pythoncontainer {
         width: 250px;
         left: 60em;
-        top: 10em;
+        top: -79em;
     }
 
     .csscontainer {
         width: 140px;
         left: 60em;
-        top: 4em;
+        top: -39.5em;
     }
 
     .htmlcontainer {
@@ -878,10 +886,6 @@
         top: 4em;
     }
 
-    .pythoncontainer {
-        left: 60.5em;
-        top: 6em;
-    }
 
     .linetoresumefromsql {
         width: 543px;
@@ -934,16 +938,16 @@
 
     .htmlcontainer {
         left: 50em;
-        top: -6em;
+        top: -18em;
     }
 
     .csscontainer {
-        top: 6em;
+        top: -37em;
         left: 40em
     }
 
     .javascriptcontainer {
-        top: 20em;
+        top: -8em;
         left: 50em;
     }
 
@@ -952,21 +956,21 @@
     }
 
     .reactcontainer {
-        top: 3em;
+        top: -40em;
         left: 25em;
     }
 
     .vitecontainer {
-        top: -9em;
+        top: -64em;
     }
 
     .pythoncontainer {
-        top: 40em;
+        top: -45em;
         left: 20em;
     }
 
     .sqlcontainer {
-        top: 28em;
+        top: -38em;
         left: 33em;
     }
 
