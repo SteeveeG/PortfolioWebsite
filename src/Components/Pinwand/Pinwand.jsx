@@ -12,6 +12,9 @@ import CplusplusLogo from './Assets/c++.svg';
 import SqlLogo from './Assets/Sql.png';
 import PythonLogo from './Assets/python.svg';
 
+import ResumeCss from './../Resume/Resume.module.css'
+import Resumebox from './../Resume/Resumebox/Resumebox'
+
 function Pinwand() {
     const { t } = useTranslation();
     return (<div className={css.container}>
@@ -160,6 +163,52 @@ function Pinwand() {
         <hr className={css.linetoresumefromsql}/>
         <hr className={css.linetoresumefrompython}/>
         <Pin className={css.resumepin}/>
+
+
+        <div className={ResumeCss.box}>
+               <div className={ResumeCss.headerwrap}>
+                    <p className={ResumeCss.header}>Resume</p>
+                    <p className={ResumeCss.headerunderline}>-------</p>
+               </div>
+               <hr className={ResumeCss.linemiddle} />
+
+               <div className={ResumeCss.wrapper}>
+
+                    <hr className={ResumeCss.line} />
+                    <Pin className={ResumeCss.pin} />
+                    <p className={ResumeCss.year}>2020</p>
+                    <div className={ResumeCss.rbcontainer}>
+                         <Resumebox header="First start" text="first look in the Programming world through Youtube Creator Micheal
+                          Reeves" undercomment="Small Codes in c#" />
+                    </div>
+               </div>
+
+               <div className={ResumeCss.wrapper} id={ResumeCss["m"]}>
+                    <hr className={ResumeCss.line} />
+                    <Pin className={ResumeCss.pin} />
+                    <p className={ResumeCss.year}>2020</p>
+                    <div className={ResumeCss.rbcontainer}>
+                         <Resumebox header="First start" text="first look in the Programming world through Youtube Creator Micheal
+                         Reeves" undercomment="Small Codes in c#" />
+                    </div>
+               </div>
+
+               <div className={ResumeCss.wrapper}>
+                    <hr className={ResumeCss.leftline} />
+                    <Pin className={ResumeCss.pin} />
+                    <p className={ResumeCss.leftyear}>2022-today</p>
+                    <div className={ResumeCss.leftrbcontainer} >
+                         <Resumebox header="First start" text="first look in the Programming world through Youtube Creator Micheal
+                    Reeves" undercomment="Small Codes in c#" />         </div>
+               </div>
+          </div>
+
+
+
+
+
+
+
 
     </div>)
 }

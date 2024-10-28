@@ -78,7 +78,7 @@
 
 .container {
     overflow: hidden;
-    height: 90em;
+    height: max-content;
     position: relative;
 }
 
@@ -1173,13 +1173,13 @@
     }
 
     .javascriptcontainer {
-        top: 25em;
+        top: -3em;
         left: 39em;
     }
 
     .htmlcontainer {
         left: 40em;
-        top: -10em;
+        top: -22em;
     }
 
     .pythoncontainer {
@@ -1298,7 +1298,7 @@
 
     .htmlcontainer {
         left: 28em;
-        top: -8em;
+        top: -20em;
     }
 
     .cpluscpluscontainer {
@@ -1306,12 +1306,12 @@
     }
 
     .reactcontainer {
-        top: 5em;
+        top: -38em;
         left: 18em;
     }
 
     .vitecontainer {
-        top: -11em;
+        top: -66em;
         left: 17em;
     }
 
@@ -1319,13 +1319,13 @@
         left: 26em;
     }
 
-    .sqlcontainer {
-        top: 37em;
+    .sqlcontainer {      
+          top: -29em;  
     }
 
     .pythoncontainer {
         left: 5em;
-        top: 34em;
+        top: -51em;
     }
 
     .headerwrap {
@@ -1454,6 +1454,7 @@
 
     .csharpcontainer {
         width: 130px;
+        height:130px;
     }
 
     .csharppin {
@@ -1472,6 +1473,8 @@
 
     .htmlcontainer {
         width: 160px;
+        height: 160px;
+        top: -11em;
     }
 
     .htmlpin {
@@ -1481,6 +1484,8 @@
 
     .vitecontainer {
         width: 110px;
+        height: 110px;
+        top: -41.5em;
     }
 
     .vitepin {
@@ -1494,8 +1499,9 @@
 
     .cpluscpluscontainer {
         left: 1em;
-        top: 9em;
+        top: 14em;
         width: 130px;
+        height: 130px;
 
     }
 
@@ -1505,9 +1511,10 @@
     }
 
     .reactcontainer {
-        top: 0em;
+        top: -24em;
         left: 13em;
         width: 107px;
+        height:107px;
     }
 
     .reactpin {
@@ -1517,7 +1524,9 @@
 
     .csscontainer {
         width: 120px;
+        height: 170px;
         left: 20em;
+        top: -18em;
     }
 
     .csssnippet {
@@ -1533,7 +1542,8 @@
     .javascriptcontainer {
         width: 170px;
         left: 23em;
-        top: 20em;
+        top: 6em;
+        height: 170px;
     }
 
     .javascriptpin {
@@ -1543,7 +1553,8 @@
 
     .sqlcontainer {
         width: 200px;
-        top: 25em;
+        height: 200px;
+        top: -12.5em;
         left: 20em;
     }
 
@@ -1558,8 +1569,9 @@
 
     .pythoncontainer {
         width: 200px;
+        height: 200px;
         left: 2em;
-        top: 26em;
+        top: -24em;
     }
 
     .pythonpin {
@@ -1576,7 +1588,7 @@
 @media (max-width:600px) {
     .htmlcontainer {
         left: 24em;
-        top: -12em;
+        top: -15.5em;
     }
 
     .linetohtml {
@@ -1704,15 +1716,14 @@
     }
 
     .reactcontainer {
-        top: 10em;
+        top: -14em;
         left: 8em;
     }
-
     .vitecontainer {
-        top: 18em;
-        left: 3em;
+           top: -12em;
+           left: 3em;
+    
     }
-
     .comments {
         left: 9em;
         top: -6em;
@@ -1730,17 +1741,17 @@
 
     .htmlcontainer {
         left: 16em;
-        top: -3em;
+        top: -7em;
     }
 
     .csscontainer {
         left: 13em;
-        top: 9em;
+        top: -15em;
     }
 
     .javascriptcontainer {
         left: 18em;
-        top: 18em;
+        top: 4em;
     }
 
     .sqlcontainer {
@@ -1834,29 +1845,33 @@
         left: 0.5em;
 
     }
+    .pythoncontainer{
+        top: -18em;
+    }
 
     .resumepin {
         left: 11.2em;
     }
 
     .reactcontainer {
-        top: 22em;
+        top: -2em;
         left: 10em;
     }
 
     .vitecontainer {
-        top: 32em;
+        top: 0.5em;
         left: 14em;
     }
 
     .sqlcontainer {
         left: 2em;
-        top: 16em;
+        height: 100px;
+        top: -22em;
     }
 
     .javascriptcontainer {
         left: 15em;
-        top: 24em;
+        top: 10em;
     }
 
     .webheader {
@@ -1978,7 +1993,7 @@
 
     .htmlcontainer {
         left: 9em;
-        top: 0em;
+        top: -3.5em;
         width: 125px;
     }
 
@@ -2008,13 +2023,17 @@
         width: 101px;
     }
 
+    .pythoncontainer{
+        top: -20em;
+    }
+
     .cpluspluspin {
         left: 2.1em;
         top: 0.2em;
     }
 
-    .sqlcontainer {
-        top: 8em;
+    .sqlcontainer {        
+        top: -31em;  
         width: 163px;
         left: 4em;
     }
@@ -2026,7 +2045,7 @@
     .javascriptcontainer {
         width: 143px;
         left: 11em;
-        top: 20em;
+        top: 6em;
     }
 
     .javascriptpin {
@@ -2034,12 +2053,12 @@
     }
 
     .reactcontainer {
-        top: 19em;
+        top: -7em; 
         left: 2em;
     }
 
     .vitecontainer {
-        top: 26em;
+        top: -6.5em;
         left: 12em;
     }
     .webheader{
@@ -2108,11 +2127,17 @@
 .linetosqlfrompython{
     display: none;
 }
-.linetoresumefromcplusplus,
-.linetoresumefromsql,
-.linetoresumefrompython {display: none;}
-
-
+ 
+.linetoresumefrompython{
+    transform: rotate(79deg);
+        left: -7em;
+        top: 63em;
+        width: 440px;
+}
+.linetoresumefromsql{
+    left: -1em;
+    transform: rotate(97deg);
+}
 .htmlcontainer{
     left: 8em;
 }
@@ -2120,17 +2145,17 @@
     left: 9em;
 }
 .cpluscpluscontainer{
-    top: 4em;
+    top: 8.5em;
 }
 .sqlcontainer{
     left: 1em;
 }
 .javascriptcontainer{
     left: 4em;
-    top: 22em;
+    top: 8em;
 }
 .reactcontainer{
-    top: 23em;
+    top: -3em;
     left: 1em;
 }
 .pythoncontainer{

@@ -26,7 +26,6 @@ function Home() {
             <Introduction />
             <AboutMe />
             <Pinwand/>
-            {/* <Resume /> */}
             <div className={HomeCss.Container}>
                 <ProjectIntroduction />
                 <Comments
