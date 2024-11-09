@@ -14,7 +14,6 @@ function Resume() {
                <hr className={ResumeCss.linemiddle} />
 
                <div className={ResumeCss.wrapper}>
-
                     <hr className={ResumeCss.line} />
                     <Pin className={ResumeCss.pin} />
                     <p className={ResumeCss.year}>2020</p>

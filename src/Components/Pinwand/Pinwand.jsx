@@ -17,7 +17,8 @@ import Resumebox from './../Resume/Resumebox/Resumebox'
 
 function Pinwand() {
     const { t } = useTranslation();
-    return (<div className={css.container}>
+    return (
+    <div className={css.container}>
         <div className={css.headerwrap}>
             <p className={css.header}>Skills</p>
             <p className={css.headerunderline}>------</p>
