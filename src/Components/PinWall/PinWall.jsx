@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from "react-i18next";
-import css from './Pinwand.module.css'
+import css from './PinWall.module.css'
 import Pin from './Assets/Pin.svg';
 import Csharplogo from './Assets/CSharp.svg';
 import htmllogo from './Assets/Html.png';
@@ -15,7 +15,9 @@ import PythonLogo from './Assets/python.svg';
 import ResumeCss from './../Resume/Resume.module.css'
 import Resumebox from './../Resume/Resumebox/Resumebox'
 
-function Pinwand() {
+function PinWall() {
+    const Resume = document.body.className === 'de'? ResumeCss.rbcontainer : ResumeCss.rbcontainer;
+
     const { t } = useTranslation();
     return (
     <div className={css.container}>
@@ -39,7 +41,7 @@ function Pinwand() {
                     <p className={css.smile}>;)</p>
                 </div>
                 <p className={css.arrowcsharp}>&lt;---- </p>
-                <p className={css.fouryears}>+4 YEARS</p>
+                <p className={css.fouryears}>{t("FourYears")}</p>
             </div>
             <p className={css.csharpsnippet}> var result = new List&lt;List&lt;int&gt;&gt;();<br/>
                 GetCombination(list, new List&lt;int&gt;(),<br/> k, result); return result; </p>
@@ -168,8 +170,8 @@ function Pinwand() {
 
         <div className={ResumeCss.box}>
                <div className={ResumeCss.headerwrap}>
-                    <p className={ResumeCss.header}>Resume</p>
-                    <p className={ResumeCss.headerunderline}>-------</p>
+                    <p className={ResumeCss.header}>{t("Resume")}</p>
+                    <p className={ResumeCss.headerunderline}>{t("ResumeUnderline")}</p>
                </div>
                <hr className={ResumeCss.linemiddle} />
 
@@ -179,8 +181,9 @@ function Pinwand() {
                     <Pin className={ResumeCss.pin} />
                     <p className={ResumeCss.year}>2020</p>
                     <div className={ResumeCss.rbcontainer}>
-                         <Resumebox header="First start" text="first look in the Programming world through Youtube Creator Micheal
-                          Reeves" undercomment="Small Codes in c#" />
+                        <Resumebox header={t("HeaderBox1")}
+                                   text={t("TextBox1")}
+                                   undercomment={t("UnderlineBox1")} />
                     </div>
                </div>
 
@@ -189,18 +192,20 @@ function Pinwand() {
                     <Pin className={ResumeCss.pin} />
                     <p className={ResumeCss.year}>2020</p>
                     <div className={ResumeCss.rbcontainer}>
-                         <Resumebox header="First start" text="first look in the Programming world through Youtube Creator Micheal
-                         Reeves" undercomment="Small Codes in c#" />
+                         <Resumebox header={t("HeaderBox2")}
+                                    text={t("TextBox2")} />
                     </div>
                </div>
 
                <div className={ResumeCss.wrapper}>
                     <hr className={ResumeCss.leftline} />
                     <Pin className={ResumeCss.pin} />
-                    <p className={ResumeCss.leftyear}>2022-today</p>
+                    <p className={ResumeCss.leftyear}>{t("2022Today")}</p>
                     <div className={ResumeCss.leftrbcontainer} >
-                         <Resumebox header="First start" text="first look in the Programming world through Youtube Creator Micheal
-                    Reeves" undercomment="Small Codes in c#" />         </div>
+                         <Resumebox header={t("HeaderBox3")}
+                                    text={t("TextBox3")}
+                         undercomment={t("UnderlineBox3")} />
+                    </div>
                </div>
           </div>
 
@@ -214,4 +219,4 @@ function Pinwand() {
     </div>)
 }
 
-export default Pinwand
+export default PinWall
