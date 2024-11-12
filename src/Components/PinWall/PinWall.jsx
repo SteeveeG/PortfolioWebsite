@@ -16,7 +16,7 @@ import ResumeCss from './../Resume/Resume.module.css'
 import Resumebox from './../Resume/Resumebox/Resumebox'
 
 function PinWall() {
-    const Resume = document.body.className === 'de'? ResumeCss.rbcontainer : ResumeCss.rbcontainer;
+    const linemiddle = document.body.className === 'de'? ResumeCss.linemiddleDe : ResumeCss.linemiddleEn;
 
     const { t } = useTranslation();
     return (
@@ -173,7 +173,7 @@ function PinWall() {
                     <p className={ResumeCss.header}>{t("Resume")}</p>
                     <p className={ResumeCss.headerunderline}>{t("ResumeUnderline")}</p>
                </div>
-               <hr className={ResumeCss.linemiddle} />
+               <hr className={linemiddle} />
 
                <div className={ResumeCss.wrapper}>
 

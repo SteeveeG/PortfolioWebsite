@@ -1,11 +1,12 @@
 .box
 {
-    height: 20vw;
+    height: 25vw;
 }
 
 
 
-.linemiddle,
+.linemiddleEn,
+.linemiddleDe,
 .line,
 .leftline {
     border: none;
@@ -49,13 +50,18 @@
     left: 20em;
 }
 
-.linemiddle {
+.linemiddleEn {
     width: 753px;
     transform: rotate(90deg);
     left: 30.5em;
     top: 108em;
 }
-
+.linemiddleDe{
+    width: 803px;
+    transform: rotate(90deg);
+    left: 29em;
+    top: 110em;
+}
 
 .pin {
     position: relative;
@@ -119,9 +125,13 @@
 
 
 @media (max-width: 1620px) {
-    .linemiddle{
+    .linemiddleDe{
+        width: 718px;
+        left: 31.7em;
+        top: 108em;
+    }
+    .linemiddleEn{
         width: 693px;
-    
         left: 32.5em;
         top: 107em; 
     }
@@ -157,8 +167,11 @@
         left: 20em;
     }
 
-    .linemiddle {
+    .linemiddleEn {
         left: 24.1em;
+    }
+    .linemiddleDe {
+        left: 23.4em;
     }
 
     .wrapper {
@@ -176,8 +189,11 @@
         left: 39em;
     }
 
-    .linemiddle {
+    .linemiddleEn {
         left: 14em;
+    }
+    .linemiddleDe {
+        left: 13.3em;
     }
 
     #m .line {
@@ -212,12 +228,17 @@
         left: 21.65em;
     }
 
-    .linemiddle{
+    .linemiddleEn{
         top: 108em;
         width: 736px;
         left: 12.6em;
     }
- 
+     .linemiddleDe{
+         top: 109em;
+         width: 747px;
+         left: 12.4em;
+    }
+
 }
 
 
@@ -243,8 +264,11 @@
 
 
 @media (max-width: 820px) {
-    .linemiddle {
+    .linemiddleEn {
         left: 0.7em;
+    }
+    .linemiddleDe {
+      left: 0.4em;
     }
 
     .rbcontainer,
@@ -329,9 +353,14 @@
     .wrapper{
         top: -10em;
     }
-    .linemiddle{
+    .linemiddleEn{
         left: -3.8em;
         top: 100em;
+    }
+    .linemiddleDe{
+        left: -4.8em;
+        top: 100em;
+        width: 770px;
     }
     .line,.leftline,#m .line {
         left: 32.4em;
@@ -350,7 +379,7 @@
         top: 54em;
     }
     .box{
-        height: 130vw;
+        height: 170vw;
     }
 }
 
@@ -358,7 +387,8 @@
      .headerwrap{
          left: 11.5em;
      }
-    .linemiddle{
+    .linemiddleEn,
+    .linemiddleDe{
         display: none;
     }
      .rbcontainer,
@@ -445,7 +475,7 @@
 @media (max-width: 360px) {
     .box
     {
-        height: 260vw;
+        height: 385vw;
     }
 
 }

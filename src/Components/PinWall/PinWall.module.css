@@ -626,10 +626,10 @@
     }
 
     .linetosqlfromcsharp {
-        width: 997px;
+        width: 971px;
         transform: rotate(-138deg);
         left: 0.5em;
-        top: 33em;
+        top: 32em;
     }
 
     .linetoresumefromcplusplus {
@@ -844,6 +844,13 @@
         transform: rotate(-12deg);
         left: 27.3em;
         top: 29em;
+    }
+
+    .linetosqlfromcsharp{
+        width: 885px;
+        transform: rotate(-133deg);
+        left: -0.5em;
+        top: 32em;
     }
 
     .linetoreact {
