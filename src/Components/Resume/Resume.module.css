@@ -1,3 +1,10 @@
+.box
+{
+    height: 20vw;
+}
+
+
+
 .linemiddle,
 .line,
 .leftline {
@@ -289,6 +296,10 @@
          top: 2.5em;
     }
 
+    .box
+    {
+        height: 40vw;
+    }
 
 
 }
@@ -338,6 +349,9 @@
         left: 15em;
         top: 54em;
     }
+    .box{
+        height: 130vw;
+    }
 }
 
  @media (max-width: 540px) {
@@ -384,6 +398,9 @@
          left: 13em;
          top: -2em;
      }
+     .box{
+         height: 180vw
+     }
  }
 
 @media (max-width: 452px) {
@@ -398,7 +415,11 @@
         left: 8.5em;
     }
 }
-
+@media (max-width:435px) {
+.box{
+    height: 220vw;;
+}
+}
 @media (max-width: 400px) {
     .headerwrap{
         left: 1em;
@@ -412,7 +433,6 @@
         height: 33px;
         width: 33px;
         left: 10.19em;
-
     }
     #m .line, .leftline{
         top: -5.6em;
@@ -420,6 +440,13 @@
         left: 7.8em;
 
     }
+}
+@media (max-width: 360px) {
+    .box
+    {
+        height: 260vw;
+    }
+
 }
 @media (max-width: 312px) {
     .headerwrap{
@@ -430,4 +457,13 @@
         top: -66px;
     }
 
+    #m .line, .leftline, .line{
+        left: 6.5em;
+
+    }
+    .pin{
+        left: 8.5em;
+    }
+    .box{
+        height: 330vw;}
 }
