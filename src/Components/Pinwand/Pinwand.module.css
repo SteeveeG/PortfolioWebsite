@@ -620,8 +620,8 @@
 
     .linetocplusplus {
         width: 463px;
-        transform: rotate(84deg);
-        left: -5.2em;
+        transform: rotate(264deg);
+        left: -5em;
         top: 25em;
     }
 
@@ -687,15 +687,15 @@
     }
 
     .linetocssfromjavascript {
-        width: 681px;
-        transform: rotate(203deg);
-        left: 48.7em;
-        top: 20em;
+        width: 697px;
+        transform: rotate(204deg);
+        left: 47.7em;
+        top: 19.8em;
     }
 
     .linetosqlfromjavascript {
         width: 698px;
-        transform: rotate(84deg);
+        transform: rotate(264deg);
         left: 30em;
         top: 32em;
     }
@@ -2062,9 +2062,9 @@
         left: 12em;
     }
     .webheader{
-        top: 4.55em;
+        top: 6em;
         font-size: 45px;
-        left: 5.5em;
+        left: 2em;
     }
 
 }
@@ -2091,16 +2091,16 @@
     top: 33.5em;
 }
 .linetoreact{
-    width: 152px;
-    transform: rotate(-59deg);
-    left: 1.8em;
+    width: 125px;
+    transform: rotate(-113deg);
+    left: 6.8em;
     top: 44.7em;
 }
 .linetovite{
-    width: 140px;
-    transform: rotate(22deg);
-    left: 4em;
-    top: 50.5em;
+    width: 153px;
+    transform: rotate(-92deg);
+    left: 7.5em;
+    top: 53em;
 }
 .linetocplusplus{
     width: 169px;
@@ -2125,7 +2125,11 @@
     left: 3em;
 }
 .linetosqlfrompython{
-    display: none;
+    width: 228px;
+    transform: rotate(93deg);
+    left: -2.6em;
+    top: 42em;
+
 }
  
 .linetoresumefrompython{
@@ -2135,8 +2139,10 @@
         width: 440px;
 }
 .linetoresumefromsql{
-    left: -1em;
-    transform: rotate(97deg);
+    left: 2em;
+    transform: rotate(100deg);
+    width: 287px;
+    top: 67em;
 }
 .htmlcontainer{
     left: 8em;
@@ -2155,15 +2161,16 @@
     top: 8em;
 }
 .reactcontainer{
-    top: -3em;
-    left: 1em;
+    top: -4em;
+    left: 9em;
 }
 .pythoncontainer{
-    left: -1em;
-    top: 28em;
+    left: -2.8em;
+    top: -25.5em;
 }
 .vitecontainer{
     left: 9em;
+    top: -0.5em;
 }
 .resumepin{
     left: 8.5em;
