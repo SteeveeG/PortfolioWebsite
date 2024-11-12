@@ -13,7 +13,6 @@ import imgChat from "../Components/Projects/Assets/ChatWindow.png"
 import imgEdabit from "../Components/Projects/Assets/Edabit.png"
 import imgTattoo from "../Components/Projects/Assets/TattooStudio.png"
 import Pinwand from "../Components/Pinwand/Pinwand";
-import Resume from "../Components/Resume/Resume";
 
 
 import { useTranslation } from "react-i18next";
