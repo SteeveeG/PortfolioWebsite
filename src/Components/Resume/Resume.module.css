@@ -433,6 +433,7 @@
         height: 33px;
         width: 33px;
         left: 10.19em;
+
     }
     #m .line, .leftline{
         top: -5.6em;
@@ -464,6 +465,4 @@
     .pin{
         left: 8.5em;
     }
-    .box{
-        height: 330vw;}
 }
