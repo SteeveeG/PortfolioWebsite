@@ -21,6 +21,29 @@ const resources = {
       "AboutMeText": "My name is Steven, and I come from the Stuttgart area. From a young age, I discovered my passion for developing and programming. After gaining most of my programming experience through self-study, I decided in 2022 to start a training program as an IT Specialist in Application Development at \"TeamTechnik,\" a subsidiary of Dürr AG. My areas of expertise are full stack development, including both backend and frontend development. I am very familiar with the programming languages C#, Python, Html & Css, JavaScript and SQL.",
       //About Me
 
+      //Pin Wall
+      "FourYears":"+4 YEARS",
+      //Pin Wall
+
+      //Resume
+      "Resume":"Resume",
+      "ResumeUnderline":"-------",
+
+      "HeaderBox1":"First start",
+      "TextBox1":"first look in the Programming world through Youtube Creator Micheal Reeves",
+      "UnderlineBox1":"Small Codes in c#",
+
+      "HeaderBox2":"Learning Arduino & ESP",
+      "TextBox2":"learn the Arduino coding language with Small Projects (esp Webserver, servo control etc.)",
+
+      "HeaderBox3":"Starting an Apprentice",
+      "TextBox3":"Starting an Apprentice as an Software Developor in the Company Teamtechnik",
+      "UnderlineBox3":"in the Same Time Learning React and python with small Learning projects in my free Time",
+
+      "2022Today": "2022-today",
+      //Resume
+
+
       //projects
       "ProjectIntro": "Here you can take a look at my ",
       "ProjectIntroProject": "Projects",
@@ -71,6 +94,28 @@ const resources = {
       "AboutMeHeader": "Über Mich",
       "AboutMeText": "Mein Name ist Steven und ich komme aus dem Raum Stuttgart. Bereits in jungen Jahren habe ich meine Leidenschaft für das Entwickeln und Programmieren entdeckt. Nachdem ich mir die Erfahrung für das Programmieren größtenteils selbst erarbeitet hatte, entschied ich mich 2022 dazu, eine Ausbildung als Fachinformatiker für Anwendungsentwicklung im Tochterunternehmen \"TeamTechnik\" der Dürr AG zu beginnen. Meine Fachgebiete sind das Full Stack, bestehend aus Backend- und Frontend-Entwicklung. Ich fühle mich in den Programmiersprachen C#, Phyton, Html & Css, Javascript und SQL sehr vertraut.\n",
       //About Me
+
+      //Pin Wall
+      "FourYears":"+4 JAHRE",
+      //Pin Wall
+
+      //Resume
+      "Resume":"Lebenslauf",
+      "ResumeUnderline":"----------",
+
+      "HeaderBox1":"Erster start",
+      "TextBox1":"erster Einblick in die Programmierwelt durch Youtube- Creator Micheal Reeves",
+      "UnderlineBox1":"kleine Codes in c#",
+
+      "HeaderBox2":"Arduino & ESP lernen",
+      "TextBox2":"Erlernen der Arduino-Programmiersprache mit kleinen Projekten (esp Webserver, Servosteuerung etc.)",
+
+      "HeaderBox3":"Beginn einer Ausbildung",
+      "TextBox3":"Ausbildungsbeginn als Fachinformatiker für Softwareentwicklung bei der Firma Teamtechnik",
+      "UnderlineBox3":"in der gleichen Zeit React und Python mit kleinen Lernprojekten in meiner freien Zeit erlernt",
+
+      "2022Today": "2022-heute",
+      //Resume
 
       //projects
       "ProjectIntro": "Hier siehst Du meine letzten ",

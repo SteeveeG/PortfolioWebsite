@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from "react-i18next";
 import LanguageHelperCss from "./LanguageHelper.module.css"
-import arrow from "../../Assets/Svg/Arrow2.svg"
+import arrow from "../../Assets/png/Arrow2.png"
 
 
 function LanguageHelper(){

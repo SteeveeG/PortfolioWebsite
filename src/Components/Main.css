@@ -26,3 +26,10 @@
     font-style: normal;
     src: url("../Assets/fonts/Segoe UI.ttf") format("truetype");
 }
+
+ @font-face {
+     font-family: 'Just Me Again Down Here';
+     font-weight: normal;
+     font-style: normal;
+     src: url("../Assets/fonts/Just Me Again Down Here.ttf") format("truetype");
+ }

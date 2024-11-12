@@ -12,6 +12,7 @@ import HomeCss from "./Home.module.css"
 import imgChat from "../Components/Projects/Assets/ChatWindow.png"
 import imgEdabit from "../Components/Projects/Assets/Edabit.png"
 import imgTattoo from "../Components/Projects/Assets/TattooStudio.png"
+import PinWall from "../Components/PinWall/PinWall";
 
 
 import { useTranslation } from "react-i18next";
@@ -23,6 +24,7 @@ function Home() {
             <LanguageHelper />
             <Introduction />
             <AboutMe />
+            <PinWall/>
             <div className={HomeCss.Container}>
                 <ProjectIntroduction />
                 <Comments
