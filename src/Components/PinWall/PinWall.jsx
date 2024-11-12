@@ -165,6 +165,7 @@ function PinWall() {
         <hr className={css.linetoresumefromcplusplus}/>
         <hr className={css.linetoresumefromsql}/>
         <hr className={css.linetoresumefrompython}/>
+        <hr className={css.linetoresumefromvite}/>
         <Pin className={css.resumepin}/>
 
 

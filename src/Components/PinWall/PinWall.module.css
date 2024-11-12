@@ -19,13 +19,20 @@
 .linetosqlfrompython,
 .linetoresumefromcplusplus,
 .linetoresumefromsql,
-.linetoresumefrompython {
+.linetoresumefrompython,
+.linetoresumefromvite{
     height: 2px;
     background-color: red;
     z-index: var(--linezindex);
     position: absolute;
     border: none;
 }
+
+.linetoresumefromvite{
+    display: none;
+}
+
+
 
 .skillpin,
 .csharppin,
@@ -458,6 +465,7 @@
 .htmlcontainer:hover ~ .linetojavascript:before,
 .reactcontainer:hover ~ .linetoreact:before,
 .vitecontainer:hover ~ .linetovite:before,
+.vitecontainer:hover ~ .linetoresumefromvite:before,
 .csharpcontainer:hover ~ .linetocsharp:before,
 .cpluscpluscontainer:hover ~ .linetocplusplus:before,
 .sqlcontainer:hover ~ .linetosqlfromjavascript:before,
@@ -500,7 +508,7 @@
     background-color: #2c3e50;
     transition: none;
 }
-
+.linetoresumefromvite::before,
 .linetosqlfrompython::before,
 .linetoresumefrompython::before,
 .linetoresumefromcplusplus::before,
@@ -1149,15 +1157,6 @@
         width: 333px;
         transform: rotate(129deg);
         left: 15em;
-    }
-
-    .linetoresumefromcplusplus {
-        /*is now for javascript to Resume*/
-        display: block;
-        width: 690px;
-        transform: rotate(108deg);
-        left: 20.5em;
-        top: 65em;
     }
 
     .linetoresumefromsql {
@@ -1841,12 +1840,15 @@
 
     .linetoresumefromsql {
         /* From Vite to Resume */
-        left: 6.8em;
-        transform: rotate(107deg);
-        width: 275px;
-        top: 68em;
+       display: none;
     }
-
+    .linetoresumefromvite{
+       display: block;
+       left: 6.8em;
+       transform: rotate(107deg);
+       width: 275px;
+       top: 68em;
+    }
     .linetoresumefrompython {
         transform: rotate(80deg);
         left: 0.5em;
@@ -1973,6 +1975,14 @@
         top: 44em;
     }
     .linetoresumefromsql{
+        /*left: 1.5em;*/
+        /*transform: rotate(100deg);*/
+        /*width: 384px;*/
+        /*top: 64em;*/
+        display: none;
+    }
+    .linetoresumefromvite {
+        display: block;
         left: 1.5em;
         transform: rotate(100deg);
         width: 384px;
@@ -2072,6 +2082,12 @@
         top: 6em;
         font-size: 45px;
         left: 2em;
+    }
+
+}
+@media (max-width: 370px) {
+    .comments{
+        display: none;
     }
 
 }
