@@ -6,10 +6,10 @@ import Csharplogo from './Assets/CSharp.svg';
 import htmllogo from './Assets/Html.png';
 import javascriptlogo from './Assets/JavaScript.png';
 import csslogo from './Assets/Css.png';
-import reactlogo from './Assets/React.png';
+import reactlogo from './Assets/react.png';
 import Vitelogo from './Assets/Vite.svg';
 import CplusplusLogo from './Assets/c++.svg';
-import SqlLogo from './Assets/Sql.png';
+import SqlLogo from './Assets/sql.png';
 import PythonLogo from './Assets/python.svg';
 
 import ResumeCss from './../Resume/Resume.module.css'
