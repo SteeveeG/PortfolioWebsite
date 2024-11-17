@@ -13,5 +13,8 @@ export default defineConfig({
       include: "**/*.svg",
     }),
   ],
+  define: {
+    '.env': {},
+  }
 });
 

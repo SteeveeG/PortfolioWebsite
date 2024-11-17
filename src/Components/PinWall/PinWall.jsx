@@ -191,7 +191,7 @@ function PinWall() {
                <div className={ResumeCss.wrapper} id={ResumeCss["m"]}>
                     <hr className={ResumeCss.line} />
                     <Pin className={ResumeCss.pin} />
-                    <p className={ResumeCss.year}>2020</p>
+                    <p className={ResumeCss.year}>2021</p>
                     <div className={ResumeCss.rbcontainer}>
                          <Resumebox header={t("HeaderBox2")}
                                     text={t("TextBox2")} />

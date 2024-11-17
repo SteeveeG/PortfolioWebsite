@@ -18,10 +18,8 @@ function Contact() {
 
     const sendEmail = (event) => {
         event.preventDefault();
-        emailjs
-            .sendForm(process.env.REACT_APP_SERVICE_ID ,process.env.REACT_APP_TEMPLATE_ID, form.current, {
-                publicKey: process.env.REACT_APP_PUPLICKEY,
-            })
+        emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID ,import.meta.env.VITE_APP_TEMPLATE_ID, form.current, {
+                publicKey: import.meta.env.VITE_APP_PUPLICKEY,})
             .then(
                 () => {
                     inputRefName.current.value = "";
@@ -32,11 +30,12 @@ function Contact() {
                     alert(t('ErrorEmailSend'))
                 }
             );
+
     };
 
 
     return (<div className={ContactCss.Contact} id='Contact'>
-            <form ref={form} className={ContactCss.ContactForm} onSubmit={sendEmail}>
+            <form ref={form} className={ContactCss.ContactForm}>
                 <h1 className={ContactCss.ContactHeader}>Let's Talk !</h1>
                 <p className={ContactCss.UnderLine}>{t("ContactUnderline")}</p>
                 <div className={ContactCss.InputWrapper}>
@@ -53,19 +52,19 @@ function Contact() {
                     <span className={ContactCss.Span}/>
                 </div>
                 <div className={ContactCss.MessageContact}>
-                <textarea id="message" name="message" ref={inputRefMessage}
+                <textarea type="textarea" id="message" name="message" ref={inputRefMessage}
                           className={ContactCss.MessageInput} required/>
 
                     <label className={ContactCss.label} htmlFor="message">{t("ContactMessage")}</label>
                     <span className={ContactCss.Span}/>
                 </div>
-                <input type="submit" className={ContactCss.Submit} value={t("ContactSubmit")}/>
+                <input type="button"  onClick={sendEmail}  className={ContactCss.Submit} value={t("ContactSubmit")}/>
             </form>
             <form className={ContactCss.Info}>
                 <h5 className={ContactCss.InfoHeader}>Info</h5>
                 <div className={ContactCss.EmailContainer}>
                     <img src={emailLogo} className={ContactCss.EmailLogo} alt="email Logo"/>
-                    <p className={ContactCss.Email}>kuehnl.st@gmail.com</p>
+                    <p className={ContactCss.Email}>email@example.com</p>
                 </div>
                 <div className={ContactCss.LocationContainer}>
                     <img src={locationLogo} className={ContactCss.LocationLogo} alt="Location Logo"/>
