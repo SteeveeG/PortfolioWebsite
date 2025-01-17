@@ -64,7 +64,7 @@ function Contact() {
                 <h5 className={ContactCss.InfoHeader}>Info</h5>
                 <div className={ContactCss.EmailContainer}>
                     <img src={emailLogo} className={ContactCss.EmailLogo} alt="email Logo"/>
-                    <p className={ContactCss.Email}>email@example.com</p>
+                    <p className={ContactCss.Email}>kuehnl.st@gmail.com</p>
                 </div>
                 <div className={ContactCss.LocationContainer}>
                     <img src={locationLogo} className={ContactCss.LocationLogo} alt="Location Logo"/>
