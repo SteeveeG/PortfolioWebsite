@@ -14,7 +14,7 @@ const CookieManager = () => {
     const handleConsentChange = (key, value) => {
         setSettings({ ...settings, [key]: value });
         if (value) {
-            setCookie(key, true, { path: "/", maxAge: 30 * 24 * 60 * 60 }); // 30 Tage Speicherdauer
+            setCookie(key, true, { path: "/", maxAge: 30 * 24 * 60 * 60 }); 
         } else {
             removeCookie(key, { path: "/" });
         }
@@ -27,23 +27,12 @@ const CookieManager = () => {
 
     const cookieDocumentation = [
         {
-            name: "Functional Cookies",
-            description: "Essential for the website to function correctly.",
-            duration: "Session or 30 days",
-            receiver: "No external services",
-        },
-        {
             name: "Analytics Cookies",
             description: "Used to analyze user behavior to improve the website.",
             duration: "14 months",
             receiver: "Google Analytics (USA)",
         },
-        {
-            name: "Marketing Cookies",
-            description: "Track user behavior for personalized advertising.",
-            duration: "30 days",
-            receiver: "Facebook, Google Ads (USA)",
-        },
+
     ];
 
     return (
@@ -59,31 +48,10 @@ const CookieManager = () => {
                         <label>
                             <input
                                 type="checkbox"
-                                checked={settings.functional}
-                                onChange={(e) => handleConsentChange("functional", e.target.checked)}
-                                disabled
-                            />
-                            Functional Cookies (required)
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input
-                                type="checkbox"
                                 checked={settings.analytics}
                                 onChange={(e) => handleConsentChange("analytics", e.target.checked)}
                             />
                             Analytics Cookies
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input
-                                type="checkbox"
-                                checked={settings.marketing}
-                                onChange={(e) => handleConsentChange("marketing", e.target.checked)}
-                            />
-                            Marketing Cookies
                         </label>
                     </div>
                     <button onClick={savePreferences}>Save Preferences</button>

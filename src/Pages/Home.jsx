@@ -17,7 +17,9 @@ import PinWall from "../Components/PinWall/PinWall";
 import CookiesConsent from "../components/cookiesHandler/cookiesConsent.jsx";
 
 import { useTranslation } from "react-i18next";
-function Home() {
+const Home = () => {
+
+    
     const [cookies] = useCookies(["cookieConsent"]);
     const { t } = useTranslation();
     return (

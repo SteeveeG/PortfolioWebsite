@@ -20,7 +20,7 @@ const CookiesConsent = () => {
         isVisible && (
             <div className={css.cookieConsent}>
                 <p>
-                    We use cookies to improve your experience. And improvise our Website. By using our website,
+                    I use cookies to improve your experience. And improvise our Website. By using our website,
                     you agree to use our Functional cookies. {" "}
                     <a href={"/privacy-policy"}>Learn more</a>.
                 </p>

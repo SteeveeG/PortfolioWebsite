@@ -5,6 +5,7 @@
     height: max-content;
     display: flex;
     flex-direction: column;
+    color: white;
     bottom: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -16,7 +17,7 @@
 }
 
 .cookieConsent>p {
-    font-weight: 600;
+    font-family: "Consolas", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -34,11 +35,12 @@
 
 
 .cookieConsent>div>button {
+    font-family: "Consolas", sans-serif;
     font-weight: 900;
     width: 200px;
     height: 45px;
-    background-color: var(--AcentColor);
-    color: white;
+    background-color: yellow;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -50,11 +52,11 @@
 }
 
 .cookieConsent>div>button:hover {
-    background-color: #d81b60;
+    background-color: yellow;
 }
 
 .cookieConsent>div>button:active {
-    background-color: #c2185b;
+    background-color: yellow;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
 }
