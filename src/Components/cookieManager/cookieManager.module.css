@@ -1,0 +1,94 @@
+
+.cookieManager {
+    position: relative;
+    top: 100px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+.cookieManager button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cookieManager button:hover {
+    background-color: #0056b3;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popup h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.popup p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.popup label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.popup input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.popup button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}

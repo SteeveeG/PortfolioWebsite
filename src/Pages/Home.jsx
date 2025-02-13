@@ -1,4 +1,5 @@
 import React from 'react';
+import {useCookies} from "react-cookie";
 import Navbar from "../Components/Navbar/navbar";
 import Introduction from "../Components/Introduction/Introduction";
 import LanguageHelper from '../Components/LanguageHelper/LanguageHelper';
@@ -13,10 +14,11 @@ import imgChat from "../Components/Projects/Assets/ChatWindow.png"
 import imgEdabit from "../Components/Projects/Assets/Edabit.png"
 import imgTattoo from "../Components/Projects/Assets/TattooStudio.png"
 import PinWall from "../Components/PinWall/PinWall";
-
+import CookiesConsent from "../components/cookiesHandler/cookiesConsent.jsx";
 
 import { useTranslation } from "react-i18next";
 function Home() {
+    const [cookies] = useCookies(["cookieConsent"]);
     const { t } = useTranslation();
     return (
         <div >
@@ -43,6 +45,7 @@ function Home() {
             </div>
             <Contact />
             <Footer />
+            {!cookies.cookieConsent && <CookiesConsent />}
         </div>
 
     )

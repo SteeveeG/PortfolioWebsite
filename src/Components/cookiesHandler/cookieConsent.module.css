@@ -1,0 +1,67 @@
+.cookieConsent {
+    position: fixed;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.5);
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+}
+
+.cookieConsent>p {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cookieConsent>p>a {
+    text-decoration: underline;
+    color: var(--AcentColor);
+}
+
+.cookieConsent>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cookieConsent>div>button {
+    font-weight: 900;
+    width: 200px;
+    height: 45px;
+    background-color: var(--AcentColor);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.cookieConsent>div>button:hover {
+    background-color: #d81b60;
+}
+
+.cookieConsent>div>button:active {
+    background-color: #c2185b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+@media (max-width: 442px) {
+    .cookieConsent>div>button {
+        width: 42vw;
+        justify-content: center;
+    }
+}

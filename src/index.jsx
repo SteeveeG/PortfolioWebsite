@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from "./Pages/Home.jsx";
-import './Components/I18n/i18n.js' 
+import './Components/I18n/i18n.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Home/>
+    <Home />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy" element={<Privatepolicy />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
