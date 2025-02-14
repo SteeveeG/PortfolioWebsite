@@ -5,9 +5,7 @@ import css from "./cookieManager.module.css";
 const CookieManager = () => {
     const [cookies, setCookie, removeCookie] = useCookies(["functional", "analytics", "marketing"]);
     const [settings, setSettings] = useState({
-        functional: cookies.functional || false,
         analytics: cookies.analytics || false,
-        marketing: cookies.marketing || false,
     });
     const [showManager, setShowManager] = useState(false);
 

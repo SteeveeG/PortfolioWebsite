@@ -18,12 +18,12 @@
 
 .cookieConsent>p {
     font-family: "Consolas", sans-serif;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .cookieConsent>p>a {
     text-decoration: underline;
-    color: var(--AcentColor);
+    color: yellow;
 }
 
 .cookieConsent>div {
@@ -39,7 +39,7 @@
     font-weight: 900;
     width: 200px;
     height: 45px;
-    background-color: yellow;
+    background-color: ghostwhite;
     color: black;
     border: none;
     padding: 10px 20px;
