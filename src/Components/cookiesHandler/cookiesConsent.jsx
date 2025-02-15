@@ -1,33 +1,34 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import css from "./cookieConsent.module.css";
+import {DeclinedGaCookie, initializeAnalytics} from "../Google/analytics";
 
 const CookiesConsent = () => {
-    const [cookies, setCookie] = useCookies(["ga-consent"]);
+    const [cookies, setCookie, removeCookie] = useCookies(["ga-consent"]);
     const [isVisible, setIsVisible] = useState(!cookies["ga-consent"]);
 
     const handleConsent = (consentGiven) => {
         if (consentGiven) {
-            setCookie("ga-consent", true, { path: "/" });
-            // Optional: Set weitere Cookie-Kategorien hier
+            initializeAnalytics();
+            setCookie("ga-consent", true, { path: "/", maxAge: 31536000 }); // 1 Jahr gültig
         } else {
-            setCookie("ga-consent", false, { path: "/" });
+            DeclinedGaCookie();
+            setCookie("ga-consent", false, { path: "/", maxAge: 0 });
+            window[`ga-disable-${import.meta.env.VITE_APP_GA_TRACKING_ID}`] = true;
         }
-        setIsVisible(false);
+        setIsVisible(false); // Verstecke die Consent-Nachricht
     };
 
     return (
         isVisible && (
             <div className={css.cookieConsent}>
                 <p>
-                    I use cookies to improve your experience. And improvise our Website. By using our website,
-                    you agree to use our Functional cookies. {" "}
-                    <a href={"/privacy-policy"}>Learn more</a>.
+                    We use cookies to improve your experience. By using our website, you agree to our use of functional cookies.{" "}
+                    <a href="/privacy-policy">Learn more</a>.
                 </p>
                 <div>
                     <button onClick={() => handleConsent(false)}>Decline</button>
                     <button onClick={() => handleConsent(true)}>Accept All</button>
-                    {/* Optional: Add "Customize" button for granular control */}
                 </div>
             </div>
         )

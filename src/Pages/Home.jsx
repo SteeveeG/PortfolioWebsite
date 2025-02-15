@@ -20,7 +20,7 @@ import { useTranslation } from "react-i18next";
 const Home = () => {
 
     
-    const [cookies] = useCookies(["analytics"]);
+    const [cookies] = useCookies(["ga-consent"]);
 
     const { t } = useTranslation();
     return (
@@ -47,8 +47,8 @@ const Home = () => {
                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
             </div>
             <Contact />
-            <Footer />
-            {!cookies.analytics && <CookiesConsent />}
+            {/*<Footer />*/}
+            {!cookies["ga-consent"] && <CookiesConsent />}
         </div>
 
     )

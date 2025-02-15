@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Pages/Home.jsx";
 import Privatepolicy from "./Pages/privacyPolicy/privacyPolicy.jsx"
 import './Components/I18n/i18n.js'
+import Footer from "./Components/Footer/Footer";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/" element={<Home />} />
       <Route path="/privacy-policy" element={<Privatepolicy />} /> 
     </Routes>
-  </Router>  
+  </Router>
+    <Footer />
 </React.StrictMode>
 );
