@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import css from "./cookieManager.module.css";
+import { initializeAnalytics } from "../Google";
+
 
 const CookieManager = () => {
-    const [cookies, setCookie, removeCookie] = useCookies(["functional", "analytics", "marketing"]);
+    const [cookies, setCookie, removeCookie] = useCookies(["ga-consent"]);
     const [settings, setSettings] = useState({
-        analytics: cookies.analytics || false,
+        analytics: cookies["ga-consent"] === false,
     });
     const [showManager, setShowManager] = useState(false);
 
     const handleConsentChange = (key, value) => {
         setSettings({ ...settings, [key]: value });
         if (value) {
-            setCookie(key, true, { path: "/", maxAge: 30 * 24 * 60 * 60 }); 
-        } else {
-            removeCookie(key, { path: "/" });
+            setCookie("ga-consent", true, { path: "/", maxAge: 31536000 });
+         } else {
+            removeCookie("ga-consent",{ path: "/"});
         }
     };
 
@@ -35,9 +37,7 @@ const CookieManager = () => {
 
     return (
         <div className={css.cookieManager}>
-
             <button onClick={() => setShowManager(true)}>Manage Cookies</button>
-
             {showManager && (
                 <div className={css.popup}>
                     <h2>Cookie Preferences</h2>
@@ -47,7 +47,7 @@ const CookieManager = () => {
                             <input
                                 type="checkbox"
                                 checked={settings.analytics}
-                                onChange={(e) => handleConsentChange("analytics", e.target.checked)}
+                                onChange={(e) => handleConsentChange("ga-consent", e.target.checked)}
                             />
                             Analytics Cookies
                         </label>

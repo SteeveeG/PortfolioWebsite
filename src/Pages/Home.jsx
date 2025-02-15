@@ -20,7 +20,8 @@ import { useTranslation } from "react-i18next";
 const Home = () => {
 
     
-    const [cookies] = useCookies(["cookieConsent"]);
+    const [cookies] = useCookies(["analytics"]);
+
     const { t } = useTranslation();
     return (
         <div >
@@ -47,7 +48,7 @@ const Home = () => {
             </div>
             <Contact />
             <Footer />
-            {!cookies.cookieConsent && <CookiesConsent />}
+            {!cookies.analytics && <CookiesConsent />}
         </div>
 
     )

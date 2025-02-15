@@ -10,13 +10,13 @@ import { useTranslation } from "react-i18next";
 
 const privacyPolicy = () => {
     const { t } = useTranslation();
-    const [cookies] = useCookies(["cookieConsent"]);
+    const [cookies] = useCookies(["analytics"]);
     return (
         <div >
             <Navbar />
             <LanguageHelper />
             <CookieManager />
-            {!cookies.cookieConsent && <CookiesConsent />}
+            {!cookies.analytics && <CookiesConsent />}
             <Footer />
         </div>
 

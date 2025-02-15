@@ -3,15 +3,15 @@ import { useCookies } from "react-cookie";
 import css from "./cookieConsent.module.css";
 
 const CookiesConsent = () => {
-    const [cookies, setCookie] = useCookies(["cookieConsent"]);
-    const [isVisible, setIsVisible] = useState(!cookies.cookieConsent);
+    const [cookies, setCookie] = useCookies(["ga-consent"]);
+    const [isVisible, setIsVisible] = useState(!cookies["ga-consent"]);
 
     const handleConsent = (consentGiven) => {
         if (consentGiven) {
-            setCookie("cookieConsent", true, { path: "/" });
+            setCookie("ga-consent", true, { path: "/" });
             // Optional: Set weitere Cookie-Kategorien hier
         } else {
-            setCookie("cookieConsent", false, { path: "/" });
+            setCookie("ga-consent", false, { path: "/" });
         }
         setIsVisible(false);
     };
