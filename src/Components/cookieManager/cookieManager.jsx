@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
+import { useTranslation } from "react-i18next";
 import css from "./cookieManager.module.css";
 import { initializeAnalytics, deleteGaCookie } from "../Google/analytics.js";
 import ReactGA from "react-ga4";
 
 
 const CookieManager = () => {
+
+     const { t } = useTranslation();
+
     function getCookie(name) {
         let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
         if (match) {
@@ -38,10 +42,10 @@ const CookieManager = () => {
 
     const cookieDocumentation = [
         {
-            name: "Analytics Cookies",
-            description: "Used to analyze user behavior to improve the website.",
-            duration: "14 months",
-            receiver: "Google Analytics (USA)",
+            name: t("AnalyticsCookies"),
+            description: t("CookiesDescription"),
+            duration: t("CookiesDuration"),
+            receiver: t("CookiesReciever"),
         },
 
     ];
@@ -52,11 +56,11 @@ const CookieManager = () => {
 
     return (
         <div className={css.cookieManager}>
-            <button onClick={GetCookiesShowManager}>Manage Cookies</button>
+            <button onClick={GetCookiesShowManager}>{t("ManageCookies")}</button>
             {showManager && (
                 <div className={css.popup}>
-                    <h2>Cookie Preferences</h2>
-                    <p>Adjust your preferences for cookies below:</p>
+                    <h2>{t("CookiePreferencess")}</h2>
+                    <p>{t("AdjustCookiesPreferences")}</p>
                     <div>
                         <label>
                             <input
@@ -64,22 +68,22 @@ const CookieManager = () => {
                                 checked={settings.analytics  === "true"}
                                 onChange={(e) => handleConsentChange("analytics", e.target.checked)}
                             />
-                            Analytics Cookies
+                         {t("AnalyticsCookies")}
                         </label>
                     </div>
-                    <button onClick={savePreferences}>Save Preferences</button>
+                    <button onClick={savePreferences}>{t("SavePreferences")}</button>
                 </div>
             )}
 
 
-            <h3>Cookie Documentation</h3>
+            <h3>{t("CookieDocumentation")}</h3>
             <table>
                 <thead>
                 <tr>
-                    <th>Cookie Name</th>
-                    <th>Description</th>
-                    <th>Duration</th>
-                    <th>Receiver</th>
+                    <th>{t("CookieName")}</th>
+                    <th>{t("Description")}</th>
+                    <th>{t("Duration")}</th>
+                    <th>{t("Receiver")}</th>
                 </tr>
                 </thead>
                 <tbody>

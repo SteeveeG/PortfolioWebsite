@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useCookies } from "react-cookie";
+import { useTranslation } from "react-i18next";
 import css from "./cookieConsent.module.css";
-import {DeclinedGaCookie, initializeAnalytics} from "../Google/analytics";
+import {DeclinedGaCookie, initializeAnalytics} from "../Google/analytics.js";
 
 const CookiesConsent = () => {
+    const { t } = useTranslation();
     const [cookies, setCookie, removeCookie] = useCookies(["ga-consent"]);
     const [isVisible, setIsVisible] = useState(!cookies["ga-consent"]);
 
@@ -23,12 +25,12 @@ const CookiesConsent = () => {
         isVisible && (
             <div className={css.cookieConsent}>
                 <p>
-                    We use cookies to improve your experience. By using our website, you agree to our use of functional cookies.{" "}
-                    <a href="/privacy-policy">Learn more</a>.
+                    {t("CookieBannerText")}
+                    <a href="/privacy-policy">{t("LearnMore")}</a>.
                 </p>
                 <div>
-                    <button onClick={() => handleConsent(false)}>Decline</button>
-                    <button onClick={() => handleConsent(true)}>Accept All</button>
+                    <button onClick={() => window.location.href="/privacy-policy"}>{t("ConfigureCookies")}</button>
+                    <button onClick={() => handleConsent(true)}>{t("AcceptAll")}</button>
                 </div>
             </div>
         )
