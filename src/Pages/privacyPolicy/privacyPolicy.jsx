@@ -5,18 +5,17 @@ import LanguageHelper from '../../Components/LanguageHelper/LanguageHelper';
 import CookieManager from "../../Components/cookieManager/cookieManager";
 import CookiesConsent from "../../components/cookiesHandler/cookiesConsent.jsx";
 import css from "./privacyPolicy.module.css"
-import { useTranslation } from "react-i18next";
-
 
 const privacyPolicy = () => {
-    const { t } = useTranslation();
     const [cookies] = useCookies(["ga-consent"]);
+    const isGaConsentCookieSet = cookies["ga-consent"] === undefined;
+
     return (
         <div className={css.container}>
             <Navbar />
             <LanguageHelper />
             <CookieManager />
-            {!cookies["ga-consent"] && <CookiesConsent />}
+            {isGaConsentCookieSet && <CookiesConsent />}
         </div>
 
     )

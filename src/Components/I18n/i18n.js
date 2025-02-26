@@ -81,9 +81,9 @@ const resources = {
       "AnalyticsCookies": "Analytics Cookies",
       "CookiesDescription": "Used to analyze user behavior to improve the website.",
       "CookiesDuration": "14 months",
-      "CookiesReciever": "Google Analytics (USA)",
+      "CookiesReceiver": "Google Analytics (USA)",
       "ManageCookies": "Manage Cookies",
-      "CookiePreferencess": "Cookie Preferences",
+      "CookiePreferences": "Cookie Preferences",
       "AdjustCookiesPreferences": "Adjust your preferences for cookies below:",
       "SavePreferences": "Save Preferences",
       "CookieDocumentation": "Cookie Documentation",
@@ -95,13 +95,7 @@ const resources = {
       "LearnMore": "Learn more",
       "ConfigureCookies": "Configure Cookies",
       "AcceptAll": "Accept All",
-
-
-
-
-
-
-
+      "PrivacyPolicy": "privacy-policy"
       //Cookies
 
 
@@ -184,9 +178,9 @@ const resources = {
       "AnalyticsCookies": "Analyse Cookies",
       "CookiesDescription": "Wird verwendet, um das Nutzerverhalten zu analysieren und die Website zu verbessern.",
       "CookiesDuration": "14 Monate",
-      "CookiesReciever": "Google Analytics (USA)",
+      "CookiesReceiver": "Google Analytics (USA)",
       "ManageCookies": "Cookies verwalten",
-      "CookiePreferencess": "Cookie-Einstellungen",
+      "CookiePreferences": "Cookie-Einstellungen",
       "AdjustCookiesPreferences": "Passen Sie Ihre Cookie-Einstellungen unten an:",
       "SavePreferences": "Einstellungen speichern",
       "CookieDocumentation": "Cookie-Dokumentation",
@@ -197,7 +191,8 @@ const resources = {
       "CookieBannerText": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von funktionalen Cookies zu.",
       "LearnMore": "Mehr erfahren",
       "ConfigureCookies": "Cookies konfigurieren",
-      "AcceptAll": "Alle akzeptieren"
+      "AcceptAll": "Alle akzeptieren",
+      "PrivacyPolicy": "Datenschutzrichtlinien"
       //Cookies
 
 

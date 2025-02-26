@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CommentsCss from './Comments.module.css'
-import "../../Pages/Home.css"
+import "../../Pages/home/Home.css"
 
 
 class Comments extends Component {

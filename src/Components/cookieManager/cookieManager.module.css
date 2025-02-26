@@ -1,12 +1,14 @@
 
 .cookieManager {
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family: "Consolas", sans-serif;
     color: #333;
      margin: 50px;
 }
-
-.cookieManager button {
+.cookieManager > h3{
+    font-family: "Segoe UI", sans-serif;
+}
+ .cookieManager button {
     background-color: darkgray;
     color: white;
     border: none;
@@ -14,6 +16,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+     font-family: "Consolas", sans-serif;
     transition: background-color 0.3s;
 }
 
@@ -34,9 +37,11 @@
     width: 90%;
     padding: 20px;
     z-index: 1000;
+    font-family: "Consolas", sans-serif;
 }
 
 .popup h2 {
+    font-family: "Segoe UI", sans-serif;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -60,6 +65,7 @@
 }
 
 .popup button {
+    font-family: "Consolas", sans-serif;
     background-color: darkgray;
     color: white;
     border: none;
@@ -70,23 +76,16 @@
     width: 100%;
     transition: background-color 0.3s;
 }
+.wrapper{
 
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
 }
+.cookie{
 
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
 }
+.header{
+    font-family: "Segoe UI", sans-serif;
 
-table th {
-    background-color: #f4f4f4;
-    color: #333;
-    font-weight: bold;
+}
+.text{
+    font-family: "Consolas", sans-serif;
 }
