@@ -2,9 +2,8 @@ import ReactGA from "react-ga4";
 
 
 
-const GA_TRACKING_ID = import.meta.env.VITE_APP_GA_TRACKING_ID || "";
-const GA_DELETE_COOKIE = import.meta.env.VITE_APP_GA_DELETE_COOKIE || "";
-
+const GA_TRACKING_ID = process.env.VITE_APP_GA_TRACKING_ID;
+const GA_DELETE_COOKIE = process.env.VITE_APP_GA_DELETE_COOKIE;
 
 
 export const initializeAnalytics = () => {
