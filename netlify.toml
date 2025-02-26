@@ -1,0 +1,22 @@
+# Netlify Konfigurationsdatei
+
+[build]
+  # Definiere das Verzeichnis, in dem Netlify das Frontend baut
+  command = "vite build"  # Falls du Yarn benutzt, ersetze mit "yarn build"
+  publish = "dist"  # Falls du Vite benutzt, sonst "build" für React mit CRA
+
+[functions]
+  # Spezifiziert den Ordner für Serverless Functions
+  directory = "netlify/functions"
+
+[dev]
+  # Lokale Entwicklungsumgebung konfigurieren
+  framework = "vite"  # Falls du React mit Vite benutzt
+  targetPort = 5173   # Port für dein lokales React-Projekt (Vite Standard)
+  port = 8888         # Port für Netlify Functions
+
+[[redirects]]
+  # Umleitungen für API-Requests (optional)
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { useCookies } from "react-cookie";
 import { useTranslation } from "react-i18next";
 import css from "./cookieConsent.module.css";
 import {DeclinedGaCookie, initializeAnalytics} from "../Google/analytics.js";
+import {fetchEnvVars} from "../../ultis/fetchEnvVars";
 
 const CookiesConsent = () => {
     const { t } = useTranslation();
     const [cookies, setCookie, removeCookie] = useCookies(["ga-consent"]);
     const [isVisible, setIsVisible] = useState(!cookies["ga-consent"]);
+    const [trackingId, setTrackingId] = useState(null);
+
+    useEffect(() => {
+        fetchEnvVars().then(envVars => {
+            setTrackingId(envVars.trackingId);
+        });
+    }, []);
+
 
     const handleConsent = (consentGiven) => {
         if (consentGiven) {
@@ -16,9 +25,9 @@ const CookiesConsent = () => {
         } else {
             DeclinedGaCookie();
             setCookie("ga-consent", false, { path: "/", maxAge: 0 });
-            window[`ga-disable-${import.meta.env.VITE_APP_GA_TRACKING_ID}`] = true;
+            window[`ga-disable-${trackingId}`] = true;
         }
-        setIsVisible(false); // Verstecke die Consent-Nachricht
+        setIsVisible(false);
     };
 
     return (

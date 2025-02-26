@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { useCookies } from "react-cookie";
 import { useTranslation } from "react-i18next";
 import css from "./cookieManager.module.css";
 import { initializeAnalytics, deleteGaCookie } from "../Google/analytics.js";
+import { fetchEnvVars } from "../../ultis/fetchEnvVars";
 
 const CookieManager = () => {
     const { t } = useTranslation();
+    const [trackingId, setTrackingId] = useState(null);
+
+    useEffect(() => {
+        fetchEnvVars().then(envVars => {
+            setTrackingId(envVars.trackingId);
+        });
+    }, []);
+
 
     function getCookie(name) {
         const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
@@ -33,7 +42,7 @@ const CookieManager = () => {
         } else {
             deleteGaCookie();
             setCookie("ga-consent", 'false', { path: "/", maxAge: 100 });
-            window[`ga-disable-${import.meta.env.VITE_APP_GA_TRACKING_ID}`] = true;
+            window[`ga-disable-${trackingId}`] = true;
         }
     };
 

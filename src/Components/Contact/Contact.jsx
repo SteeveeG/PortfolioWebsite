@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { useTranslation } from "react-i18next";
 import emailLogo from "../../Assets/png/email-8-svgrepo-com.png"
 import locationLogo from "../../Assets/png/location-pin-alt-1-svgrepo-com(1).png"
 import Arrow from "../../Assets/png/WhiteArrow.png"
 import ContactCss from './Contact.module.css'
 import emailjs from '@emailjs/browser';
+import {fetchEnvVars} from "../../ultis/fetchEnvVars";
 
 
 
@@ -15,11 +16,23 @@ function Contact() {
     const inputRefMessage = useRef(null);
     const { t } = useTranslation();
     const form = useRef();
+    const [serviceId, setServiceId] = useState(null);
+    const [templateId, setTemplateId] = useState(null);
+    const [publicKey, setPublicKey] = useState(null);
+
+    useEffect(() => {
+        fetchEnvVars().then(envVars => {
+            setServiceId(envVars.ServiceId);
+            setTemplateId(envVars.TemplateId);
+            setPublicKey(envVars.PublicKey);
+        });
+    }, []);
+
 
     const sendEmail = (event) => {
         event.preventDefault();
-        emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID ,import.meta.env.VITE_APP_TEMPLATE_ID, form.current, {
-                publicKey: import.meta.env.VITE_APP_PUPLICKEY,})
+        emailjs.sendForm(serviceId ,templateId, form.current, {
+                publicKey: publicKey,})
             .then(
                 () => {
                     inputRefName.current.value = "";
