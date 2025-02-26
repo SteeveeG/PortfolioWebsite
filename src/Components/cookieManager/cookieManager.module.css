@@ -1,0 +1,91 @@
+
+.cookieManager {
+    position: relative;
+    font-family: "Consolas", sans-serif;
+    color: #333;
+     margin: 50px;
+}
+.cookieManager > h3{
+    font-family: "Segoe UI", sans-serif;
+}
+ .cookieManager button {
+    background-color: darkgray;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+     font-family: "Consolas", sans-serif;
+    transition: background-color 0.3s;
+}
+
+.cookieManager button:hover,
+.popup button:hover{
+    background-color: #8c8c8c;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    z-index: 1000;
+    font-family: "Consolas", sans-serif;
+}
+
+.popup h2 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.popup p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.popup label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.popup input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.popup button {
+    font-family: "Consolas", sans-serif;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.wrapper{
+
+}
+.cookie{
+
+}
+.header{
+    font-family: "Segoe UI", sans-serif;
+
+}
+.text{
+    font-family: "Consolas", sans-serif;
+}
