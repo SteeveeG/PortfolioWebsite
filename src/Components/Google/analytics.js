@@ -1,21 +1,15 @@
 import ReactGA from "react-ga4";
 import {fetchEnvVars} from "../../ultis/fetchEnvVars";
-import {useState, useEffect} from "react";
 
 
+let trackingId = null;
+let deleteCookie = null;
 
 
-const [trackingId, setTrackingId] = useState(null);
-const [deleteCookie, setDeleteCookie] = useState(null);
-
-useEffect(() => {
-    fetchEnvVars().then(envVars => {
-        setTrackingId(envVars.trackingId);
-        setDeleteCookie(envVars.deleteCookie);
-    });
-}, []);
-
-
+fetchEnvVars().then(envVars => {
+    trackingId = envVars.trackingId;
+    deleteCookie= envVars.deleteCookie;
+});
 
 
 export const initializeAnalytics = () => {
