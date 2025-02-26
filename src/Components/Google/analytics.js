@@ -1,20 +1,32 @@
 import ReactGA from "react-ga4";
+import {fetchEnvVars} from "../../ultis/fetchEnvVars";
+import {useState, useEffect} from "react";
 
 
 
-const GA_TRACKING_ID = process.env.VITE_APP_GA_TRACKING_ID;
-const GA_DELETE_COOKIE = process.env.VITE_APP_GA_DELETE_COOKIE;
+
+const [trackingId, setTrackingId] = useState(null);
+const [deleteCookie, setDeleteCookie] = useState(null);
+
+useEffect(() => {
+    fetchEnvVars().then(envVars => {
+        setTrackingId(envVars.trackingId);
+        setDeleteCookie(envVars.deleteCookie);
+    });
+}, []);
+
+
 
 
 export const initializeAnalytics = () => {
-    ReactGA.initialize(GA_TRACKING_ID);
+    ReactGA.initialize(trackingId);
     ReactGA.send("pageview");
 };
 
 
 export const deleteGaCookie = () => {
     const cookiesToDelete = ['_ga', '_gid', '_gat',
-        '_ga_' +  GA_DELETE_COOKIE];
+        '_ga_' +  deleteCookie];
     cookiesToDelete.forEach(cookie => {
         document.cookie = `${cookie}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
     });
@@ -25,7 +37,7 @@ export const deleteGaCookie = () => {
 
 export const DeclinedGaCookie = () => {
     const cookiesToDelete = ['_ga', '_gid', '_gat',
-        '_ga_' +  GA_DELETE_COOKIE];
+        '_ga_' +  deleteCookie];
     cookiesToDelete.forEach(cookie => {
         document.cookie = `${cookie}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
     });
