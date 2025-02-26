@@ -3,7 +3,7 @@ import {useCookies} from "react-cookie";
 import Navbar from "../../Components/Navbar/navbar";
 import LanguageHelper from '../../Components/LanguageHelper/LanguageHelper';
 import CookieManager from "../../Components/cookieManager/cookieManager";
-import CookiesConsent from "../../components/cookiesHandler/cookiesConsent.jsx";
+import CookiesConsent from "../../Components/cookiesHandler/cookiesConsent.jsx";
 import css from "./privacyPolicy.module.css"
 
 const privacyPolicy = () => {
