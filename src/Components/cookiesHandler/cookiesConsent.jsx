@@ -35,10 +35,10 @@ const CookiesConsent = () => {
             <div className={css.cookieConsent}>
                 <p>
                     {t("CookieBannerText")}
-                    <a href="/privacy-policy">{t("LearnMore")}</a>.
+                    <a href="/#/privacy-policy">{t("LearnMore")}</a>.
                 </p>
                 <div>
-                    <button onClick={() => window.location.href="/privacy-policy"}>{t("ConfigureCookies")}</button>
+                    <button onClick={() => window.location.href="/#/privacy-policy"}>{t("ConfigureCookies")}</button>
                     <button onClick={() => handleConsent(true)}>{t("AcceptAll")}</button>
                 </div>
             </div>

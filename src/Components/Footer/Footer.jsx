@@ -15,7 +15,7 @@ function Footer() {
                 <a href="/#AboutMe" className={FooterCss.LinkText}>{t("About")}</a>
                 <a href="/#Projects" className={FooterCss.LinkText}>{t("Projects")}</a>
                 <a href="/#Contact" className={FooterCss.LinkText}>{t("Contact")}</a>
-                <a href="/privacy-policy" className={FooterCss.LinkText}>{t("PrivacyPolicy")}</a>
+                <a href="/#/privacy-policy" className={FooterCss.LinkText}>{t("PrivacyPolicy")}</a>
             </li>
             </div>
             <div className={FooterCss.Name}>
