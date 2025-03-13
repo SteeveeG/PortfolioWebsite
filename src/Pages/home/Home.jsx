@@ -45,7 +45,7 @@ const Home = () => {
                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
             </div>
             <Contact />
-            {isGaConsentCookieSet && <CookiesConsent />}
+            {/* {isGaConsentCookieSet && <CookiesConsent />} */}
         </div>
 
     )

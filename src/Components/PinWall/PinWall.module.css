@@ -20,7 +20,9 @@
 .linetoresumefromcplusplus,
 .linetoresumefromsql,
 .linetoresumefrompython,
-.linetoresumefromvite{
+.linetoresumefromvite,
+.linetojavascriptfromtypescript,
+.linetoreactfromnextjs{
     height: 2px;
     background-color: red;
     z-index: var(--linezindex);
@@ -32,8 +34,8 @@
     display: none;
 }
 
-
-
+.typescriptpin,
+.nextjspin,
 .skillpin,
 .csharppin,
 .htmlpin,
@@ -59,6 +61,8 @@
 .vitesnippet,
 .cplusplussnippet,
 .sqlsnippet,
+.nextjssnippet,
+.typescriptsnippet,
 .pythonsnippet {
     Font-family: "Just Me Again Down Here";
     z-index: var(--snippetzindex);
@@ -67,10 +71,25 @@
     width: max-content;
 
 }
-
+.nextjscontainer,
+.typescriptcontainer,
+.pythoncontainer,
+.sqlcontainer,
+.cpluscpluscontainer,
+.vitecontainer,
+.reactcontainer,
+.csscontainer,
+.javascriptcontainer,
+.htmlcontainer,
+.csharpcontainer
+{
+    position: relative;
+}
 .csharplogo,
 .htmllogo,
 .javascriptlogo,
+.typescriptlogo,
+.nextjslogo,
 .csslogo,
 .reactlogo,
 .vitelogo,
@@ -84,13 +103,13 @@
 }
 
 .container {
+    user-select: none;
     overflow: hidden;
     height: max-content;
     position: relative;
 }
 
 .header {
-
     Font-family: "Farmhouse Children";
     position: relative;
     font-size: 2em;
@@ -133,7 +152,6 @@
 
 .csharpcontainer {
     width: 200px;
-    position: relative;
     left: 25.5em;
     top: 6em;
 }
@@ -205,7 +223,6 @@
 
 .htmlcontainer {
     width: 250px;
-    position: relative;
     left: 87.5em;
     top: -22.5em;
     height: 250px;
@@ -230,18 +247,17 @@
 }
 
 .javascriptcontainer {
-    position: relative;
     width: 280px;
-    left: 55em;
-    top: -29.5em;
+    left: 58em;
+    top: -31.5em;
     height: 250px;
 }
 
 .linetojavascript {
-    width: 512px;
-    transform: rotate(162deg);
-    left: 63.7em;
-    top: 14em;
+    width: 458px;
+    transform: rotate(165deg);
+    left: 66.7em;
+    top: 13em;
 }
 
 .javascriptpin {
@@ -267,7 +283,6 @@
 
 .csscontainer {
     width: 200px;
-    position: relative;
     left: 94em;
     top: -34em;
 }
@@ -280,10 +295,10 @@
 }
 
 .linetocssfromjavascript {
-    width: 595px;
-    transform: rotate(196deg);
-    left: 63.7em;
-    top: 24em;
+    width: 560px;
+    transform: rotate(201deg);
+    left: 65.7em;
+    top: 22.5em;
 }
 
 .csssnippet {
@@ -293,11 +308,26 @@
     transform: rotate(8deg);
 }
 
-.reactcontainer {
-    position: relative;
+
+.nextjscontainer{
+    width: 250px;
+    left: 57em;
+    top: -57.5em;
+    height: 50px;
+
+}
+.typescriptcontainer{
     width: 200px;
-    left: 69.5em;
-    top: -44.5em;
+    left: 69em;
+    top: -36.5em;
+    height: 200px;
+
+}
+
+.reactcontainer {
+    width: 200px;
+    left: 43.5em;
+    top: -73.5em;
     height: 200px;
 }
 
@@ -307,10 +337,10 @@
 }
 
 .linetoreact {
-    width: 328px;
-    transform: rotate(235deg);
-    left: 59.7em;
-    top: 27em;
+    width: 420px;
+    transform: rotate(332deg);
+    left: 41.7em;
+    top: 23em;
 }
 
 .reactsnippet {
@@ -319,17 +349,16 @@
 }
 
 .linetovite {
-    width: 338px;
-    transform: rotate(367deg);
-    left: 55.7em;
-    top: 34.5em;
+    width: 230px;
+    transform: rotate(276deg);
+    left: 36em;
+    top: 35.5em;
 }
 
 .vitecontainer {
-    position: relative;
     width: 170px;
-    left: 50em;
-    top: -58.5em;
+    left: 37em;
+    top: -64.5em;
     height: 170px;
 }
 
@@ -350,7 +379,6 @@
 }
 
 .cpluscpluscontainer {
-    position: relative;
     width: 190px;
     left: 10em;
     top: 12em;
@@ -369,9 +397,8 @@
 
     transform: rotate(-7deg);
 }
-
+ 
 .sqlcontainer {
-    position: relative;
     width: 300px;
     height: 300px;
     left: 46.4em;
@@ -418,7 +445,6 @@
 }
 
 .pythoncontainer {
-    position: relative;
     width: 350px;
     height: 350px;
     left: 78em;

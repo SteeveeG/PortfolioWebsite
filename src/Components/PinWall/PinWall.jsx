@@ -11,6 +11,9 @@ import Vitelogo from './Assets/Vite.svg';
 import CplusplusLogo from './Assets/c++.svg';
 import SqlLogo from './Assets/sql.png';
 import PythonLogo from './Assets/python.svg';
+import Typescriptlogo from './Assets/typescript.svg'
+import Nextjslogo from './Assets/nextjs.svg'
+
 
 import ResumeCss from './../Resume/Resume.module.css'
 import Resumebox from './../Resume/Resumebox/Resumebox'
@@ -108,6 +111,52 @@ function PinWall() {
                 position: relative;<br/>
                 {'}'}</p>
         </div>
+
+
+        <hr className={css.linetojavascriptfromtypescript}/>
+        <div className={css.typescriptcontainer}>
+            <Pin className={css.typescriptpin}/>
+            <Typescriptlogo alt="" className={css.typescriptlogo}/>
+            <p className={css.typescriptsnippet}>
+            const response = await axios.get(url);
+          <br />
+          const regex = new RegExp(`&lt;div\\s+class=[&quot;']${'{'}cssClass{'{'}{'}}'}'[&quot;'][^&gt;]*&gt;(.*?)&lt;\\/div&gt;`, 'i');
+          <br />
+          const match = regex.exec(response.data);
+          <br />
+          if (match &amp;&amp; match[1]) {'{'}
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;const value = match[1].trim();
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;return value;
+          <br />
+          {'}'} else {'{'}
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;return "0";
+          <br />
+          {'}'}
+                </p>
+        </div>
+
+
+        <hr className={css.linetoreactfromnextjs}/>
+        <div className={css.nextjscontainer}>
+            <Pin className={css.nextjspin}/>
+            <Nextjslogo alt="" className={css.nextjslogo}/>
+            <p className={css.nextjssnippet}>
+            import type {'{'} NextApiRequest, NextApiResponse {'}'} from 'next';
+
+             </p>
+        </div>
+
+
+
+
+
+
+
+
+
         <hr className={css.linetocssfromhtml}/>
         <hr className={css.linetocssfromjavascript}/>
 
@@ -209,13 +258,6 @@ function PinWall() {
                     </div>
                </div>
           </div>
-
-
-
-
-
-
-
 
     </div>)
 }
