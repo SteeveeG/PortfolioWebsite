@@ -12,6 +12,7 @@ import HomeCss from "./Home.module.css"
 import imgChat from "../../Components/Projects/Assets/ChatWindow.png"
 import imgEdabit from "../../Components/Projects/Assets/Edabit.png"
 import imgTattoo from "../../Components/Projects/Assets/TattooStudio.png"
+import imgWebScraper from "../../Components/Projects/Assets/Currency.png"
 import PinWall from "../../Components/PinWall/PinWall";
 import CookiesConsent from "../../Components/cookiesHandler/cookiesConsent.jsx";
 
@@ -36,11 +37,19 @@ const Home = () => {
                     fontfam='Farmhouse Children' />
                 <Project header={t("ProjectHeaderP1")} description={t("ProjectTextP1")} img={imgChat} link="https://github.com/SteeveeG/ChatApp/tree/main" showSecondLink={false} />
                 <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
+
+
+                <Project header={t("ProjectHeaderP3")} description={t("ProjectTextP3")} img={imgTattoo}
+                         link="https://github.com/SteeveeG/tattoostudio" showSecondLink={true} link2="https://yourtattoostudio.netlify.app/" />
+
+                <Project header={t("ProjectHeaderP4")} description={t("ProjectTextP4")} img={imgWebScraper}
+                         link="https://github.com/SteeveeG/currency" showSecondLink={true} link2="https://currentexchangeratebetweeneuroandusd.netlify.app/" />
+                <Comments commentdivName="Comment2" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
+
                 <Project header={t("ProjectHeaderP2")} description={t("ProjectTextP2")} img={imgEdabit}
                     link="https://github.com/SteeveeG/EdabitChallenges/tree/main" showSecondLink={false} />
 
-                <Project header={t("ProjectHeaderP3")} description={t("ProjectTextP3")} img={imgTattoo}
-                    link="https://github.com/SteeveeG/tattoostudio" showSecondLink={true} link2="https://yourtattoostudio.netlify.app/" />
+
 
                 <Comments commentdivName="Comment3" comment='Console.WriteLine("Hello Wolrd !");' fontfam='Farmhouse Children' />
             </div>

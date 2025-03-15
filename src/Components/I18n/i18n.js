@@ -57,6 +57,9 @@ const resources = {
 
       "ProjectHeaderP3": "Tattoo Studio Website",
       "ProjectTextP3": "A website for a non-existent tattoo studio that I made in the React + Vite framework.",
+
+      "ProjectHeaderP4":"Currency Web Scraper",
+      "ProjectTextP4":"A currency web scraper that I built with Next.js and TypeScript. Every 2 seconds, it fetches the current exchange rate of the euro to the US dollar.",
       //ProjectTexts
 
 
@@ -156,6 +159,10 @@ const resources = {
 
       "ProjectHeaderP3": "Tattoo Studio Website",
       "ProjectTextP3": "Ein Website für ein nicht existierendes Tattoo-Studio, die ich mit dem React + Vite Framework erstellt habe.",
+
+
+      "ProjectHeaderP4":"Währungs Web Scraper",
+      "ProjectTextP4":"Ein Währungs-Web-Scraper, den ich mit Next.js und TypeScript gebaut habe. In einem Zeitintervall von 2 Sekunden ruft er den aktuellen Wechselkurs des Euro zum US-Dollar ab.",
       //ProjectTexts
 
 
