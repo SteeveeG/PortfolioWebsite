@@ -22,7 +22,9 @@
 .linetoresumefrompython,
 .linetoresumefromvite,
 .linetojavascriptfromtypescript,
-.linetoreactfromnextjs{
+.linetoreactfromnextjs,
+.linetoreactfromtypescript,
+.linetonextjsfromtypescript {
     height: 2px;
     background-color: red;
     z-index: var(--linezindex);
@@ -30,7 +32,7 @@
     border: none;
 }
 
-.linetoresumefromvite{
+.linetoresumefromvite {
     display: none;
 }
 
@@ -71,6 +73,7 @@
     width: max-content;
 
 }
+
 .nextjscontainer,
 .typescriptcontainer,
 .pythoncontainer,
@@ -81,10 +84,10 @@
 .csscontainer,
 .javascriptcontainer,
 .htmlcontainer,
-.csharpcontainer
-{
+.csharpcontainer {
     position: relative;
 }
+
 .csharplogo,
 .htmllogo,
 .javascriptlogo,
@@ -243,21 +246,21 @@
     top: 2em;
     Font-family: "Just Me Again Down Here";
     font-size: 60px;
-    left: 17em;
+    left: 14em;
 }
 
 .javascriptcontainer {
     width: 280px;
     left: 58em;
-    top: -31.5em;
+    top: -38.5em;
     height: 250px;
 }
 
 .linetojavascript {
-    width: 458px;
-    transform: rotate(165deg);
-    left: 66.7em;
-    top: 13em;
+    width: 444px;
+    transform: rotate(178deg);
+    left: 67.7em;
+    top: 9.3em;
 }
 
 .javascriptpin {
@@ -295,10 +298,10 @@
 }
 
 .linetocssfromjavascript {
-    width: 560px;
-    transform: rotate(201deg);
-    left: 65.7em;
-    top: 22.5em;
+    width: 621px;
+    transform: rotate(210deg);
+    left: 64.7em;
+    top: 19.5em;
 }
 
 .csssnippet {
@@ -309,25 +312,67 @@
 }
 
 
-.nextjscontainer{
+.nextjscontainer {
     width: 250px;
-    left: 57em;
-    top: -57.5em;
+    left: 58em;
+    top: -47.5em;
     height: 50px;
-
 }
-.typescriptcontainer{
-    width: 200px;
-    left: 69em;
-    top: -36.5em;
-    height: 200px;
 
+.nextjspin {
+    left: 5em;
+    top: -1.5em;
+}
+
+.linetoreactfromnextjs {
+    width: 356px;
+    transform: rotate(65deg);
+    left: 48.7em;
+    top: 31.3em;
+}
+
+.typescriptcontainer {
+    width: 200px;
+    left: 70em;
+    top: -48.5em;
+    height: 200px;
+}
+
+.typescriptpin {
+    left: 67px;
+    top: -15px;
+}
+
+.linetojavascriptfromtypescript {
+    width: 364px;
+    transform: rotate(66deg);
+    left: 60.4em;
+    top: 19.3em;
+}
+
+.linetoreactfromtypescript {
+    width: 341px;
+    transform: rotate(20deg);
+    left: 54em;
+    top: 25em;
+}
+
+.linetonextjsfromtypescript {
+    width: 276px;
+    transform: rotate(132deg);
+    left: 60.7em;
+    top: 35.7em;
+}
+
+.typescriptsnippet {
+    left: -3em;
+    top: -1em;
 }
 
 .reactcontainer {
     width: 200px;
-    left: 43.5em;
-    top: -73.5em;
+    left: 48.5em;
+    top: -74.5em;
     height: 200px;
 }
 
@@ -337,10 +382,10 @@
 }
 
 .linetoreact {
-    width: 420px;
-    transform: rotate(332deg);
-    left: 41.7em;
-    top: 23em;
+    width: 282px;
+    transform: rotate(316deg);
+    left: 52.7em;
+    top: 15.2em;
 }
 
 .reactsnippet {
@@ -350,15 +395,15 @@
 
 .linetovite {
     width: 230px;
-    transform: rotate(276deg);
-    left: 36em;
-    top: 35.5em;
+    transform: rotate(284deg);
+    left: 46.2em;
+    top: 27.5em;
 }
 
 .vitecontainer {
     width: 170px;
-    left: 37em;
-    top: -64.5em;
+    left: 46em;
+    top: -72.5em;
     height: 170px;
 }
 
@@ -397,12 +442,12 @@
 
     transform: rotate(-7deg);
 }
- 
+
 .sqlcontainer {
     width: 300px;
-    height: 300px;
+    height: 160px;
     left: 46.4em;
-    top: -49em;
+    top: -64.5em;
 }
 
 .sqlpin {
@@ -431,10 +476,10 @@
 }
 
 .linetosqlfromjavascript {
-    width: 599px;
+    width: 734px;
     transform: rotate(-73deg);
-    left: 40.5em;
-    top: 36em;
+    left: 37.5em;
+    top: 32em;
 }
 
 .linetosqlfrompython {
@@ -448,7 +493,7 @@
     width: 350px;
     height: 350px;
     left: 78em;
-    top: -76.3em;
+    top: -83em;
 }
 
 .pythonpin {
@@ -487,44 +532,49 @@
 }
 
 
-.htmlcontainer:hover ~ .linetocssfromhtml:before,
-.htmlcontainer:hover ~ .linetojavascript:before,
-.reactcontainer:hover ~ .linetoreact:before,
-.vitecontainer:hover ~ .linetovite:before,
-.vitecontainer:hover ~ .linetoresumefromvite:before,
-.csharpcontainer:hover ~ .linetocsharp:before,
-.cpluscpluscontainer:hover ~ .linetocplusplus:before,
-.sqlcontainer:hover ~ .linetosqlfromjavascript:before,
-.sqlcontainer:hover ~ .linetosqlfromcsharp:before,
-.csscontainer:hover ~ .linetocssfromjavascript:before,
-.sqlcontainer:hover ~ .linetosqlfromcplusplus:before,
-.cpluscpluscontainer:hover ~ .linetoresumefromcplusplus:before,
-.sqlcontainer:hover ~ .linetosqlfrompython:before,
-.sqlcontainer:hover ~ .linetoresumefromsql:before
-
-{
+.htmlcontainer:hover~.linetocssfromhtml:before,
+.htmlcontainer:hover~.linetojavascript:before,
+.reactcontainer:hover~.linetoreact:before,
+.vitecontainer:hover~.linetovite:before,
+.vitecontainer:hover~.linetoresumefromvite:before,
+.csharpcontainer:hover~.linetocsharp:before,
+.cpluscpluscontainer:hover~.linetocplusplus:before,
+.sqlcontainer:hover~.linetosqlfromjavascript:before,
+.sqlcontainer:hover~.linetosqlfromcsharp:before,
+.csscontainer:hover~.linetocssfromjavascript:before,
+.sqlcontainer:hover~.linetosqlfromcplusplus:before,
+.cpluscpluscontainer:hover~.linetoresumefromcplusplus:before,
+.sqlcontainer:hover~.linetosqlfrompython:before,
+.sqlcontainer:hover~.linetoresumefromsql:before,
+.javascriptcontainer:hover~.linetojavascriptfromtypescript:before,
+.reactcontainer:hover~.linetoreactfromtypescript:before,
+.reactcontainer:hover~.linetoreactfromnextjs:before,
+.typescriptcontainer:hover~.linetonextjsfromtypescript:before {
     animation: move-line 2s ease-in-out infinite;
 
 }
-.pythoncontainer:hover ~ .linetosqlfrompython:before,
-.pythoncontainer:hover ~ .linetoresumefrompython:before,
-.cpluscpluscontainer:hover ~ .linetosqlfromcplusplus:before,
-.htmlcontainer:hover ~ .linetohtml:before,
-.javascriptcontainer:hover ~ .linetosqlfromjavascript:before,
-.csscontainer:hover ~ .linetocssfromhtml:before,
-.csharpcontainer:hover ~ .linetosqlfromcsharp:before,
-.javascriptcontainer:hover ~ .linetojavascript:before,
-.javascriptcontainer:hover ~ .linetocssfromjavascript:before,
-.javascriptcontainer:hover ~ .linetoreact:before,
-.reactcontainer:hover ~ .linetovite:before,
-.csharpcontainer:hover ~ .linetocplusplus:before
-{
+
+.pythoncontainer:hover~.linetosqlfrompython:before,
+.pythoncontainer:hover~.linetoresumefrompython:before,
+.cpluscpluscontainer:hover~.linetosqlfromcplusplus:before,
+.htmlcontainer:hover~.linetohtml:before,
+.javascriptcontainer:hover~.linetosqlfromjavascript:before,
+.csscontainer:hover~.linetocssfromhtml:before,
+.csharpcontainer:hover~.linetosqlfromcsharp:before,
+.javascriptcontainer:hover~.linetojavascript:before,
+.javascriptcontainer:hover~.linetocssfromjavascript:before,
+.javascriptcontainer:hover~.linetoreact:before,
+.reactcontainer:hover~.linetovite:before,
+.csharpcontainer:hover~.linetocplusplus:before,
+.typescriptcontainer:hover~.linetojavascriptfromtypescript:before,
+.typescriptcontainer:hover~.linetoreactfromtypescript:before,
+.nextjscontainer:hover~.linetoreactfromnextjs:before,
+.nextjscontainer:hover~.linetonextjsfromtypescript:before {
     animation: reversemove-line 2s ease-in-out infinite;
 }
 
 .linetoresumefromsql::before,
-.linetocsharp::before
-{
+.linetocsharp::before {
     content: "";
     position: absolute;
     top: 0;
@@ -534,6 +584,7 @@
     background-color: #2c3e50;
     transition: none;
 }
+
 .linetoresumefromvite::before,
 .linetosqlfrompython::before,
 .linetoresumefrompython::before,
@@ -547,7 +598,11 @@
 .linetohtml::before,
 .linetosqlfromcsharp::before,
 .linetoreact::before,
-.linetocssfromhtml::before{
+.linetocssfromhtml::before,
+.linetojavascriptfromtypescript::before,
+.linetonextjsfromtypescript::before,
+.linetoreactfromtypescript::before,
+.linetoreactfromnextjs::before {
 
     content: "";
     position: absolute;
@@ -568,20 +623,25 @@
     0% {
         left: -20%;
     }
+
     50% {
         left: 100%;
     }
+
     100% {
         left: -20%;
     }
 }
+
 @keyframes reversemove-line {
     0% {
         right: -20%;
     }
+
     50% {
         right: 100%;
     }
+
     100% {
         right: -20%;
     }
@@ -628,14 +688,24 @@
         top: -37.5em;
     }
 
+    .typescriptcontainer {
+        left: 58em;
+        top: -55.5em;
+    }
+
     .vitecontainer {
-        left: 34em;
-        top: -64.4em;
+        left: 33em;
+        top: -77.4em;
     }
 
     .reactcontainer {
-        left: 53.5em;
-        top: -52.5em;
+        left: 27.5em;
+        top: -80.5em;
+    }
+
+    .nextjscontainer {
+        left: 48em;
+        top: -51.5em;
     }
 
     .linetocsharp {
@@ -687,11 +757,39 @@
         top: 10em;
     }
 
+    .linetoreactfromtypescript {
+        width: 467px;
+        transform: rotate(13deg);
+        left: 34em;
+        top: 18.5em;
+    }
+
+    .linetonextjsfromtypescript {
+        width: 285px;
+        transform: rotate(120deg);
+        left: 50em;
+        top: 30em;
+    }
+
+    .linetojavascriptfromtypescript {
+        width: 296px;
+        transform: rotate(37deg);
+        left: 47.4em;
+        top: 16.3em;
+    }
+
+    .linetoreactfromnextjs {
+        width: 462px;
+        transform: rotate(48deg);
+        left: 29.7em;
+        top: 26.3em;
+    }
+
     .linetovite {
-        width: 332px;
-        transform: rotate(0deg);
-        left: 39.3em;
-        top: 27.5em;
+        width: 238px;
+        transform: rotate(-108deg);
+        left: 29em;
+        top: 22.5em;
     }
 
     .linetocssfromhtml {
@@ -707,10 +805,10 @@
     }
 
     .linetoreact {
-        width: 339px;
-        transform: rotate(238deg);
-        left: 44em;
-        top: 19em;
+        width: 258px;
+        transform: rotate(343deg);
+        left: 34em;
+        top: 13em;
     }
 
     .linetohtml {
@@ -758,6 +856,16 @@
         top: -25em;
     }
 
+    .typescriptcontainer {
+        left: 58em;
+        top: -52em;
+        width: 160px;
+    }
+
+    .nextjscontainer {
+        top: -48.5em;
+    }
+
     .htmlpin {
         left: 5em;
     }
@@ -767,15 +875,15 @@
     }
 
     .pythoncontainer {
-        top: -83em;
+        top: -90em;
     }
 
     .vitecontainer {
-        top: -60.8em;
+        top: -74.8em;
     }
 
     .reactcontainer {
-        top: -49em;
+        top: -77em;
     }
 
     .linetosqlfrompython {
@@ -824,6 +932,7 @@
         width: 150px;
         left: 3em;
     }
+
     .headerwrap {
         left: 33em;
     }
@@ -840,22 +949,56 @@
     .vitecontainer {
         width: 130px;
         left: 23em;
-        top: -55.5em;
+        top: -74.5em;
+
     }
 
     .reactcontainer {
         width: 140px;
-        left: 40em;
-        top: -48em;
+        left: 27em;
+        top: -73em;
     }
 
+    .reactpin {
+        left: 3em;
+        top: 0em;
+    }
 
+    .nextjscontainer {
+        width: 190px;
+        left: 31em;
+        top: -48.5em;
 
+    }
+
+    .nextjspin {
+        left: 3em;
+    }
+
+    .nextjssnippet {
+        left: -3em;
+    }
+
+    .typescriptcontainer {
+        width: 120px;
+        left: 46em;
+        top: -44em;
+    }
+
+    .typescriptpin {
+        left: 43px;
+        top: -15px;
+    }
+
+    .vitepin {
+        left: 3em;
+        top: 0em;
+    }
 
     .pythoncontainer {
         width: 250px;
         left: 60em;
-        top: -79em;
+        top: -85em;
     }
 
     .csscontainer {
@@ -870,28 +1013,65 @@
     }
 
     .sqlcontainer {
-        left: 38em;
+        left: 37.6em;
+        top: -61em;
     }
 
     .linetovite {
-        width: 317px;
-        transform: rotate(-12deg);
-        left: 27.3em;
-        top: 29em;
+        width: 204px;
+        transform: rotate(-71deg);
+        left: 23.3em;
+        top: 21em;
     }
 
-    .linetosqlfromcsharp{
+    .linetosqlfromcsharp {
         width: 885px;
         transform: rotate(-133deg);
         left: -0.5em;
         top: 32em;
     }
 
+    .linetonextjsfromtypescript {
+        width: 263px;
+        transform: rotate(153deg);
+        left: 35em;
+        top: 31.5em;
+    }
+
     .linetoreact {
-        width: 284px;
-        transform: rotate(83deg);
-        left: 36.5em;
-        top: 19em;
+        width: 251px;
+        transform: rotate(-21deg);
+        left: 30em;
+        top: 13.3em;
+    }
+
+    .cpluspluspin {
+        left: 3.4em
+    }
+
+    .cpluscpluscontainer {
+        left: 6em;
+    }
+
+    .linetoreactfromtypescript {
+        width: 345px;
+        transform: rotate(34deg);
+        left: 30em;
+        top: 22em;
+    }
+
+    .linetoreactfromnextjs {
+        width: 315px;
+        transform: rotate(78deg);
+        left: 23.8em;
+        top: 26.3em;
+    }
+
+    .linetojavascriptfromtypescript {
+        width: 294px;
+        transform: rotate(73deg);
+        left: 38.1em;
+        top: 19.3em;
     }
 
     .linetocssfromjavascript {
@@ -940,16 +1120,16 @@
     }
 
     .linetosqlfrompython {
-        width: 430px;
-        transform: rotate(155deg);
+        width: 415px;
+        transform: rotate(-24deg);
         left: 45em;
-        top: 45.4em;
+        top: 45.8em;
     }
 
     .linetosqlfromjavascript {
-        width: 644px;
-        transform: rotate(89deg);
-        left: 24.87em;
+        width: 658px;
+        transform: rotate(-91deg);
+        left: 24.3em;
         top: 32em;
     }
 
@@ -960,7 +1140,7 @@
 
     .linetoresumefrompython {
         width: 814px;
-        transform: rotate(118deg);
+        transform: rotate(-62deg);
         left: 32em;
         top: 63.4em;
     }
@@ -973,6 +1153,20 @@
 }
 
 @media (max-width:1200px) {
+    .webheader {
+        left: 11em;
+    }
+
+    .javascriptpin {
+        left: 5.5em;
+        top: 2em;
+    }
+
+    .csspin {
+        left: 3em;
+        top: 2em;
+    }
+
     .headerwrap {
         left: 34em;
     }
@@ -983,35 +1177,49 @@
     }
 
     .csscontainer {
-        top: -37em;
-        left: 40em
+        top: -22em;
+        left: 52em;
+    }
+
+    .typescriptcontainer {
+        left: 37em;
+        top: -45em;
     }
 
     .javascriptcontainer {
-        top: -8em;
-        left: 50em;
+        top: -35em;
+        left: 30em;
     }
 
     .cpluscpluscontainer {
-        left: 10em;
+        left: 11em;
     }
 
     .reactcontainer {
-        top: -40em;
-        left: 25em;
-    }
-
-    .vitecontainer {
-        top: -64em;
-    }
-
-    .pythoncontainer {
-        top: -45em;
+        top: -65em;
         left: 20em;
     }
 
+    .nextjscontainer {
+        left: 32em;
+        top: -40.5em;
+    }
+
+    .vitecontainer {
+        top: -67em;
+    }
+
+    .pythoncontainer {
+        top: -52em;
+        left: 20em;
+    }
+
+    .reactcontainer {
+        top: -69em;
+    }
+
     .sqlcontainer {
-        top: -38em;
+        top: -53em;
         left: 33em;
     }
 
@@ -1037,41 +1245,78 @@
     }
 
     .linetojavascript {
-        left: 43.5em;
-        transform: rotate(84deg);
-        top: 26.5em;
+        left: 36.5em;
+        transform: rotate(184deg);
+        top: 12.7em;
+        width: 308px;
+    }
+
+    .linetojavascriptfromtypescript {
+        width: 224px;
+        transform: rotate(73deg);
+        left: 32.2em;
+        top: 19.3em;
+    }
+
+    .linetonextjsfromtypescript {
+        width: 296px;
+        transform: rotate(160deg);
+        left: 37em;
+        top: 40.2em;
     }
 
     .linetocssfromhtml {
-        transform: rotate(132deg);
+        transform: rotate(90deg);
         left: 43em;
-        top: 19.5em;
+        top: 26.5em;
+        width: 433px;
     }
 
     .linetocssfromjavascript {
-        transform: rotate(227deg);
-        left: 42.5em;
-        top: 32.5em;
-        width: 317px;
+        transform: rotate(235deg);
+        left: 30em;
+        top: 26em;
+        width: 533px;
+    }
+
+    .linetonextjsfromtypescript {
+        width: 272px;
+        transform: rotate(107deg);
+        left: 30em;
+        top: 36.2em;
+    }
+
+    .linetoreactfromtypescript {
+        width: 296px;
+        transform: rotate(25deg);
+        left: 23em;
+        top: 23em;
     }
 
     .linetoreact {
-        width: 443px;
-        transform: rotate(11deg);
-        left: 31.5em;
-        top: 37.5em;
+        width: 246px;
+        transform: rotate(-32deg);
+        left: 22.5em;
+        top: 15.9em;
+    }
+
+    .linetoreactfromnextjs {
+        width: 401px;
+        transform: rotate(63deg);
+        left: 18em;
+        top: 31.3em;
     }
 
     .linetovite {
         width: 222px;
-        transform: rotate(77deg);
-        left: 23.3em;
-        top: 29em;
+        transform: rotate(258deg);
+        left: 19.2em;
+        top: 27em;
     }
 
     .linetocplusplus {
         width: 478px;
-        transform: rotate(73deg);
+        transform: rotate(-107deg);
         left: -3.2em;
     }
 
@@ -1083,23 +1328,20 @@
     }
 
     .linetosqlfromcplusplus {
-        width: 535px;
-        transform: rotate(-140deg);
-        top: 49em;
-        left: 12em;
+        width: 515px;
+        transform: rotate(-139deg);
+        top: 50em;
+        left: 12.4em;
     }
 
     .linetosqlfromjavascript {
-        width: 435px;
-        transform: rotate(136deg);
-        left: 36.87em;
-        top: 49em;
+        display: none;
     }
 
     .linetosqlfrompython {
-        width: 329px;
-        transform: rotate(126deg);
-        left: 25em;
+        width: 301px;
+        transform: rotate(129deg);
+        left: 25.4em;
         top: 66.4em;
     }
 
@@ -1124,6 +1366,12 @@
 }
 
 @media (max-width:1000px) {
+    .linetocplusplus {
+        width: 428px;
+        transform: rotate(-97deg);
+        left: -4.2em;
+    }
+
     .linetohtml {
         left: 34em;
         transform: rotate(28deg);
@@ -1132,31 +1380,45 @@
     }
 
     .linetojavascript {
-        left: 29.5em;
-        transform: rotate(87deg);
-        width: 575px;
-
+        left: 29em;
+        transform: rotate(91deg);
+        width: 555px;
+        top: 26em;
     }
 
     .linetocssfromhtml {
-        transform: rotate(114deg);
-        left: 34.5em;
-        top: 17.5em;
-        width: 273px;
+        transform: rotate(105deg);
+        left: 34em;
+        top: 18.5em;
+        width: 309px;
     }
 
     .linetocssfromjavascript {
-        transform: rotate(65deg);
-        left: 33.5em;
-        width: 317px;
-        top: 35.5em;
+        transform: rotate(74deg);
+        left: 35.5em;
+        width: 265px;
+        top: 36.5em;
+    }
+
+    .linetonextjsfromtypescript {
+        width: 246px;
+        transform: rotate(172deg);
+        left: 16em;
+        top: 22.2em;
     }
 
     .linetoreact {
-        width: 298px;
-        transform: rotate(31deg);
-        left: 30.5em;
-        top: 40em;
+        width: 244px;
+        transform: rotate(10deg);
+        left: 31.5em;
+        top: 42.8em;
+    }
+
+    .linetovite {
+        width: 222px;
+        transform: rotate(35deg);
+        left: 20.8em;
+        top: 38em;
     }
 
     .linetosqlfromcsharp {
@@ -1179,10 +1441,32 @@
         top: 52em;
     }
 
+    .linetoreactfromnextjs {
+        width: 388px;
+        transform: rotate(226deg);
+        left: 12em;
+        top: 32.4em;
+
+    }
+
+    .linetoreactfromtypescript {
+        width: 320px;
+        transform: rotate(-94deg);
+        left: 22em;
+        top: 31em;
+    }
+
     .linetosqlfrompython {
         width: 333px;
         transform: rotate(129deg);
         left: 15em;
+    }
+
+    .linetosqlfromcplusplus {
+        width: 459px;
+        transform: rotate(-134deg);
+        top: 49em;
+        left: 6.8em;
     }
 
     .linetoresumefromsql {
@@ -1196,12 +1480,41 @@
         left: 17.4em;
     }
 
+    .linetojavascriptfromtypescript {
+        width: 408px;
+        transform: rotate(238deg);
+        left: 25.6em;
+        top: 32.3em;
+    }
+
+    .typescriptcontainer {
+        left: 29em;
+        top: -44em;
+    }
+
+    .reactcontainer {
+        top: -47em;
+        left: 28em;
+    }
+
+    .vitecontainer {
+        top: -67em;
+        left: 17em;
+
+    }
+
     .csscontainer {
-        left: 33em;
+        left: 37em;
+        top: -34em;
     }
 
     .sqlcontainer {
         left: 24em;
+    }
+
+    .nextjscontainer {
+        left: 11em;
+        top: -60.5em;
     }
 
     .javascriptcontainer {
@@ -1218,9 +1531,22 @@
         left: 10em;
     }
 
+    .headerwrap {
+        left: 31em;
+    }
+
     .webheader {
-        top: 0;
-        left: 10em;
+        top: 3em;
+        left: 9em;
+    }
+
+    .cpluscpluscontainer {
+        left: 5em;
+    }
+
+    .typescriptcontainer {
+        left: 27em;
+        top: -51em;
     }
 }
 
@@ -1238,41 +1564,72 @@
     }
 
     .linetojavascript {
-        left: 18em;
-        transform: rotate(88deg);
-        width: 539px;
-        top: 27.5em;
+        left: 28em;
+        transform: rotate(78deg);
+        width: 271px;
+        top: 20.5em;
     }
 
     .linetocssfromhtml {
-        transform: rotate(72deg);
-        left: 29.5em;
-        top: 17.5em;
-        width: 229px;
+        transform: rotate(152deg);
+        left: 22em;
+        top: 14.5em;
+        width: 198px;
     }
 
     .linetocssfromjavascript {
-        transform: rotate(100deg);
-        left: 27.5em;
+        left: 21em;
+        transform: rotate(40deg);
+        width: 297px;
+        top: 22.9em;
     }
 
     .linetoreact {
-        width: 222px;
-        transform: rotate(37deg);
-        left: 22.5em;
-        top: 41em;
+        width: 324px;
+        transform: rotate(-56deg);
+        left: 22em;
+        top: 38em;
+    }
+
+    .linetonextjsfromtypescript {
+        width: 225px;
+        transform: rotate(-149deg);
+        left: 24em;
+        top: 40.7em;
     }
 
     .linetovite {
-        width: 268px;
-        transform: rotate(83deg);
-        left: 15.3em;
+        width: 361px;
+        transform: rotate(53deg);
+        left: 8.3em;
+        top: 37em;
+    }
+
+    .linetojavascriptfromtypescript {
+        width: 279px;
+        transform: rotate(94deg);
+        left: 28.8em;
+        top: 36.3em;
+    }
+
+    .linetoreactfromtypescript {
+        width: 173px;
+        transform: rotate(-9deg);
+        left: 25.4em;
+        top: 45em;
+    }
+
+    .linetoreactfromnextjs {
+        width: 171px;
+        transform: rotate(258deg);
+        left: 20.2em;
+        top: 41.4em;
     }
 
     .linetocplusplus {
         width: 450px;
-        transform: rotate(85deg);
-        left: -5.2em;
+        transform: rotate(87deg);
+        left: -6em;
     }
 
     .linetosqlfromcsharp {
@@ -1337,22 +1694,43 @@
         left: 4em;
     }
 
-    .reactcontainer {
-        top: -38em;
-        left: 18em;
+    .typescriptcontainer {
+        height: 120px;
+
     }
 
-    .vitecontainer {
-        top: -66em;
-        left: 17em;
+    .csscontainer {
+        left: 19em;
+        top: -45em;
     }
 
     .javascriptcontainer {
-        left: 26em;
+        left: 31em;
+        top: -18em;
     }
 
-    .sqlcontainer {      
-          top: -29em;  
+    .reactcontainer {
+        top: -38em;
+        left: 22em;
+    }
+
+    .vitecontainer {
+        top: -69em;
+        left: 8em;
+    }
+
+    .typescriptcontainer {
+        left: 33em;
+        top: -28em;
+    }
+
+    .nextjscontainer {
+        left: 20em;
+        top: -42.5em;
+    }
+
+    .sqlcontainer {
+        top: -29em;
     }
 
     .pythoncontainer {
@@ -1365,8 +1743,14 @@
         top: 0em;
     }
 
+    .comments {
+        left: 8em;
+        top: -8em;
+    }
+
     .webheader {
-        left: 7em;
+        left: 6em;
+        top: 2em;
     }
 }
 
@@ -1486,7 +1870,7 @@
 
     .csharpcontainer {
         width: 130px;
-        height:130px;
+        height: 130px;
     }
 
     .csharppin {
@@ -1546,7 +1930,7 @@
         top: -24em;
         left: 13em;
         width: 107px;
-        height:107px;
+        height: 107px;
     }
 
     .reactpin {
@@ -1751,11 +2135,13 @@
         top: -14em;
         left: 8em;
     }
+
     .vitecontainer {
-           top: -12em;
-           left: 3em;
-    
+        top: -12em;
+        left: 3em;
+
     }
+
     .comments {
         left: 9em;
         top: -6em;
@@ -1866,21 +2252,24 @@
 
     .linetoresumefromsql {
         /* From Vite to Resume */
-       display: none;
+        display: none;
     }
-    .linetoresumefromvite{
-       display: block;
-       left: 6.8em;
-       transform: rotate(107deg);
-       width: 275px;
-       top: 68em;
+
+    .linetoresumefromvite {
+        display: block;
+        left: 6.8em;
+        transform: rotate(107deg);
+        width: 275px;
+        top: 68em;
     }
+
     .linetoresumefrompython {
         transform: rotate(80deg);
         left: 0.5em;
 
     }
-    .pythoncontainer{
+
+    .pythoncontainer {
         top: -18em;
     }
 
@@ -1933,80 +2322,93 @@
         height: 30px;
     }
 
-    .linetocsharp{
+    .linetocsharp {
         width: 156px;
         transform: rotate(-52deg);
         left: 4em;
     }
-    .linetohtml{
+
+    .linetohtml {
         transform: rotate(86deg);
         top: 11em;
         width: 240px;
         left: 5em;
     }
-    .linetojavascript{
+
+    .linetojavascript {
         left: 4.5em;
         transform: rotate(81deg);
         width: 318px;
     }
-    .linetocssfromhtml{
+
+    .linetocssfromhtml {
         transform: rotate(-109deg);
         left: 10em;
         width: 140px;
         top: 22.5em;
     }
-    .linetocssfromjavascript{
+
+    .linetocssfromjavascript {
         transform: rotate(89deg);
         left: 10em;
         width: 189px;
         top: 32.5em;
     }
-    .linetoreact{
+
+    .linetoreact {
         width: 197px;
         transform: rotate(-30deg);
         left: 4.5em;
         top: 41.7em;
     }
-    .linetovite{
+
+    .linetovite {
         width: 196px;
         transform: rotate(33deg);
         left: 4em;
         top: 48.5em;
     }
-    .linetocplusplus{
+
+    .linetocplusplus {
         width: 243px;
         left: -2.5em;
     }
-    .linetosqlfromcsharp{
+
+    .linetosqlfromcsharp {
         transform: rotate(-94deg);
         left: -4.3em;
         top: 23em;
         width: 366px;
     }
-    .linetosqlfromcplusplus{
+
+    .linetosqlfromcplusplus {
         width: 139px;
         top: 30em;
         left: 1.6em;
         transform: rotate(64deg);
     }
-    .linetosqlfromjavascript{
+
+    .linetosqlfromjavascript {
         width: 144px;
         transform: rotate(32deg);
         top: 36.5em;
     }
-    .linetosqlfrompython{
+
+    .linetosqlfrompython {
         width: 328px;
         transform: rotate(87deg);
         left: -1.8em;
         top: 44em;
     }
-    .linetoresumefromsql{
+
+    .linetoresumefromsql {
         /*left: 1.5em;*/
         /*transform: rotate(100deg);*/
         /*width: 384px;*/
         /*top: 64em;*/
         display: none;
     }
+
     .linetoresumefromvite {
         display: block;
         left: 1.5em;
@@ -2014,6 +2416,7 @@
         width: 384px;
         top: 64em;
     }
+
     .linetoresumefrompython {
         transform: rotate(84deg);
         left: -0.5em;
@@ -2021,16 +2424,17 @@
         width: 338px;
     }
 
-    .resumepin{
+    .resumepin {
         left: 10.2em;
 
-    }   
-    
-    .skillpin{
+    }
+
+    .skillpin {
         left: 11em;
 
     }
-    .headerwrap{
+
+    .headerwrap {
         left: 4em;
     }
 
@@ -2066,7 +2470,7 @@
         width: 101px;
     }
 
-    .pythoncontainer{
+    .pythoncontainer {
         top: -20em;
     }
 
@@ -2075,8 +2479,8 @@
         top: 0.2em;
     }
 
-    .sqlcontainer {        
-        top: -31em;  
+    .sqlcontainer {
+        top: -31em;
         width: 163px;
         left: 4em;
     }
@@ -2096,7 +2500,7 @@
     }
 
     .reactcontainer {
-        top: -7em; 
+        top: -7em;
         left: 2em;
     }
 
@@ -2104,130 +2508,153 @@
         top: -6.5em;
         left: 12em;
     }
-    .webheader{
+
+    .webheader {
         top: 6em;
         font-size: 45px;
         left: 2em;
     }
 
 }
+
 @media (max-width: 370px) {
-    .comments{
+    .comments {
         display: none;
     }
 
 }
+
 @media (max-width: 313px) {
 
-.linetohtml{
-    transform: rotate(90deg);
-    left: 4.5em;
-}
-.linetojavascript{
-    left: -1em;
-    transform: rotate(98deg);
-    width: 362px;
-    top: 30em;
-}
-.linetocssfromhtml{
-    transform: rotate(90deg);
-    left: 7.5em;
-}
-.linetocssfromjavascript{
-    transform: rotate(102deg);
-    left: 3.4em;
-    width: 227px;
-    top: 33.5em;
-}
-.linetoreact{
-    width: 125px;
-    transform: rotate(-113deg);
-    left: 6.8em;
-    top: 44.7em;
-}
-.linetovite{
-    width: 153px;
-    transform: rotate(-92deg);
-    left: 7.5em;
-    top: 53em;
-}
-.linetocplusplus{
-    width: 169px;
-    left: -0.3em;
-    transform: rotate(101deg);
-    top: 16em;
-}
-.linetosqlfromcsharp{
-    transform: rotate(-87deg);
-    left: -5.8em;
-}
-.linetosqlfromcplusplus{
-    width: 208px;
-    top: 28em;
-    left: -2em;
-    transform: rotate(87deg);
-}
-.linetosqlfromjavascript{
-    width: 128px;
-    transform: rotate(59deg);
-    top: 37.5em;
-    left: 3em;
-}
-.linetosqlfrompython{
-    width: 228px;
-    transform: rotate(93deg);
-    left: -2.6em;
-    top: 42em;
+    .linetohtml {
+        transform: rotate(90deg);
+        left: 4.5em;
+    }
 
-}
- 
-.linetoresumefrompython{
-    transform: rotate(79deg);
+    .linetojavascript {
+        left: -1em;
+        transform: rotate(98deg);
+        width: 362px;
+        top: 30em;
+    }
+
+    .linetocssfromhtml {
+        transform: rotate(90deg);
+        left: 7.5em;
+    }
+
+    .linetocssfromjavascript {
+        transform: rotate(102deg);
+        left: 3.4em;
+        width: 227px;
+        top: 33.5em;
+    }
+
+    .linetoreact {
+        width: 125px;
+        transform: rotate(-113deg);
+        left: 6.8em;
+        top: 44.7em;
+    }
+
+    .linetovite {
+        width: 153px;
+        transform: rotate(-92deg);
+        left: 7.5em;
+        top: 53em;
+    }
+
+    .linetocplusplus {
+        width: 169px;
+        left: -0.3em;
+        transform: rotate(101deg);
+        top: 16em;
+    }
+
+    .linetosqlfromcsharp {
+        transform: rotate(-87deg);
+        left: -5.8em;
+    }
+
+    .linetosqlfromcplusplus {
+        width: 208px;
+        top: 28em;
+        left: -2em;
+        transform: rotate(87deg);
+    }
+
+    .linetosqlfromjavascript {
+        width: 128px;
+        transform: rotate(59deg);
+        top: 37.5em;
+        left: 3em;
+    }
+
+    .linetosqlfrompython {
+        width: 228px;
+        transform: rotate(93deg);
+        left: -2.6em;
+        top: 42em;
+
+    }
+
+    .linetoresumefrompython {
+        transform: rotate(79deg);
         left: -7em;
         top: 63em;
         width: 440px;
-}
-.linetoresumefromsql{
-    left: 2em;
-    transform: rotate(100deg);
-    width: 287px;
-    top: 67em;
-}
-.htmlcontainer{
-    left: 8em;
-}
-.csscontainer{
-    left: 9em;
-}
-.cpluscpluscontainer{
-    top: 8.5em;
-}
-.sqlcontainer{
-    left: 1em;
-}
-.javascriptcontainer{
-    left: 4em;
-    top: 8em;
-}
-.reactcontainer{
-    top: -4em;
-    left: 9em;
-}
-.pythoncontainer{
-    left: -2.8em;
-    top: -25.5em;
-}
-.vitecontainer{
-    left: 9em;
-    top: -0.5em;
-}
-.resumepin{
-    left: 8.5em;
-}
+    }
+
+    .linetoresumefromsql {
+        left: 2em;
+        transform: rotate(100deg);
+        width: 287px;
+        top: 67em;
+    }
+
+    .htmlcontainer {
+        left: 8em;
+    }
+
+    .csscontainer {
+        left: 9em;
+    }
+
+    .cpluscpluscontainer {
+        top: 8.5em;
+    }
+
+    .sqlcontainer {
+        left: 1em;
+    }
+
+    .javascriptcontainer {
+        left: 4em;
+        top: 8em;
+    }
+
+    .reactcontainer {
+        top: -4em;
+        left: 9em;
+    }
+
+    .pythoncontainer {
+        left: -2.8em;
+        top: -25.5em;
+    }
+
+    .vitecontainer {
+        left: 9em;
+        top: -0.5em;
+    }
+
+    .resumepin {
+        left: 8.5em;
+    }
 }
 
 @media (max-width: 250px) {
-    .container{
+    .container {
         display: none;
     }
 }

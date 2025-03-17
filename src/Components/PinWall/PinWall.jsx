@@ -113,7 +113,7 @@ function PinWall() {
         </div>
 
 
-        <hr className={css.linetojavascriptfromtypescript}/>
+ 
         <div className={css.typescriptcontainer}>
             <Pin className={css.typescriptpin}/>
             <Typescriptlogo alt="" className={css.typescriptlogo}/>
@@ -138,8 +138,8 @@ function PinWall() {
                 </p>
         </div>
 
-
-        <hr className={css.linetoreactfromnextjs}/>
+        <hr className={css.linetojavascriptfromtypescript}/>
+      
         <div className={css.nextjscontainer}>
             <Pin className={css.nextjspin}/>
             <Nextjslogo alt="" className={css.nextjslogo}/>
@@ -149,12 +149,8 @@ function PinWall() {
              </p>
         </div>
 
-
-
-
-
-
-
+        <hr className={css.linetonextjsfromtypescript}/>
+ 
 
 
         <hr className={css.linetocssfromhtml}/>
@@ -166,7 +162,10 @@ function PinWall() {
 
 
             <p className={css.reactsnippet}>import React from 'react'</p>
-        </div>
+        </div>      
+        
+        <hr className={css.linetoreactfromnextjs}/>
+        <hr className={css.linetoreactfromtypescript}/>
 
         <hr className={css.linetoreact}/>
         <div className={css.vitecontainer}>
