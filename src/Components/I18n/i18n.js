@@ -22,7 +22,7 @@ const resources = {
       //About Me
 
       //Pin Wall
-      "FourYears": "+4 YEARS",
+      "FourYears": "+5 YEARS",
       //Pin Wall
 
       //Resume
